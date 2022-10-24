@@ -12,33 +12,16 @@ type CreateIconArguments = {
   name: string;
 };
 
-function getSvgBySize(
-  size: IconProps['size'] | undefined,
-  m: SizeComponent,
-  s: SizeComponent,
-  xs: SizeComponent,
-) {
-  switch (size) {
-    case 'xs':
-      return xs;
-    case 's':
-      return s;
-    case 'm':
-      return m;
-    default:
-      return m;
-  }
-}
-
-export function createIcon({ m, s, xs, name }: CreateIconArguments) {
+export function createIcon(createProps: CreateIconArguments) {
+  const { name } = createProps;
   const IconComponent = forwardRef<HTMLSpanElement, IconProps>((props, ref) => {
-    const Svg = getSvgBySize(props.size, m, s, xs);
-
+    const { size = 'm', className } = props;
+    const Svg = createProps[size];
     const { addIcon, removeIcon } = useContext(IconsContext);
 
     useEffect(() => {
-      addIcon?.(name, props.size, Svg);
-      return () => removeIcon?.(name, props.size);
+      addIcon?.(name, size, Svg);
+      return () => removeIcon?.(name, size);
     }, []);
 
     const { children, ...otherProps } = useMemo(() => {
@@ -46,20 +29,12 @@ export function createIcon({ m, s, xs, name }: CreateIconArguments) {
     }, [Svg]);
 
     return (
-      <Icon
-        {...props}
-        className={cnIcon(null, [name, props.className])}
-        ref={ref}
-      >
+      <Icon {...props} className={cnIcon(null, [name, className])} ref={ref}>
         {!addIcon ? (
           <Svg className={cnIcon('Svg')} />
         ) : (
           <svg {...otherProps}>
-            <use
-              x="0"
-              y="0"
-              xlinkHref={`#${cnIcons(`${name}_${props.size ?? 'm'}`)}`}
-            />
+            <use x="0" y="0" xlinkHref={`#${cnIcons(`${name}_${size}`)}`} />
           </svg>
         )}
       </Icon>

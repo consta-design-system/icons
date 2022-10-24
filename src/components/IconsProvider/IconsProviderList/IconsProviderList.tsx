@@ -9,7 +9,6 @@ type Props = {
 export const IconsProviderList = memo(
   (props: Props) => {
     const { icons } = props;
-    console.log(icons);
 
     return (
       <div className={cnIcons()}>
@@ -30,5 +29,5 @@ export const IconsProviderList = memo(
       </div>
     );
   },
-  ({ names: prev }, { names: next }) => prev === next,
+  ({ names: namesPrev }, { names: namesNext }) => namesPrev === namesNext,
 );
