@@ -22,7 +22,7 @@ export function createIcon(createProps: CreateIconArguments) {
     useEffect(() => {
       addIcon?.(name, size, Svg);
       return () => removeIcon?.(name, size);
-    }, []);
+    }, [Svg]);
 
     const { children, ...otherProps } = useMemo(() => {
       return Svg({ className: cnIcon('Svg') })?.props;
