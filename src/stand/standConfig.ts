@@ -1,6 +1,7 @@
 import { createConfig } from '@consta/stand';
 
 import image from './ConstaImage.png';
+import { StandPageDecoration as standPageDecoration } from './StandPageDecoration';
 
 export const { createStand } = createConfig({
   title: 'Consta icons',
@@ -17,5 +18,6 @@ export const { createStand } = createConfig({
   ],
   group: 'Иконки',
   image,
+  standPageDecoration,
   description: 'Иконки дизайн-системы Consta',
 });

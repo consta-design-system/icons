@@ -1,0 +1,15 @@
+import * as React from 'react';
+import { SVGProps } from 'react';
+
+const IconRoubleSizeXS = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M6.51973 3.43722H5.83663V5.64286H6.51136C7.23122 5.64286 7.71429 5.26256 7.71429 4.53571C7.71429 3.80887 7.23122 3.43722 6.51973 3.43722Z" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11ZM9 4.5C9 5.92857 7.92383 6.64286 6.71429 6.64286H5.83663V7.42857H8.14286V8.14286H5.83663V9.57143H4.57143V8.14286H3.5V7.42857H4.57143V6.64286H3.5V5.64286H4.57143V2.42857H6.71429C7.89872 2.42857 9 3.07143 9 4.5Z"
+    />
+  </svg>
+);
+
+export default IconRoubleSizeXS;
