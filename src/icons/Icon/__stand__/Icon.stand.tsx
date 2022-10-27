@@ -3,7 +3,7 @@ import { createStand } from '##/stand/standConfig';
 export default createStand({
   title: 'Icon',
   id: 'Icon',
-  group: 'components',
+  group: 'icons',
   description: 'Иконки на любые случаи.',
   version: '1.0.0',
   status: 'stable',

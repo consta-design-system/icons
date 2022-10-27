@@ -15,6 +15,10 @@ export const { createStand } = createConfig({
       title: 'Иконки',
       id: 'icons',
     },
+    {
+      title: 'Компоненты',
+      id: 'components',
+    },
   ],
   group: 'Иконки',
   image,

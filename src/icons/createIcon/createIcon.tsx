@@ -11,19 +11,21 @@ const renderTypeDefault = {
   xs: 'default',
 };
 
-type SizeComponent = React.FC<React.SVGProps<SVGSVGElement>>;
-type CreateIconArguments = {
+export type CreateIconRenderType = {
+  l?: 'use' | 'default';
+  m?: 'use' | 'default';
+  s?: 'use' | 'default';
+  xs?: 'use' | 'default';
+};
+
+export type SizeComponent = React.FC<React.SVGProps<SVGSVGElement>>;
+export type CreateIconArguments = {
   l: SizeComponent;
   m: SizeComponent;
   s: SizeComponent;
   xs: SizeComponent;
   name: string;
-  renderType?: {
-    l?: 'use' | 'default';
-    m?: 'use' | 'default';
-    s?: 'use' | 'default';
-    xs?: 'use' | 'default';
-  };
+  renderType?: CreateIconRenderType;
   color?: 'mono' | 'multiple';
 };
 

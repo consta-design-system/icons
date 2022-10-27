@@ -1,0 +1,166 @@
+import { MdxMenu } from '@consta/stand';
+
+```tsx
+import { createIcon } from '@consta/icons/createIcon';
+```
+
+<MdxMenu>
+
+- [Создание своей иконки](#создание-своей-иконки)
+  - [Размер](#размер)
+  - [Название](#название)
+  - [Тип рендера](#тип-рендера)
+  - [Цвет](#цвет)
+- [Свойства](#свойства)
+- [Пример](#пример)
+
+</MdxMenu>
+
+## Создание своей иконки
+
+Данная функция возвращает компонент [иконки](##LIBS.LIB.STAND/lib:icons/stand:components-icon-stable)
+
+### Размер
+
+Для того чтобы созадть собственную иконку вам не обходимо создать рендер функцию хотя бы для одного размера (`'xs', 's', 'm', 'l'`).
+
+```tsx
+import React, { SVGProps } from 'react';
+import { createIcon } from '@consta/icons/createIcon';
+
+const IconExamplePlusSizeM = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M13 2h-2v9H2v2h9v9h2v-9h9v-2h-9V2z" />
+  </svg>
+);
+
+const IconExamplePlusSizeXs = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M6.5 2.5h-1v3h-3v1h3v3h1v-3h3v-1h-3v-3z" />
+  </svg>
+);
+
+export const IconExamplePlus = createIcon({
+  l: IconExamplePlusSizeM,
+  m: IconExamplePlusSizeM,
+  s: IconExamplePlusSizeXs,
+  xs: IconExamplePlusSizeXs,
+});
+```
+
+### Название
+
+Свойство `name` отвечает за название иконки и его `className`
+
+### Тип рендера
+
+Для того чтобы указать какой тип рендеринга будет использваться:
+
+- `use` - оптимизированный рендеринг, не стоит использвать с иконками в которых есть градиент
+- `default` - рендеринг по умолчанию
+
+Необхоодимо определить свойство `renderType`:
+
+```tsx
+export const IconExamplePlus = createIcon({
+  l: IconExamplePlusSizeM,
+  m: IconExamplePlusSizeM,
+  s: IconExamplePlusSizeXs,
+  xs: IconExamplePlusSizeXs,
+  name: 'IconExamplePlus',
+  renderType: {
+    l: 'use',
+    m: 'use',
+    s: 'default',
+    xs: 'use',
+  },
+});
+```
+
+### Цвет
+
+Если фаша иконка имеет один цвет и подразумевается что будет изменять цвет в соответствии с `view` иконки, установите `color: 'mono'`, иначе стоит
+использовать значение `multiple`, тогда цвета темы и цвета определенные `view` иконки использоваться не будут.
+
+```tsx
+export const IconExamplePlus = createIcon({
+  l: IconExamplePlusSizeM,
+  m: IconExamplePlusSizeM,
+  s: IconExamplePlusSizeXs,
+  xs: IconExamplePlusSizeXs,
+  name: 'IconExamplePlus',
+  renderType: {
+    l: 'use',
+    m: 'use',
+    s: 'default',
+    xs: 'use',
+  },
+  color: 'mono',
+});
+```
+
+## Свойства
+
+```tsx
+export type CreateIconRenderType = {
+  l?: 'use' | 'default';
+  m?: 'use' | 'default';
+  s?: 'use' | 'default';
+  xs?: 'use' | 'default';
+};
+
+export type SizeComponent = React.FC<React.SVGProps<SVGSVGElement>>;
+export type CreateIconArguments = {
+  l: SizeComponent;
+  m: SizeComponent;
+  s: SizeComponent;
+  xs: SizeComponent;
+  name: string;
+  renderType?: CreateIconRenderType;
+  color?: 'mono' | 'multiple';
+};
+```
+
+| Свойство                      | Тип                    | По умолчанию                                                  | Описание                            |
+| ----------------------------- | ---------------------- | ------------------------------------------------------------- | ----------------------------------- |
+| [`l` ](#размер)               | `SizeComponent`        | -                                                             | Рендер функция для `l` размера      |
+| [`m` ](#размер)               | `SizeComponent`        | -                                                             | Рендер функция для `m` размера      |
+| [`s` ](#размер)               | `SizeComponent`        | -                                                             | Рендер функция для `s` размера      |
+| [`xs` ](#размер)              | `SizeComponent`        | -                                                             | Рендер функция для `xs` размера     |
+| [`name`](#название)           | `string`               | -                                                             | Название                            |
+| [`renderType?`](#тип-рендера) | `CreateIconRenderType` | `{ l: 'default', m: 'default', s: 'default', xs: 'default' }` | Тип рендера для каждого из размеров |
+| [`color?`](#цвет)             | `'mono', 'multiple'`   | `'mono'`                                                      | Цвет                                |
+
+## Пример
+
+```tsx
+import React, { SVGProps } from 'react';
+import { createIcon } from '@consta/icons/createIcon';
+
+const IconExamplePlusSizeM = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M13 2h-2v9H2v2h9v9h2v-9h9v-2h-9V2z" />
+  </svg>
+);
+
+const IconExamplePlusSizeXs = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M6.5 2.5h-1v3h-3v1h3v3h1v-3h3v-1h-3v-3z" />
+  </svg>
+);
+
+export const IconExamplePlus = createIcon({
+  l: IconExamplePlusSizeM,
+  m: IconExamplePlusSizeM,
+  s: IconExamplePlusSizeXs,
+  xs: IconExamplePlusSizeXs,
+  name: 'IconExamplePlus',
+  renderType: {
+    l: 'use',
+    m: 'use',
+    s: 'default',
+    xs: 'use',
+  },
+  color: 'mono',
+});
+```
