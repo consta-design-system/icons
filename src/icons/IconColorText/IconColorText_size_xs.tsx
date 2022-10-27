@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SVGProps } from 'react';
 
 const IconColorTextSizeXs = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path d="M1 10h10v1H1v-1Z" />
     <path
       fillRule="evenodd"

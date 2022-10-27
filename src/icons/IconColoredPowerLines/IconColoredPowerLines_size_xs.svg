@@ -1,0 +1,19 @@
+<!-- ##color:multiple ##group:colored -->
+<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M1 12L5.07692 2.21538C5.4188 1.39487 6.5812 1.39487 6.92308 2.21538L11 12"
+    stroke="var(--color-bg-normal)"
+  />
+  <path
+    d="M10.5 11L3 8L8.5 6L4.5 4"
+    stroke="var(--color-bg-normal)"
+    stroke-width="0.5"
+    stroke-linejoin="bevel"
+  />
+  <path
+    d="M1.5 11L9 8L3.5 6L7.5 4"
+    stroke="var(--color-bg-normal)"
+    stroke-width="0.5"
+    stroke-linejoin="bevel"
+  />
+</svg>

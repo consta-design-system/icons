@@ -4,8 +4,11 @@ import IconChatFilledSizeS from './IconChatFilled_size_s';
 import IconChatFilledSizeXs from './IconChatFilled_size_xs';
 
 export const IconChatFilled = createIcon({
+  l: IconChatFilledSizeM,
   m: IconChatFilledSizeM,
   s: IconChatFilledSizeS,
   xs: IconChatFilledSizeXs,
   name: 'IconChatFilled',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
 });

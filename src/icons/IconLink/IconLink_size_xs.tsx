@@ -1,24 +1,19 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const IconLinkSizeXS = (props: SVGProps<SVGSVGElement>) => (
+const IconLinkSizeXs = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M8.24371 3.60193H3.74083V2.60193H8.24371V3.60193Z"
+      d="M8.244 3.602H3.74v-1h4.503v1Z"
     />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M3.00192 1.10193C1.89665 1.10193 1.00064 1.99736 1.00064 3.10193C1.00064 4.2065 1.89665 5.10193 3.00192 5.10193H4.99538V6.10193H3.00192C1.34401 6.10193 0 4.75878 0 3.10193C0 1.44507 1.34401 0.101929 3.00192 0.101929H4.99538V1.10193H3.00192Z"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.00577 5.10193C10.111 5.10193 10.9994 4.20223 10.9994 3.09766C10.9994 1.99309 10.111 1.10193 9.00577 1.10193L7.01231 1.10193V0.101929L9.00577 0.101929C10.6637 0.101929 12 1.4408 12 3.09766C12 4.75451 10.6637 6.10193 9.00577 6.10193H7.01231V5.10193H9.00577Z"
+      d="M3.002 1.102a2 2 0 1 0 0 4h1.993v1H3.002a3.001 3.001 0 1 1 0-6h1.993v1H3.002ZM9.006 5.102c1.105 0 1.993-.9 1.993-2.004a1.99 1.99 0 0 0-1.993-1.996H7.012v-1h1.994A2.99 2.99 0 0 1 12 3.098a2.998 2.998 0 0 1-2.994 3.004H7.012v-1h1.994Z"
     />
   </svg>
 );
 
-export default IconLinkSizeXS;
+export default IconLinkSizeXs;

@@ -4,8 +4,11 @@ import IconDrillingPartRightStrokedSizeS from './IconDrillingPartRightStroked_si
 import IconDrillingPartRightStrokedSizeXs from './IconDrillingPartRightStroked_size_xs';
 
 export const IconDrillingPartRightStroked = createIcon({
+  l: IconDrillingPartRightStrokedSizeM,
   m: IconDrillingPartRightStrokedSizeM,
   s: IconDrillingPartRightStrokedSizeS,
   xs: IconDrillingPartRightStrokedSizeXs,
   name: 'IconDrillingPartRightStroked',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
 });

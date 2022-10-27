@@ -1,0 +1,24 @@
+<!-- ##color:multiple ##group:tools -->
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M6 5V9V9C6 10.6569 7.34315 12 9 12H12H14C16.2091 12 18 13.7909 18 16V16V20"
+    stroke="#B5E2FC"
+    stroke-width="2"
+  />
+  <rect
+    x="8"
+    y="6"
+    width="4"
+    height="4"
+    transform="rotate(-180 8 6)"
+    fill="var(--color-typo-primary)"
+  />
+  <rect
+    x="20"
+    y="22"
+    width="4"
+    height="4"
+    transform="rotate(-180 20 22)"
+    fill="var(--color-typo-primary)"
+  />
+</svg>

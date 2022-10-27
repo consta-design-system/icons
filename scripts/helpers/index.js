@@ -79,88 +79,97 @@ const transformCSS = async (ignore, src, distPaths, options) => {
   });
 };
 
-function sortComponent(a, b) {
-  if (a > b) {
-    return 1;
-  }
-  if (a < b) {
-    return -1;
-  }
-  return 0;
-}
+const readIconGroup = async (component) => {
+  const targetPath = component.m ?? component.s ?? component.xs;
+  let svg = await readFile(targetPath, 'utf8');
+  const group = svg.split('group:')?.[1]?.split(' ')?.[0];
+  return group ?? 'default';
+};
 
-const createIconStories = async (svgComponents, src) => {
-  const templatePath = './scripts/templates/Icons.stories.tsx.template';
+const createIconsMockData = async (svgComponents, src) => {
+  const templatePath = './scripts/templates/Icons.mock.data.ts.template';
   const template = await readFile(templatePath, 'utf8');
 
   let imports = '';
-  let icons = '';
 
-  Object.keys(svgComponents)
-    .sort(sortComponent)
-    .forEach(async (componentName) => {
-      if (iconComponentIsValid(svgComponents[componentName])) {
-        imports += `import { ${componentName} } from '../../../${componentName}';\n`;
-        icons += `${componentName},\n`;
-      }
-    });
+  const groupedIcons = {};
 
-  const jsCode = template
-    .replace(/#imports#/g, imports)
-    .replace(/#icons#/g, icons);
-  const jsPatch = `${src}/icons/Icon/__stand__/IconGrid/IconGrid.tsx`;
-  await ensureDir(dirname(jsPatch));
-  await writeFile(jsPatch, jsCode);
-};
+  const readIcon = async (componentName) => {
+    const group = await readIconGroup(svgComponents[componentName]);
+    return {
+      group,
+      icon: componentName,
+      import: `import { ${componentName} } from '../../${componentName}';\n`,
+    };
+  };
 
-const createFileIconsStories = async (svgComponents, src) => {
-  const templatePath = './scripts/templates/FileIconsGallery.tsx.template';
-  const template = await readFile(templatePath, 'utf8');
+  const iconsWithGroup = await Promise.all(
+    Object.keys(svgComponents).map((key) => readIcon(key)),
+  );
 
-  let imports = '';
-  let icons = '';
+  iconsWithGroup.forEach((item) => {
+    imports += item.import;
+    groupedIcons[item.group] = {
+      ...groupedIcons[item.group],
+      [item.icon]: item.icon,
+    };
+  });
 
-  Object.keys(svgComponents)
-    .sort(sortComponent)
-    .forEach(async (componentName) => {
-      if (iconFileComponentIsValid(svgComponents[componentName])) {
-        imports += `import { ${componentName} } from '../../../${componentName}/${componentName}';\n`;
-        icons += `${componentName},\n`;
-      }
-    });
+  const groupArray = Object.keys(groupedIcons).map((group) => ({
+    name: group,
+    icons: JSON.stringify(groupedIcons[group]).replace(/\'|\"/g, ''),
+  }));
+
+  const groupsString = JSON.stringify(groupArray)
+    .replace(/icons\":\"/g, 'icons":')
+    .replace(/}\"}/g, '}}');
 
   const jsCode = template
     .replace(/#imports#/g, imports)
-    .replace(/#icons#/g, icons);
-  const jsPatch = `${src}/fileIcons/FileIcon/__stand__/FileIconsGallery/FileIconsGallery.tsx`;
+    .replace(/#groups#/g, groupsString);
+  const jsPatch = `${src}/icons/Icon/__mocks__/mock.data.ts`;
   await ensureDir(dirname(jsPatch));
   await writeFile(jsPatch, jsCode);
 };
 
-const createComponent = async ({ componentName, pathOutdir, templatePath }) => {
-  const template = await readFile(templatePath, 'utf8');
-  const jsCode = template.replace(/#componentName#/g, componentName);
-
-  const jsPatch = `${pathOutdir}/${componentName}.tsx`;
-  await ensureDir(dirname(jsPatch));
-  await writeFile(jsPatch, jsCode);
+const getExistingSize = (sizesPath) => {
+  if (sizesPath.m) {
+    return 'M';
+  }
+  if (sizesPath.s) {
+    return 'S';
+  }
+  if (sizesPath.l) {
+    return 'L';
+  }
+  if (sizesPath.xs) {
+    return 'Xs';
+  }
 };
 
-const crateSvgComponentsMap = (sizesPath) => ({
-  m: sizesPath.m ? 'M' : sizesPath.s ? 'S' : 'Xs',
-  s: sizesPath.s ? 'S' : sizesPath.m ? 'M' : 'Xs',
-  xs: sizesPath.xs ? 'Xs' : sizesPath.s ? 'S' : 'M',
-});
+const crateSvgComponentsMap = (sizesPath) => {
+  return {
+    l: sizesPath.l ? 'L' : getExistingSize(sizesPath),
+    m: sizesPath.m ? 'M' : getExistingSize(sizesPath),
+    s: sizesPath.s ? 'S' : getExistingSize(sizesPath),
+    xs: sizesPath.xs ? 'Xs' : getExistingSize(sizesPath),
+  };
+};
 
 const createSvgComponent = async ({
   componentName,
   pathOutdir,
   templatePath,
   sizes: sizesProp,
+  hasGradient = {},
+  color = 'mono',
 }) => {
   const sizesMap = crateSvgComponentsMap(sizesProp);
 
   let sizesImports = '';
+  if (sizesMap.l === 'L') {
+    sizesImports += `import ${componentName}SizeL from './${componentName}_size_l';\n`;
+  }
   if (sizesMap.m === 'M') {
     sizesImports += `import ${componentName}SizeM from './${componentName}_size_m';\n`;
   }
@@ -171,10 +180,19 @@ const createSvgComponent = async ({
     sizesImports += `import ${componentName}SizeXs from './${componentName}_size_xs';\n`;
   }
 
+  let renderType = '{ ';
+  renderType += ['l', 'm', 's', 'xs']
+    .map((size) => `${size}: ${hasGradient[size] ? "'default'" : "'use'"}`)
+    .join(', ');
+  renderType += ' }';
+
   const template = await readFile(templatePath, 'utf8');
   const jsCode = template
     .replace(/#componentName#/g, componentName)
+    .replace(/#renderType#/g, renderType)
+    .replace(/#color#/g, color)
     .replace(/#sizesImports#/g, sizesImports)
+    .replace(/#sizeL#/g, sizesMap.l)
     .replace(/#sizeM#/g, sizesMap.m)
     .replace(/#sizeS#/g, sizesMap.s)
     .replace(/#sizeXs#/g, sizesMap.xs);
@@ -203,33 +221,71 @@ const iconsTransformed = async (ignore, src) => {
 
   Object.keys(svgComponents).forEach(async (componentName) => {
     const sizes = svgComponents[componentName];
-
+    let hasGradient = {};
+    let color = 'mono';
+    let iconHasGradientView = false;
     if (iconComponentIsValid(sizes)) {
       if (sizes.xs) {
-        await svgParse({
+        let options = await svgParse({
           componentName: `${componentName}SizeXs`,
           fileName: `${componentName}_size_xs`,
           path: sizes.xs,
           pathOutdir: `./src/icons/${componentName}/`,
           cleanFill: true,
         });
+        color = options.color;
+        hasGradient.xs = options.hasGradient;
+        if (options.hasGradient) {
+          iconHasGradientView = true;
+        }
       }
       if (sizes.s) {
-        await svgParse({
+        let options = await svgParse({
           componentName: `${componentName}SizeS`,
           fileName: `${componentName}_size_s`,
           path: sizes.s,
           pathOutdir: `./src/icons/${componentName}/`,
           cleanFill: true,
         });
+        color = options.color;
+        hasGradient.s = options.hasGradient;
+        if (options.hasGradient) {
+          iconHasGradientView = true;
+        }
       }
       if (sizes.m) {
-        await svgParse({
+        let options = await svgParse({
           componentName: `${componentName}SizeM`,
           fileName: `${componentName}_size_m`,
           path: sizes.m,
           pathOutdir: `./src/icons/${componentName}/`,
           cleanFill: true,
+        });
+        color = options.color;
+        hasGradient.m = options.hasGradient;
+        if (options.hasGradient) {
+          iconHasGradientView = true;
+        }
+      }
+      if (sizes.l) {
+        let options = await svgParse({
+          componentName: `${componentName}SizeL`,
+          fileName: `${componentName}_size_l`,
+          path: sizes.l,
+          pathOutdir: `./src/icons/${componentName}/`,
+          cleanFill: true,
+        });
+        color = options.color;
+        hasGradient.m = options.hasGradient;
+        if (options.hasGradient) {
+          iconHasGradientView = true;
+        }
+      }
+      if (color === 'multiple' && iconHasGradientView) {
+        ['l', 'm', 's', 'xs'].forEach((size) => {
+          if (!sizes[size]) {
+            hasGradient[size] = true;
+          }
         });
       }
       await createSvgComponent({
@@ -237,87 +293,12 @@ const iconsTransformed = async (ignore, src) => {
         componentName,
         pathOutdir: `./src/icons/${componentName}/`,
         templatePath: './scripts/templates/Icon.js.template',
+        hasGradient,
+        color,
       });
     }
   });
-  await createIconStories(svgComponents, src);
-};
-
-const iconsFileTransformed = async (ignore, src) => {
-  const svgFiles = await fg([`${src}/fileIcons/**/*.svg`], { ignore });
-
-  const test = /.\/src\/fileIcons\/(.+)\/(.+)_size_(.+).svg/;
-  const svgComponents = {};
-
-  svgFiles.forEach((fileName) => {
-    if (test.test(fileName)) {
-      const [file, componentName, svgName, size] = test.exec(fileName);
-      if (componentName === svgName) {
-        if (!svgComponents[componentName]) {
-          svgComponents[componentName] = {};
-        }
-        svgComponents[componentName][size.toLowerCase()] = file;
-      }
-    }
-  });
-
-  Object.keys(svgComponents).forEach(async (componentName) => {
-    if (iconFileComponentIsValid(svgComponents[componentName])) {
-      await svgParse({
-        componentName: `${componentName}SizeS`,
-        fileName: `${componentName}_size_s`,
-        path: svgComponents[componentName].s,
-        pathOutdir: `./src/fileIcons/${componentName}/`,
-      });
-      await svgParse({
-        componentName: `${componentName}SizeM`,
-        fileName: `${componentName}_size_m`,
-        path: svgComponents[componentName].m,
-        pathOutdir: `./src/fileIcons/${componentName}/`,
-      });
-      await createComponent({
-        componentName,
-        pathOutdir: `./src/fileIcons/${componentName}/`,
-        templatePath: './scripts/templates/FileIcon.js.template',
-      });
-    }
-  });
-  await createFileIconsStories(svgComponents, src);
-};
-
-const responsesImagesTransformed = async (ignore, src) => {
-  const svgFiles = await fg([`${src}/responsesImages/**/*.svg`], { ignore });
-  const test = /.\/src\/responsesImages\/(.+)\/ResponsesImage(.+).svg/;
-  const svgComponents = {};
-
-  svgFiles.forEach((fileName) => {
-    if (test.test(fileName)) {
-      const [file, componentName, svgName] = test.exec(fileName);
-      if (componentName === 'ResponsesImage' + svgName) {
-        if (!svgComponents[componentName]) {
-          svgComponents[componentName] = {};
-        }
-        svgComponents[componentName] = file;
-      }
-    }
-  });
-
-  Object.keys(svgComponents).forEach(async (componentName) => {
-    await svgParse({
-      componentName: `${componentName}`,
-      fileName: `${componentName}Svg`,
-      path: svgComponents[componentName],
-      pathOutdir: `./src/responsesImages/${componentName}/`,
-      svgo: false,
-      cleanFill: true,
-    });
-    await createComponent({
-      componentName,
-      pathOutdir: `./src/responsesImages/${componentName}/`,
-      templatePath: './scripts/templates/ResponsesImage.tsx.template',
-    });
-  });
-  // await createFileIconsStories(svgComponents, src);
+  await createIconsMockData(svgComponents, src);
 };
 
 const copyAssets = async (ignore, src, distPaths) => {
@@ -594,8 +575,6 @@ module.exports = {
   generateReExports,
   iconsTransformed,
   copyPackageJson,
-  iconsFileTransformed,
-  responsesImagesTransformed,
   copyReadme,
   copyChangelog,
   generateReExportsFonts,

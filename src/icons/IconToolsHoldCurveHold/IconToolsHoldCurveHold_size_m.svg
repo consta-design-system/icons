@@ -1,0 +1,12 @@
+<!-- ##color:multiple ##group:tools -->
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M4 4V12V12C4 16.4183 7.58172 20 12 20H13H20"
+    stroke="#B5E2FC"
+    stroke-width="2"
+  />
+  <rect x="11" y="18" width="4" height="4" fill="var(--color-typo-primary)" />
+  <rect x="18" y="18" width="4" height="4" fill="var(--color-typo-primary)" />
+  <rect x="2" y="2" width="4" height="4" fill="var(--color-typo-primary)" />
+  <rect x="2" y="10" width="4" height="4" fill="var(--color-typo-primary)" />
+</svg>

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SVGProps } from 'react';
 
 const IconOilBarrelSizeXs = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path d="M3 1a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2H3Z" />
     <path
       fillRule="evenodd"

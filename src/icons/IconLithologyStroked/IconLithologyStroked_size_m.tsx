@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SVGProps } from 'react';
 
 const IconLithologyStrokedSizeM = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path d="M7 11H5v2h2v-2ZM8 14h2v2H8v-2ZM13 17h-2v2h2v-2Z" />
     <path
       fillRule="evenodd"

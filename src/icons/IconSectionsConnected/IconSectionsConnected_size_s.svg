@@ -1,0 +1,12 @@
+<!-- ##color:multiple ##group:seismic -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 2L6 4V14L10 12V2Z" fill="var(--color-bg-border)" />
+  <path
+    d="M10 2L13.4472 3.72361C13.786 3.893 14 4.23926 14 4.61803V12.8674C14 13.3877 13.4524 13.7262 12.9869 13.4935L10 12V2Z"
+    fill="var(--color-bg-normal)"
+  />
+  <path
+    d="M2 3.13262C2 2.61226 2.54762 2.27381 3.01305 2.50652L6 4V14L2.55279 12.2764C2.214 12.107 2 11.7607 2 11.382V3.13262Z"
+    fill="var(--color-bg-normal)"
+  />
+</svg>

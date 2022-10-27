@@ -4,8 +4,11 @@ import IconWatchSizeS from './IconWatch_size_s';
 import IconWatchSizeXs from './IconWatch_size_xs';
 
 export const IconWatch = createIcon({
+  l: IconWatchSizeM,
   m: IconWatchSizeM,
   s: IconWatchSizeS,
   xs: IconWatchSizeXs,
   name: 'IconWatch',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
 });

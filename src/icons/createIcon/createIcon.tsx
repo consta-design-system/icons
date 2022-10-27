@@ -4,38 +4,59 @@ import { cnIcons, IconsContext } from '##/components/IconsProvider';
 
 import { cnIcon, Icon, IconProps } from '../Icon/Icon';
 
+const renderTypeDefault = {
+  l: 'default',
+  m: 'default',
+  s: 'default',
+  xs: 'default',
+};
+
 type SizeComponent = React.FC<React.SVGProps<SVGSVGElement>>;
 type CreateIconArguments = {
+  l: SizeComponent;
   m: SizeComponent;
   s: SizeComponent;
   xs: SizeComponent;
   name: string;
+  renderType?: {
+    l?: 'use' | 'default';
+    m?: 'use' | 'default';
+    s?: 'use' | 'default';
+    xs?: 'use' | 'default';
+  };
+  color?: 'mono' | 'multiple';
 };
 
 export function createIcon(createProps: CreateIconArguments) {
-  const { name } = createProps;
+  const { name, renderType = renderTypeDefault, color = 'mono' } = createProps;
   const IconComponent = forwardRef<HTMLSpanElement, IconProps>((props, ref) => {
     const { size = 'm', className } = props;
     const Svg = createProps[size];
     const { addIcon, removeIcon } = useContext(IconsContext);
 
     useEffect(() => {
-      addIcon?.(name, size, Svg);
-      return () => removeIcon?.(name, size);
-    }, [Svg]);
+      if (renderType[size] === 'use') {
+        addIcon?.(name, size, Svg);
+      }
+      return () => {
+        if (renderType[size] === 'use') {
+          removeIcon?.(name, size);
+        }
+      };
+    }, [Svg, renderType, size]);
 
     const { children, ...otherProps } = useMemo(() => {
-      return Svg({ className: cnIcon('Svg') })?.props;
+      return Svg({ className: cnIcon('Svg', { color }) })?.props;
     }, [Svg]);
 
     return (
       <Icon {...props} className={cnIcon(null, [name, className])} ref={ref}>
-        {!addIcon ? (
-          <Svg className={cnIcon('Svg')} />
-        ) : (
+        {addIcon && renderType[size] === 'use' ? (
           <svg {...otherProps}>
             <use x="0" y="0" xlinkHref={`#${cnIcons(`${name}_${size}`)}`} />
           </svg>
+        ) : (
+          <Svg className={cnIcon('Svg', { color })} />
         )}
       </Icon>
     );

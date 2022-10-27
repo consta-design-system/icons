@@ -4,8 +4,11 @@ import IconPressureStrokedSizeS from './IconPressureStroked_size_s';
 import IconPressureStrokedSizeXs from './IconPressureStroked_size_xs';
 
 export const IconPressureStroked = createIcon({
+  l: IconPressureStrokedSizeM,
   m: IconPressureStrokedSizeM,
   s: IconPressureStrokedSizeS,
   xs: IconPressureStrokedSizeXs,
   name: 'IconPressureStroked',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
 });

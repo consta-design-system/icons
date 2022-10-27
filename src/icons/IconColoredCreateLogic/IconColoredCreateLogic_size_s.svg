@@ -1,0 +1,37 @@
+<!-- ##color:multiple ##group:colored -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="2" width="5" height="3" fill="var(--color-bg-normal)" />
+  <path
+    opacity="0.5"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M10 4H6V3H10V4Z"
+    fill="var(--color-bg-normal)"
+  />
+  <path
+    opacity="0.5"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M10 8H7V7H10V8Z"
+    fill="var(--color-bg-normal)"
+  />
+  <rect x="10" y="6" width="5" height="3" fill="var(--color-bg-border)" />
+  <rect x="10" y="11" width="5" height="3" fill="var(--color-bg-border)" />
+  <rect x="10" y="2" width="5" height="3" fill="var(--color-bg-border)" />
+  <rect
+    opacity="0.5"
+    x="7"
+    y="4"
+    width="1"
+    height="3"
+    fill="var(--color-bg-normal)"
+  />
+  <rect
+    opacity="0.5"
+    x="12"
+    y="9"
+    width="1"
+    height="2"
+    fill="var(--color-bg-normal)"
+  />
+</svg>

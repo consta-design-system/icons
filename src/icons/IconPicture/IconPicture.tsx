@@ -4,8 +4,11 @@ import IconPictureSizeS from './IconPicture_size_s';
 import IconPictureSizeXs from './IconPicture_size_xs';
 
 export const IconPicture = createIcon({
+  l: IconPictureSizeM,
   m: IconPictureSizeM,
   s: IconPictureSizeS,
   xs: IconPictureSizeXs,
   name: 'IconPicture',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
 });

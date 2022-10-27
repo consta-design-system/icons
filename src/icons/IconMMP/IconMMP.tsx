@@ -4,8 +4,11 @@ import IconMMPSizeS from './IconMMP_size_s';
 import IconMMPSizeXs from './IconMMP_size_xs';
 
 export const IconMMP = createIcon({
+  l: IconMMPSizeM,
   m: IconMMPSizeM,
   s: IconMMPSizeS,
   xs: IconMMPSizeXs,
   name: 'IconMMP',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
 });

@@ -1,4 +1,4 @@
-.Icon {
+.icons--Icon {
   display: inline-flex;
   overflow: hidden;
   justify-content: center;
@@ -18,6 +18,10 @@
 
     &_m {
       --icon-size: var(--graphics-size-m);
+    }
+
+    &_l {
+      --icon-size: calc(var(--graphics-size-xl) - var(--graphics-size-xs));
     }
   }
 
@@ -63,6 +67,9 @@
     display: block;
     width: 100%;
     height: 100%;
-    fill: currentcolor;
+
+    &.icons--Icon-Svg_color_mono {
+      fill: currentcolor;
+    }
   }
 }

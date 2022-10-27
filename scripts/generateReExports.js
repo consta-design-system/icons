@@ -25,8 +25,6 @@ const generateReExport = async (src, reexport, ignore, distPath) => {
 
   const files = await fg(join(src, reexport, '**/*.{ts,tsx}'), { ignore });
 
-  // console.log(files);
-
   files
     .sort()
     .filter((fileName) => fileName.match(/\.(ts|tsx)?$/))

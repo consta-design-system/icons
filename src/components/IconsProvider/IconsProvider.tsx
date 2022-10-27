@@ -3,7 +3,7 @@ import './IconsProvider.css';
 import React, { createContext, useMemo, useState } from 'react';
 
 import { IconProps } from '##/icons/Icon';
-import { withPrefix } from '##/utils/bem';
+import { cn } from '##/utils/bem';
 
 import { IconsProviderList } from './IconsProviderList/IconsProviderList';
 
@@ -33,7 +33,7 @@ const defaultContextValue: IconsContextParams = {
   removeIcon: undefined,
 };
 
-export const cnIcons = withPrefix('icons')('Icons');
+export const cnIcons = cn('Icons');
 
 export const IconsContext =
   createContext<IconsContextParams>(defaultContextValue);

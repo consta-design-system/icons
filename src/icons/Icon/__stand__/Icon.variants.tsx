@@ -4,7 +4,7 @@ import React from 'react';
 import { IconGrid } from './IconGrid';
 
 const Variants = () => {
-  const size = useSelect('size', ['xs', 's', 'm']);
+  const size = useSelect('size', ['xs', 's', 'm', 'l']);
   const view = useSelect('view', [
     'alert',
     'brand',

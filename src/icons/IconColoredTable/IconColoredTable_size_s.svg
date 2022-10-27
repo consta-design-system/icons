@@ -1,0 +1,10 @@
+<!-- ##color:multiple ##group:colored -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M5 4H2V6H5V4ZM6 6H10V4H6V6ZM14 6H11V4H14V6ZM6 7H10V9H6V7ZM11 9H14V7H11V9ZM15 9V7V6V4V3H14H11H10H6H5H2H1V4V6V7V9V10V12V13H2H5H6H10H11H14H15V12V10V9ZM11 12H14V10H11V12ZM10 12V10H6V12H10ZM5 10V12H2V10H5ZM5 7V9H2V7H5Z"
+    fill="var(--color-bg-border)"
+  />
+  <rect x="5.5" y="6.5" width="5" height="3" stroke="var(--color-bg-normal)" />
+</svg>

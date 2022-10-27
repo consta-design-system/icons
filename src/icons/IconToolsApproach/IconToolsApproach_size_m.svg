@@ -1,0 +1,16 @@
+<!-- ##color:multiple ##group:tools -->
+<svg
+  viewBox="0 0 24 24"
+  fill="none"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M2 2L20 20" stroke="var(--color-typo-secondary)" stroke-width="2" />
+  <path
+    opacity="0.8"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M5.06727 10.0184L2.5 2.5L10.0184 5.06727L5.06727 10.0184ZM5.78723 12.1269L7.10363 15.9821L15.9821 7.10363L12.1269 5.78723L5.78723 12.1269ZM18.0905 7.82359L7.82359 18.0905L9.5 23L23 9.5L18.0905 7.82359Z"
+    fill="var(--color-bg-success)"
+  />
+</svg>

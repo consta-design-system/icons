@@ -1,0 +1,14 @@
+<!-- ##color:multiple ##group:tools -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M13.5 12C13.5 10.7524 13.2543 9.5171 12.7769 8.36451C12.2994 7.21191 11.5997 6.16464 10.7175 5.28249C9.83536 4.40033 8.78809 3.70056 7.63549 3.22314C6.4829 2.74572 5.24756 2.5 4 2.5"
+    stroke="var(--color-typo-primary)"
+    stroke-width="2"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M13 10.5L13 13.5L14 13.5L14 10.5L13 10.5ZM5.5 2L2.5 2L2.5 3L5.5 3L5.5 2Z"
+    fill="var(--color-typo-secondary)"
+  />
+</svg>

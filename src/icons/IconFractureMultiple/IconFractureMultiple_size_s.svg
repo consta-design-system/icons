@@ -1,0 +1,19 @@
+<!-- ##color:multiple ##group:geo -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M2 6C2 6 5.5 4 9.5 4"
+    stroke="var(--color-typo-caution)"
+    stroke-linecap="round"
+  />
+  <path
+    d="M7.5 11C11.5 11 14 12 14 12"
+    stroke="var(--color-typo-system)"
+    stroke-linecap="round"
+  />
+  <path
+    d="M6.5 14L10 2"
+    stroke="var(--color-typo-primary)"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+</svg>

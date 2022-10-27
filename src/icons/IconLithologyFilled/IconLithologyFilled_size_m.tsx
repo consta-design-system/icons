@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SVGProps } from 'react';
 
 const IconLithologyFilledSizeM = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3H2V4Z" />
     <path
       fillRule="evenodd"

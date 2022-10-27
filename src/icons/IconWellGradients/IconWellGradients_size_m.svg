@@ -1,0 +1,14 @@
+<!-- ##color:multiple ##group:well -->
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M7 1V7L16 8V17L11 18V23"
+    stroke="var(--color-typo-primary)"
+    stroke-width="2"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M4 1V9.10496L12.1104 10.0061L13 10.105V11V14V14.8198L12.1961 14.9806L8 15.8198V23H6V15V14.1802L6.80388 14.0194L11 13.1802V11.895L2.88957 10.9939L2 10.895V10V1H4ZM14 1V4.5V5.40499L14.9005 5.49504L19 5.90499V19.1802L14.8039 20.0194L14 20.1802V21V23H16V21.8198L20.1961 20.9806L21 20.8198V20V5V4.09501L20.0995 4.00496L16 3.59501V1H14Z"
+    fill="var(--color-typo-secondary)"
+  />
+</svg>

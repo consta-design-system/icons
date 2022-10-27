@@ -1,0 +1,6 @@
+<!-- ##color:mono ##group:map -->
+<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2 3L4 2.33337V9.33337L2 10V3Z" />
+  <path d="M5 9V2L7 3V10L5 9Z" />
+  <path d="M8 9.66663L10 9V2L8 2.66663V9.66663Z" />
+</svg>

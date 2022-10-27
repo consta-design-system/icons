@@ -1,0 +1,49 @@
+<!-- ##color:multiple ##group:seismic -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M3.50003 6.5C3.50003 6 3.50004 5.58263 3.50003 5.3125C3.50003 5.3125 3.94636 5.02032 4.63558 4.64438C5.81719 3.99987 7.46529 3.33333 9.25001 3.33333C10.8364 3.33333 11.8617 3.86113 12.5073 4.49095C12.5 4.5 12.5 5.08138 12.5073 6C12.4327 5.63055 12.1744 5.2939 11.9063 5.05469C11.3858 4.5904 10.7724 4.33333 9.25001 4.33333C7.70139 4.33333 6.22449 4.91679 5.11443 5.52228C4.48909 5.86337 4.00003 6.17969 3.50003 6.5Z"
+    fill="var(--color-bg-warning)"
+  />
+  <path
+    d="M7 6C4.18618 6 3.5 8.83333 3.5 8.83333V10.5C4.53323 9.50389 5.5 8.5 7.5 8.5C9.58333 8.5 11.8056 9.80556 12.5 10.5V8.5C12.5 8.5 9.81382 6 7 6Z"
+    fill="var(--color-bg-normal)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M3.50919 11.3945C3.6266 11.3536 3.75808 11.311 3.9043 11.2692C4.68231 11.0469 5.87475 10.8333 7.58333 10.8333C9.2915 10.8333 10.6823 11.0468 11.6501 11.2619C12.1341 11.3695 12.2398 11.3905 12.5 11.4727C12.5 11.7617 12.5 12.2381 12.5 12.5156C12.2654 12.4415 11.8867 12.3389 11.4332 12.2381C10.526 12.0365 9.20848 11.8333 7.58333 11.8333C5.95857 11.8333 4.85935 12.0364 4.17902 12.2308C3.87783 12.3168 3.66013 12.3984 3.50921 12.4829C3.50919 12.207 3.50917 11.6099 3.50919 11.3945Z"
+    fill="var(--color-bg-alert)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M2 14H1V13H3V15H2V14Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M14 2L15 2L15 3L13 3L13 1L14 1L14 2Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M14 14L14 15L13 15L13 13L15 13L15 14L14 14Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M2 2L2 1L3 1L3 3L1 3L1 2L2 2Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M2 4.5V3.5H3V4.5H2ZM4.5 2H3.5V3H4.5V2ZM5.5 2V3H6.5V2H5.5ZM7.5 2V3H8.5V2H7.5ZM9.5 2V3H10.5V2H9.5ZM11.5 2V3H12.5V2H11.5ZM14 3.5H13V4.5H14V3.5ZM14 5.5H13V6.5H14V5.5ZM14 7.5H13V8.5H14V7.5ZM14 9.5H13V10.5H14V9.5ZM14 11.5H13V12.5H14V11.5ZM12.5 14V13H11.5V14H12.5ZM10.5 14V13H9.5V14H10.5ZM8.5 14V13H7.5V14H8.5ZM6.5 14V13H5.5V14H6.5ZM4.5 14V13H3.5V14H4.5ZM2 12.5H3V11.5H2V12.5ZM2 10.5H3V9.5H2V10.5ZM2 8.5H3V7.5H2V8.5ZM2 6.5H3V5.5H2V6.5Z"
+    fill="var(--color-typo-primary)"
+  />
+</svg>
