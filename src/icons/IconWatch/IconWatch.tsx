@@ -1,10 +1,11 @@
 import { createIcon } from '../createIcon/createIcon';
+import IconWatchSizeL from './IconWatch_size_l';
 import IconWatchSizeM from './IconWatch_size_m';
 import IconWatchSizeS from './IconWatch_size_s';
 import IconWatchSizeXs from './IconWatch_size_xs';
 
 export const IconWatch = createIcon({
-  l: IconWatchSizeM,
+  l: IconWatchSizeL,
   m: IconWatchSizeM,
   s: IconWatchSizeS,
   xs: IconWatchSizeXs,

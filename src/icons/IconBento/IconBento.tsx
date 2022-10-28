@@ -1,10 +1,11 @@
 import { createIcon } from '../createIcon/createIcon';
+import IconBentoSizeL from './IconBento_size_l';
 import IconBentoSizeM from './IconBento_size_m';
 import IconBentoSizeS from './IconBento_size_s';
 import IconBentoSizeXs from './IconBento_size_xs';
 
 export const IconBento = createIcon({
-  l: IconBentoSizeM,
+  l: IconBentoSizeL,
   m: IconBentoSizeM,
   s: IconBentoSizeS,
   xs: IconBentoSizeXs,

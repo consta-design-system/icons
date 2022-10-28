@@ -1,10 +1,11 @@
 import { createIcon } from '../createIcon/createIcon';
+import IconRingSizeL from './IconRing_size_l';
 import IconRingSizeM from './IconRing_size_m';
 import IconRingSizeS from './IconRing_size_s';
 import IconRingSizeXs from './IconRing_size_xs';
 
 export const IconRing = createIcon({
-  l: IconRingSizeM,
+  l: IconRingSizeL,
   m: IconRingSizeM,
   s: IconRingSizeS,
   xs: IconRingSizeXs,

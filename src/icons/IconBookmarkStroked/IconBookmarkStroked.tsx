@@ -1,10 +1,11 @@
 import { createIcon } from '../createIcon/createIcon';
+import IconBookmarkStrokedSizeL from './IconBookmarkStroked_size_l';
 import IconBookmarkStrokedSizeM from './IconBookmarkStroked_size_m';
 import IconBookmarkStrokedSizeS from './IconBookmarkStroked_size_s';
 import IconBookmarkStrokedSizeXs from './IconBookmarkStroked_size_xs';
 
 export const IconBookmarkStroked = createIcon({
-  l: IconBookmarkStrokedSizeM,
+  l: IconBookmarkStrokedSizeL,
   m: IconBookmarkStrokedSizeM,
   s: IconBookmarkStrokedSizeS,
   xs: IconBookmarkStrokedSizeXs,

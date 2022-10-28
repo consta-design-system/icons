@@ -1,10 +1,11 @@
 import { createIcon } from '../createIcon/createIcon';
+import IconSearchFilledSizeL from './IconSearchFilled_size_l';
 import IconSearchFilledSizeM from './IconSearchFilled_size_m';
 import IconSearchFilledSizeS from './IconSearchFilled_size_s';
 import IconSearchFilledSizeXs from './IconSearchFilled_size_xs';
 
 export const IconSearchFilled = createIcon({
-  l: IconSearchFilledSizeM,
+  l: IconSearchFilledSizeL,
   m: IconSearchFilledSizeM,
   s: IconSearchFilledSizeS,
   xs: IconSearchFilledSizeXs,
