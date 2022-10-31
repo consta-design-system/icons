@@ -19,7 +19,7 @@ export const IconsProviderList = memo(
           }
           const { children, ...otherProps } = SvgRender.props;
           return (
-            <svg key={cnIcons(key, { index })}>
+            <svg key={cnIcons(key)}>
               <symbol {...otherProps} id={`${cnIcons(key)}`}>
                 {children}
               </symbol>
