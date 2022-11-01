@@ -38,9 +38,10 @@ export const cnIcons = cn('Icons');
 export const IconsContext =
   createContext<IconsContextParams>(defaultContextValue);
 
-export const IconsProvider: React.FC<{ children: React.ReactNode }> = (
-  props,
-) => {
+export const IconsProvider: React.FC<{
+  children: React.ReactNode;
+  container?: Element;
+}> = ({ children, container = window.document.body }) => {
   const [icons, setIcons] = useState<Icons>({});
 
   const value = useMemo(() => {
@@ -71,15 +72,10 @@ export const IconsProvider: React.FC<{ children: React.ReactNode }> = (
     return { addIcon, removeIcon };
   }, []);
 
-  const names = useMemo(
-    () => Object.keys(icons).sort(),
-    [Object.keys(icons).sort().join(',')],
-  );
-
   return (
-    <IconsContext.Provider value={value}>
-      {props.children}
-      <IconsProviderList icons={icons} names={names} />
-    </IconsContext.Provider>
+    <>
+      <IconsContext.Provider value={value}>{children}</IconsContext.Provider>
+      <IconsProviderList icons={icons} container={container} />
+    </>
   );
 };

@@ -1,33 +1,21 @@
-import React, { memo } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import { cnIcons, Icons } from '../IconsProvider';
+import { IconsProviderIcon } from '../IconsProviderIcon';
 
 type Props = {
   icons: Icons;
-  names: string[];
+  container: Element;
 };
-export const IconsProviderList = memo(
-  (props: Props) => {
-    const { icons } = props;
 
-    return (
-      <div className={cnIcons()}>
-        {Object.keys(icons).map((key, index) => {
-          const SvgElement = icons[key].svg;
-          if (!SvgElement) {
-            return null;
-          }
-          const { children, ...otherProps } = SvgElement.props;
-          return (
-            <svg key={cnIcons(key)}>
-              <symbol {...otherProps} id={`${cnIcons(key)}`}>
-                {children}
-              </symbol>
-            </svg>
-          );
-        })}
-      </div>
-    );
-  },
-  ({ names: namesPrev }, { names: namesNext }) => namesPrev === namesNext,
-);
+export const IconsProviderList: React.FC<Props> = ({ icons, container }) => {
+  return ReactDOM.createPortal(
+    <div className={cnIcons()}>
+      {Object.keys(icons).map((key) => (
+        <IconsProviderIcon element={icons[key].svg} name={key} key={key} />
+      ))}
+    </div>,
+    container,
+  );
+};
