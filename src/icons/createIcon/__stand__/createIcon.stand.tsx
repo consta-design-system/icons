@@ -1,7 +1,7 @@
 import { createStand } from '##/stand/standConfig';
 
 export default createStand({
-  title: 'Создание иконок',
+  title: 'createIcon',
   id: 'createIcon',
   group: 'icons',
   description: 'Создание кастомных иконок.',

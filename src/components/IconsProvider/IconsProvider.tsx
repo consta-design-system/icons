@@ -9,13 +9,13 @@ import { IconsProviderList } from './IconsProviderList/IconsProviderList';
 
 export type Icons = Record<
   string,
-  { count: number; svg: React.FC<React.SVGProps<SVGSVGElement>> }
+  { count: number; svg: React.ReactElement | null }
 >;
 
 type IconsContextAddIcon = (
   iconName: string,
   size: IconProps['size'],
-  svg: React.FC<React.SVGProps<SVGSVGElement>>,
+  svg: React.ReactElement | null,
 ) => void;
 
 type IconsContextRemoveIcon = (

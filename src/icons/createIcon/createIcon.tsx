@@ -36,20 +36,27 @@ export function createIcon(createProps: CreateIconArguments) {
     const Svg = createProps[size];
     const { addIcon, removeIcon } = useContext(IconsContext);
 
+    const SvgElement = useMemo(() => {
+      return renderType[size] === 'use'
+        ? Svg({ className: cnIcon('Svg', { color }) })
+        : null;
+    }, [Svg]);
+
+    const { children, ...otherProps } = SvgElement?.props ?? {};
+
     useEffect(() => {
       if (renderType[size] === 'use') {
-        addIcon?.(name, size, Svg);
+        addIcon?.(name, size, SvgElement);
       }
+    }, [SvgElement, renderType, size]);
+
+    useEffect(() => {
       return () => {
         if (renderType[size] === 'use') {
           removeIcon?.(name, size);
         }
       };
     }, [Svg, renderType, size]);
-
-    const { children, ...otherProps } = useMemo(() => {
-      return Svg({ className: cnIcon('Svg', { color }) })?.props;
-    }, [Svg]);
 
     return (
       <Icon {...props} className={cnIcon(null, [name, className])} ref={ref}>

@@ -13,11 +13,11 @@ export const IconsProviderList = memo(
     return (
       <div className={cnIcons()}>
         {Object.keys(icons).map((key, index) => {
-          const SvgRender = icons[key].svg({});
-          if (!SvgRender) {
+          const SvgElement = icons[key].svg;
+          if (!SvgElement) {
             return null;
           }
-          const { children, ...otherProps } = SvgRender.props;
+          const { children, ...otherProps } = SvgElement.props;
           return (
             <svg key={cnIcons(key)}>
               <symbol {...otherProps} id={`${cnIcons(key)}`}>
