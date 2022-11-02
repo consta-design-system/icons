@@ -51,3 +51,9 @@ export const IconExampleViewSuccess = () => (
     <IconBag view="success" />
   </StoryBookExample>
 );
+
+export const IconExampleViewDisabled = () => (
+  <StoryBookExample className={cnDocsDecorator('Section')}>
+    <IconBag view="disabled" />
+  </StoryBookExample>
+);

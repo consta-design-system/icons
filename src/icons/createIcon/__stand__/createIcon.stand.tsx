@@ -7,5 +7,5 @@ export default createStand({
   description: 'Создание кастомных иконок.',
   version: '1.0.0',
   status: 'stable',
-  order: 10,
+  order: 20,
 });

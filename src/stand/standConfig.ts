@@ -10,14 +10,17 @@ export const { createStand } = createConfig({
     {
       title: 'Документация',
       id: 'docs',
+      initialOpen: true,
     },
     {
       title: 'Иконки',
       id: 'icons',
+      initialOpen: true,
     },
     {
       title: 'Компоненты',
       id: 'components',
+      initialOpen: true,
     },
   ],
   group: 'Иконки',

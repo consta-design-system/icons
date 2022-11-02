@@ -9,5 +9,6 @@ export const IconExampleSize = () => (
     <IconBag size="xs" />
     <IconBag size="s" />
     <IconBag size="m" />
+    <IconBag size="l" />
   </StoryBookExample>
 );

@@ -9,8 +9,10 @@ import {
   IconExampleViewSuccess,
   IconExampleViewWarning,
   IconExampleViewSecondary,
+  IconExampleViewDisabled,
 } from './examples/IconExampleView/IconExampleView';
 import { IconExampleSize } from './examples/IconExampleSize/IconExampleSize';
+//import { IconExampleButton } from './examples/IconExampleButton/IconExampleButton';
 
 ```tsx
 import { Icon } from '@consta/icons/Icon';
@@ -30,13 +32,24 @@ import { Icon } from '@consta/icons/Icon';
 
 За вид иконки отвечает свойство `view`.
 
-| `'alert'`                | `'brand'`                | `'ghost'`                | `'link'`                | `'primary'`                | `'secondary'`                | `'success'`                | `'warning'`                |
-| ------------------------ | ------------------------ | ------------------------ | ----------------------- | -------------------------- | ---------------------------- | -------------------------- | -------------------------- |
-| <IconExampleViewAlert /> | <IconExampleViewBrand /> | <IconExampleViewGhost /> | <IconExampleViewLink /> | <IconExampleViewPrimary /> | <IconExampleViewSecondary /> | <IconExampleViewSuccess /> | <IconExampleViewWarning /> |
+```tsx
+<IconBag view="alert" />
+```
+
+| `'alert'`                | `'brand'`                | `'ghost'`                | `'link'`                | `'primary'`                | `'secondary'`                | `'success'`                | `'warning'`                | `'disabled'`                |
+| ------------------------ | ------------------------ | ------------------------ | ----------------------- | -------------------------- | ---------------------------- | -------------------------- | -------------------------- | --------------------------- |
+| <IconExampleViewAlert /> | <IconExampleViewBrand /> | <IconExampleViewGhost /> | <IconExampleViewLink /> | <IconExampleViewPrimary /> | <IconExampleViewSecondary /> | <IconExampleViewSuccess /> | <IconExampleViewWarning /> | <IconExampleViewDisabled /> |
 
 ## Размер
 
-За размер иконки отвечает свойство `size`. Варианты: `'xs'`, `'s'`, `'m'`.
+За размер иконки отвечает свойство `size`. Варианты: `'xs'`, `'s'`, `'m'`, `'l'`.
+
+```tsx
+<IconBag size="xs" />
+<IconBag size="s" />
+<IconBag size="m" />
+<IconBag size="l" />
+```
 
 <IconExampleSize />
 
@@ -48,12 +61,12 @@ import { Icon } from '@consta/icons/Icon';
 
 ## Свойства
 
-| Свойство                | Тип                                                                                             | По умолчанию | Описание                                  |
-| ----------------------- | ----------------------------------------------------------------------------------------------- | ------------ | ----------------------------------------- |
-| [`size?` ](#размер)     | `'xs'`, `'s'`, `'m'`                                                                            | `'m'`        | Размер                                    |
-| [`view?`](#внешний-вид) | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'` | -            | Вид иконки                                |
-| `className?`            | `string`                                                                                        | -            | Дополнительный CSS-класс                  |
-| `ref?`                  | `React.Ref<HTMLSpanElement>`                                                                    | -            | Ссылка на корневой DOM-элемент компонента |
+| Свойство                | Тип                                                                                                           | По умолчанию | Описание                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ | ----------------------------------------- |
+| [`size?` ](#размер)     | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | Размер                                    |
+| [`view?`](#внешний-вид) | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | Вид иконки                                |
+| `className?`            | `string`                                                                                                      | -            | Дополнительный CSS-класс                  |
+| `ref?`                  | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента |
 
 ## Примеры
 
@@ -61,11 +74,10 @@ import { Icon } from '@consta/icons/Icon';
 
 ```tsx
 import { IconCancel } from '@consta/icons/IconCancel';
-import { Button } from '@consta/uikit/Button';
 
-const buttonWithIcon = () => {
-  return <Button label="Закрыть" iconLeft={IconCancel} onlyIcon />;
+const newIcon = () => {
+  return <IconCancel />;
 };
 
-export default buttonWithIcon;
+export default IconCancel;
 ```
