@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconWellPresetALTSizeM from './IconWellPresetALT_size_m';
 
 export const IconWellPresetALT = createIcon({

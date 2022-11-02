@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconLitologySizeS from './IconLitology_size_s';
 
 export const IconLitology = createIcon({

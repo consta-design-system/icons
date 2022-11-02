@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconFacebookSizeM from './IconFacebook_size_m';
 import IconFacebookSizeS from './IconFacebook_size_s';
 import IconFacebookSizeXs from './IconFacebook_size_xs';

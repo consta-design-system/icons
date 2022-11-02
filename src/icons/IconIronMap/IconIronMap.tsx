@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconIronMapSizeS from './IconIronMap_size_s';
 
 export const IconIronMap = createIcon({

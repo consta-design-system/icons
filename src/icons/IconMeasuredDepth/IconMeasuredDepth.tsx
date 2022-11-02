@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconMeasuredDepthSizeS from './IconMeasuredDepth_size_s';
 
 export const IconMeasuredDepth = createIcon({

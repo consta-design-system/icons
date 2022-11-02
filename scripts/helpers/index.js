@@ -25,12 +25,8 @@ const enhancedReactNaming = {
 
 const nestedModernMatch = createMatch(enhancedReactNaming);
 
-const iconFileComponentIsValid = (obj) => {
-  return !!(obj.m && obj.s);
-};
-
 const iconComponentIsValid = (obj) => {
-  return !!(obj.m || obj.s || obj.xs);
+  return !!(obj.m || obj.s || obj.xs || obj.l);
 };
 
 const copyPackageJson = async (distPaths) => {

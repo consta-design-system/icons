@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconShuffleSizeM from './IconShuffle_size_m';
 import IconShuffleSizeS from './IconShuffle_size_s';
 import IconShuffleSizeXs from './IconShuffle_size_xs';

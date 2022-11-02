@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconColoredPDFModellingSizeS from './IconColoredPDFModelling_size_s';
 
 export const IconColoredPDFModelling = createIcon({

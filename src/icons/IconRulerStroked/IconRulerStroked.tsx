@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconRulerStrokedSizeM from './IconRulerStroked_size_m';
 import IconRulerStrokedSizeS from './IconRulerStroked_size_s';
 import IconRulerStrokedSizeXs from './IconRulerStroked_size_xs';

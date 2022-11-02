@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconToolsDiameterOuterSizeS from './IconToolsDiameterOuter_size_s';
 
 export const IconToolsDiameterOuter = createIcon({

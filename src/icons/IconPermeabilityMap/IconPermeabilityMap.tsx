@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconPermeabilityMapSizeS from './IconPermeabilityMap_size_s';
 
 export const IconPermeabilityMap = createIcon({

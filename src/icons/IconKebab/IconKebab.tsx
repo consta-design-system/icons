@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconKebabSizeM from './IconKebab_size_m';
 import IconKebabSizeS from './IconKebab_size_s';
 import IconKebabSizeXs from './IconKebab_size_xs';

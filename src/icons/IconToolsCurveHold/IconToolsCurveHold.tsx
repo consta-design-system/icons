@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconToolsCurveHoldSizeM from './IconToolsCurveHold_size_m';
 
 export const IconToolsCurveHold = createIcon({

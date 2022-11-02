@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconAxisZSizeS from './IconAxisZ_size_s';
 
 export const IconAxisZ = createIcon({

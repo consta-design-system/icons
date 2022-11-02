@@ -63,13 +63,17 @@
     }
   }
 
+  &_color {
+    &_mono {
+      & .icons--Icon-Svg {
+        fill: currentcolor;
+      }
+    }
+  }
+
   &-Svg {
     display: block;
     width: 100%;
     height: 100%;
-
-    &.icons--Icon-Svg_color_mono {
-      fill: currentcolor;
-    }
   }
 }

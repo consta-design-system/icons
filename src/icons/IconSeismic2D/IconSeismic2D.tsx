@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconSeismic2DSizeS from './IconSeismic2D_size_s';
 
 export const IconSeismic2D = createIcon({

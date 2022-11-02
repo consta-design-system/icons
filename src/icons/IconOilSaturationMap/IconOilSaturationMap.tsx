@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconOilSaturationMapSizeS from './IconOilSaturationMap_size_s';
 
 export const IconOilSaturationMap = createIcon({

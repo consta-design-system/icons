@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconWellPipeSizeM from './IconWellPipe_size_m';
 import IconWellPipeSizeS from './IconWellPipe_size_s';
 import IconWellPipeSizeXs from './IconWellPipe_size_xs';

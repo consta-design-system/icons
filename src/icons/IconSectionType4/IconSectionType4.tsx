@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconSectionType4SizeS from './IconSectionType4_size_s';
 
 export const IconSectionType4 = createIcon({

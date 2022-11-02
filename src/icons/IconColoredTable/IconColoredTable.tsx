@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconColoredTableSizeS from './IconColoredTable_size_s';
 
 export const IconColoredTable = createIcon({

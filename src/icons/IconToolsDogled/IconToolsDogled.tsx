@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconToolsDogledSizeM from './IconToolsDogled_size_m';
 
 export const IconToolsDogled = createIcon({

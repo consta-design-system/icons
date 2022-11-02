@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconColoredFazaBlueSizeXs from './IconColoredFazaBlue_size_xs';
 
 export const IconColoredFazaBlue = createIcon({

@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconToolsBuildTurnSizeM from './IconToolsBuildTurn_size_m';
 
 export const IconToolsBuildTurn = createIcon({

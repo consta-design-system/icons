@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconMoleculesSizeM from './IconMolecules_size_m';
 import IconMoleculesSizeS from './IconMolecules_size_s';
 import IconMoleculesSizeXs from './IconMolecules_size_xs';

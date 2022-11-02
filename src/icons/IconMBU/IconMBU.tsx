@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconMBUSizeM from './IconMBU_size_m';
 import IconMBUSizeS from './IconMBU_size_s';
 import IconMBUSizeXs from './IconMBU_size_xs';

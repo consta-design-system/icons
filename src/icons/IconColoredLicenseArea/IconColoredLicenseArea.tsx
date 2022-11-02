@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconColoredLicenseAreaSizeXs from './IconColoredLicenseArea_size_xs';
 
 export const IconColoredLicenseArea = createIcon({

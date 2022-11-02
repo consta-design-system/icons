@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconSnowflakeSizeM from './IconSnowflake_size_m';
 import IconSnowflakeSizeS from './IconSnowflake_size_s';
 import IconSnowflakeSizeXs from './IconSnowflake_size_xs';

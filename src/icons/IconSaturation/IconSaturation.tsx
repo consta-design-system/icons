@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconSaturationSizeS from './IconSaturation_size_s';
 
 export const IconSaturation = createIcon({

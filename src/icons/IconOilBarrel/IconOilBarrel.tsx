@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconOilBarrelSizeM from './IconOilBarrel_size_m';
 import IconOilBarrelSizeS from './IconOilBarrel_size_s';
 import IconOilBarrelSizeXs from './IconOilBarrel_size_xs';

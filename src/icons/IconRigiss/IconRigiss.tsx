@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconRigissSizeS from './IconRigiss_size_s';
 
 export const IconRigiss = createIcon({

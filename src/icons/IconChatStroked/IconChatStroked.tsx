@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconChatStrokedSizeL from './IconChatStroked_size_l';
 import IconChatStrokedSizeM from './IconChatStroked_size_m';
 import IconChatStrokedSizeS from './IconChatStroked_size_s';

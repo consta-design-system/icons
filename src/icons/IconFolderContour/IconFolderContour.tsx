@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconFolderContourSizeS from './IconFolderContour_size_s';
 
 export const IconFolderContour = createIcon({

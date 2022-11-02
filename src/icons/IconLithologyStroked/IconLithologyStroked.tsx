@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconLithologyStrokedSizeM from './IconLithologyStroked_size_m';
 import IconLithologyStrokedSizeS from './IconLithologyStroked_size_s';
 import IconLithologyStrokedSizeXs from './IconLithologyStroked_size_xs';

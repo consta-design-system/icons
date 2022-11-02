@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconFishboneFilledSizeM from './IconFishboneFilled_size_m';
 import IconFishboneFilledSizeS from './IconFishboneFilled_size_s';
 import IconFishboneFilledSizeXs from './IconFishboneFilled_size_xs';

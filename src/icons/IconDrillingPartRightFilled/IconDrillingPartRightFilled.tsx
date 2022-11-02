@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconDrillingPartRightFilledSizeM from './IconDrillingPartRightFilled_size_m';
 import IconDrillingPartRightFilledSizeS from './IconDrillingPartRightFilled_size_s';
 import IconDrillingPartRightFilledSizeXs from './IconDrillingPartRightFilled_size_xs';

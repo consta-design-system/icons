@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconIpadStrokedSizeM from './IconIpadStroked_size_m';
 import IconIpadStrokedSizeS from './IconIpadStroked_size_s';
 import IconIpadStrokedSizeXs from './IconIpadStroked_size_xs';

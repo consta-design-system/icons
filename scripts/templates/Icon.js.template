@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 #sizesImports#
 export const #componentName# = createIcon({
   l: #componentName#Size#sizeL#,

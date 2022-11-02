@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconSectionOffsetSizeS from './IconSectionOffset_size_s';
 
 export const IconSectionOffset = createIcon({

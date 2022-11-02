@@ -1,7 +1,7 @@
 import { MdxMenu } from '@consta/stand';
 
 ```tsx
-import { createIcon } from '@consta/icons/createIcon';
+import { createIcon } from '@consta/icons/Icon';
 ```
 
 <MdxMenu>
@@ -33,7 +33,7 @@ import { createIcon } from '@consta/icons/createIcon';
 
 ```tsx
 import React, { SVGProps } from 'react';
-import { createIcon } from '@consta/icons/createIcon';
+import { createIcon } from '@consta/icons/Icon';
 
 const IconExamplePlusSizeM = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
@@ -118,33 +118,32 @@ export type CreateIconRenderType = {
   xs?: 'use' | 'default';
 };
 
-export type SizeComponent = React.FC<React.SVGProps<SVGSVGElement>>;
 export type CreateIconArguments = {
-  l: SizeComponent;
-  m: SizeComponent;
-  s: SizeComponent;
-  xs: SizeComponent;
+  l: React.FC<React.SVGProps<SVGSVGElement>>;
+  m: React.FC<React.SVGProps<SVGSVGElement>>;
+  s: React.FC<React.SVGProps<SVGSVGElement>>;
+  xs: React.FC<React.SVGProps<SVGSVGElement>>;
   name: string;
   renderType?: CreateIconRenderType;
   color?: 'mono' | 'multiple';
 };
 ```
 
-| Свойство                      | Тип                    | По умолчанию                                                  | Описание                            |
-| ----------------------------- | ---------------------- | ------------------------------------------------------------- | ----------------------------------- |
-| [`l` ](#размер)               | `SizeComponent`        | -                                                             | Рендер функция для `l` размера      |
-| [`m` ](#размер)               | `SizeComponent`        | -                                                             | Рендер функция для `m` размера      |
-| [`s` ](#размер)               | `SizeComponent`        | -                                                             | Рендер функция для `s` размера      |
-| [`xs` ](#размер)              | `SizeComponent`        | -                                                             | Рендер функция для `xs` размера     |
-| [`name`](#название)           | `string`               | -                                                             | Название                            |
-| [`renderType?`](#тип-рендера) | `CreateIconRenderType` | `{ l: 'default', m: 'default', s: 'default', xs: 'default' }` | Тип рендера для каждого из размеров |
-| [`color?`](#цвет)             | `'mono', 'multiple'`   | `'mono'`                                                      | Цветовое решение                    |
+| Свойство                      | Тип                                       | По умолчанию                                                  | Описание                            |
+| ----------------------------- | ----------------------------------------- | ------------------------------------------------------------- | ----------------------------------- |
+| [`l` ](#размер)               | `React.FC<React.SVGProps<SVGSVGElement>>` | -                                                             | Рендер функция для `l` размера      |
+| [`m` ](#размер)               | `React.FC<React.SVGProps<SVGSVGElement>>` | -                                                             | Рендер функция для `m` размера      |
+| [`s` ](#размер)               | `React.FC<React.SVGProps<SVGSVGElement>>` | -                                                             | Рендер функция для `s` размера      |
+| [`xs` ](#размер)              | `React.FC<React.SVGProps<SVGSVGElement>>` | -                                                             | Рендер функция для `xs` размера     |
+| [`name`](#название)           | `string`                                  | -                                                             | Название                            |
+| [`renderType?`](#тип-рендера) | `CreateIconRenderType`                    | `{ l: 'default', m: 'default', s: 'default', xs: 'default' }` | Тип рендера для каждого из размеров |
+| [`color?`](#цвет)             | `'mono', 'multiple'`                      | `'mono'`                                                      | Цветовое решение                    |
 
 ## Пример
 
 ```tsx
 import React, { SVGProps } from 'react';
-import { createIcon } from '@consta/icons/createIcon';
+import { createIcon } from '@consta/icons/Icon';
 
 const IconExamplePlusSizeM = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>

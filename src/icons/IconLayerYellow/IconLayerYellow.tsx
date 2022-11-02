@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconLayerYellowSizeS from './IconLayerYellow_size_s';
 
 export const IconLayerYellow = createIcon({

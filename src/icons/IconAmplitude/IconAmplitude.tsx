@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconAmplitudeSizeS from './IconAmplitude_size_s';
 
 export const IconAmplitude = createIcon({

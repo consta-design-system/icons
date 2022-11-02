@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconFractureGreenSizeS from './IconFractureGreen_size_s';
 
 export const IconFractureGreen = createIcon({

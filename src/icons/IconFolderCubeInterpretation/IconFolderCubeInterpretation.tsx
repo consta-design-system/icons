@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconFolderCubeInterpretationSizeS from './IconFolderCubeInterpretation_size_s';
 
 export const IconFolderCubeInterpretation = createIcon({

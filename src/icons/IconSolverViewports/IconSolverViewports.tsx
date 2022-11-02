@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconSolverViewportsSizeM from './IconSolverViewports_size_m';
 
 export const IconSolverViewports = createIcon({

@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconColoredReserviorSizeS from './IconColoredReservior_size_s';
 
 export const IconColoredReservior = createIcon({

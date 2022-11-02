@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconPorosityMapSizeS from './IconPorosityMap_size_s';
 
 export const IconPorosityMap = createIcon({

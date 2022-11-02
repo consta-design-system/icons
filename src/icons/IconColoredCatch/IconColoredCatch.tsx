@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconColoredCatchSizeXs from './IconColoredCatch_size_xs';
 
 export const IconColoredCatch = createIcon({

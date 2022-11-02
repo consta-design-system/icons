@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconColoredFolderSizeXs from './IconColoredFolder_size_xs';
 
 export const IconColoredFolder = createIcon({

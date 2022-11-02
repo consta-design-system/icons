@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconToolsMaxAngleSizeS from './IconToolsMaxAngle_size_s';
 
 export const IconToolsMaxAngle = createIcon({

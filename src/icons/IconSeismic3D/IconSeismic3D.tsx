@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconSeismic3DSizeS from './IconSeismic3D_size_s';
 
 export const IconSeismic3D = createIcon({

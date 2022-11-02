@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconStratigraphySizeS from './IconStratigraphy_size_s';
 
 export const IconStratigraphy = createIcon({

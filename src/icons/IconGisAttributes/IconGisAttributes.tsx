@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconGisAttributesSizeS from './IconGisAttributes_size_s';
 
 export const IconGisAttributes = createIcon({

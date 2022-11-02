@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconYoutubeSizeM from './IconYoutube_size_m';
 import IconYoutubeSizeS from './IconYoutube_size_s';
 import IconYoutubeSizeXs from './IconYoutube_size_xs';

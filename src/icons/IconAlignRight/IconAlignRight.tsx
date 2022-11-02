@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconAlignRightSizeM from './IconAlignRight_size_m';
 import IconAlignRightSizeS from './IconAlignRight_size_s';
 import IconAlignRightSizeXs from './IconAlignRight_size_xs';

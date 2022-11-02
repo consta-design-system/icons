@@ -22,7 +22,7 @@
 [Подробнее о функции createIcon](##LIBS.LIB.STAND.TAB/lib:icons/tab:dev/stand:icons-createicon-stable)
 
 ```tsx
-import { createIcon } from '@consta/icons/createIcon';
+import { createIcon } from '@consta/icons/Icon';
 
 import IconAddSizeM from './IconAdd_size_m';
 import IconAddSizeS from './IconAdd_size_s';
@@ -42,7 +42,7 @@ export const IconAdd = createIcon({
 Просто укажите одну иконку во всех размерах:
 
 ```tsx
-import { createIcon } from '@consta/icons/createIcon';
+import { createIcon } from '@consta/icons/Icon';
 
 import IconAddSizeM from './IconAdd_size_m';
 
@@ -75,7 +75,7 @@ export const IconAdd = createIcon({
                ) => {
                    return template.ast`
                        ${imports}
-                       import { createIcon } from '@consta/icons/createIcon';
+                       import { createIcon } from '@consta/icons/Icon';
 
                        const SvgComponent = (${props}) => {
                          return ${jsx};

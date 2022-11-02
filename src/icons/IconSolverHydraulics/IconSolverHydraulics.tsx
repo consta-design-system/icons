@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconSolverHydraulicsSizeM from './IconSolverHydraulics_size_m';
 
 export const IconSolverHydraulics = createIcon({

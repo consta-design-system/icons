@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconInstagramStrokedSizeM from './IconInstagramStroked_size_m';
 import IconInstagramStrokedSizeS from './IconInstagramStroked_size_s';
 import IconInstagramStrokedSizeXs from './IconInstagramStroked_size_xs';

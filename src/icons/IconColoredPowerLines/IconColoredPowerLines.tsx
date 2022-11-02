@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconColoredPowerLinesSizeXs from './IconColoredPowerLines_size_xs';
 
 export const IconColoredPowerLines = createIcon({

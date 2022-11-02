@@ -1,4 +1,4 @@
-import { createIcon } from '../createIcon/createIcon';
+import { createIcon } from '../Icon';
 import IconHorizonGreenSizeS from './IconHorizonGreen_size_s';
 
 export const IconHorizonGreen = createIcon({
