@@ -1,0 +1,17 @@
+<!-- ##color:multiple ##group:geo -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M1.97729 12V10.9772L6.27273 5.34091V5.25H1.97729V4H8V5.06818L3.84093 10.659V10.75H8V12H1.97729Z"
+    fill="var(--color-typo-alert)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M11 3.5C11 3.22386 11.2929 3 11.5 3H13.5C13.7071 3 14 3.22386 14 3.5C14 3.77614 13.7071 4 13.5 4H11.5C11.2929 4 11 3.77614 11 3.5Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M13 5.5C13 5.22386 12.7761 5 12.5 5C12.2239 5 12 5.22386 12 5.5V11H11L12.5 13L14 11H13V5.5Z"
+    fill="var(--color-typo-primary)"
+  />
+</svg>

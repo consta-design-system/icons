@@ -1,0 +1,21 @@
+<!-- ##color:multiple ##group:geo -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M1 12V3.5L4 3L9.5 4L12 3.5H15V12.5L12.5 13L7 12L4 13L1 12Z"
+    fill="var(--color-typo-caution)"
+  />
+  <path
+    d="M3.99999 2L9.49455 2.98907L11.6951 2.50006H15L15 6H14V3.50006H12L9.50542 4.01105L8 3.73649V6H7V3.55411L3.99999 3.00696L2 3.33565V6H1V2.5L3.99999 2Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M4 7.99306V5H5V7.8264L7.00818 7.4917L9.54949 7.99996H11V5H12V7.99316L15 7.5V8.5L12.0414 8.99996H9.45047L6.99179 8.50822L3.99999 9.00686L1 8.50822V7.5L4 7.99306Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M7 12L12.5 12.99L15 12.5V13.5L12.5 14L7 13L4 14L1 13V12L4 13L7 12Z"
+    fill="var(--color-typo-primary)"
+  />
+</svg>

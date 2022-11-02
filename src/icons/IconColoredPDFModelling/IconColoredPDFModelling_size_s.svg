@@ -1,0 +1,13 @@
+<!-- ##color:multiple ##group:colored -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11 14H2V5L5 2H14V11L11 14Z" stroke="var(--color-bg-border)" />
+  <path d="M2.5 8L13.5 7V10L2.5 11V8Z" fill="var(--color-bg-alert)" />
+  <path
+    d="M8.45833 5.5C5.25 5 3.72222 6.83333 2.5 7.5V10C3.72222 9.16667 6.71667 7.6 8.91667 8C11.1167 8.4 12.8889 7.5 13.5 7V2.5C12.5833 3.5 10.2732 5.78284 8.45833 5.5Z"
+    fill="var(--color-bg-caution)"
+  />
+  <path
+    d="M8.45833 8.76923C6.625 8.76923 4.5 9.5 2.5 11V13C3.72222 12.2308 6.84584 11.3197 8.91667 12.1538C11.2083 13.0769 12.8889 10.6923 13.5 10.2308V8C12.5833 8.92308 10.2917 8.76923 8.45833 8.76923Z"
+    fill="var(--color-bg-success)"
+  />
+</svg>

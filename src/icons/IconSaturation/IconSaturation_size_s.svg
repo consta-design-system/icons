@@ -1,0 +1,43 @@
+<!-- ##color:multiple ##group:geo -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M10.5 4H10V5H10.5C10.7761 5 11 4.77614 11 4.5C11 4.22386 10.7761 4 10.5 4Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M5.5 12H6V11H5.5C5.22386 11 5 11.2239 5 11.5C5 11.7761 5.22386 12 5.5 12Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M10 11H10.5C10.7761 11 11 11.2239 11 11.5C11 11.7761 10.7761 12 10.5 12H10V11Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M5.5 5L6 5V4H5.5C5.22386 4 5 4.22386 5 4.5C5 4.77614 5.22386 5 5.5 5Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M10 6H12.5C12.7761 6 13 6.22386 13 6.5C13 6.77614 12.7761 7 12.5 7H10V6Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M3.5 10H6V9H3.5C3.22386 9 3 9.22386 3 9.5C3 9.77614 3.22386 10 3.5 10Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M10 9H12.5C12.7761 9 13 9.22386 13 9.5C13 9.77614 12.7761 10 12.5 10H10V9Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    d="M3.5 7L6 7V6L3.5 6C3.22386 6 3 6.22386 3 6.5C3 6.77614 3.22386 7 3.5 7Z"
+    fill="var(--color-typo-primary)"
+  />
+  <rect
+    x="7"
+    y="2"
+    width="2"
+    height="12"
+    rx="1"
+    fill="var(--color-typo-normal)"
+  />
+</svg>

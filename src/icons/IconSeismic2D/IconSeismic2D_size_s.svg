@@ -1,0 +1,25 @@
+<!-- ##color:multiple ##group:geo -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 10H10V7H14V10Z" fill="var(--color-bg-caution)" />
+  <path d="M6 10H2V7H6V10Z" fill="var(--color-bg-caution)" />
+  <path
+    d="M6 13H3C2.44772 13 2 12.5523 2 12V10H6V13Z"
+    fill="var(--color-bg-alert)"
+  />
+  <path
+    d="M13 13H10V10H14V12C14 12.5523 13.5523 13 13 13Z"
+    fill="var(--color-bg-alert)"
+  />
+  <path
+    d="M14 7H10V4H13C13.5523 4 14 4.44772 14 5V7Z"
+    fill="var(--color-bg-success)"
+  />
+  <path
+    d="M6 7H2V5C2 4.44772 2.44772 4 3 4H6V7Z"
+    fill="var(--color-bg-success)"
+  />
+  <path
+    d="M7 3C7 2.44772 7.44772 2 8 2C8.55228 2 9 2.44772 9 3V13C9 13.5523 8.55228 14 8 14C7.44772 14 7 13.5523 7 13V3Z"
+    fill="#97B2C4"
+  />
+</svg>

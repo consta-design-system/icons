@@ -1,0 +1,15 @@
+<!-- ##color:multiple ##group:tools -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M7 13L7 3L9 3L9 13L7 13Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M11 2L5 2L5 3L11 3L11 2ZM11 13L5 13L5 14L11 14L11 13Z"
+    fill="var(--color-typo-secondary)"
+  />
+</svg>

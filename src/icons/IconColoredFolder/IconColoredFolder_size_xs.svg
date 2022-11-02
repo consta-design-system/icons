@@ -1,0 +1,7 @@
+<!-- ##color:multiple ##group:colored -->
+<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M1 1C0.447715 1 0 1.44772 0 2V10C0 10.5523 0.447715 11 1 11H11C11.5523 11 12 10.5523 12 10V3C12 2.44772 11.5523 2 11 2H5C5 1.44772 4.55228 1 4 1H1Z"
+    fill="var(--color-bg-border)"
+  />
+</svg>

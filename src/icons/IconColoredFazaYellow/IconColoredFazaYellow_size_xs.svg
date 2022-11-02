@@ -1,0 +1,9 @@
+<!-- ##color:multiple ##group:colored -->
+<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M1 2V3H2V2L3 2V1H2H1V2ZM11 2V1H10H9V2L10 2V3H11V2ZM1 9V10V11H2H3L3 10H2L2 9H1ZM10 11H9V10H10V9H11V10V11H10ZM5 2V1H7V2L5 2ZM11 5H10V7H11V5ZM2 7H1V5H2L2 7ZM7 11V10H5V11H7Z"
+    fill="var(--color-bg-caution)"
+  />
+</svg>

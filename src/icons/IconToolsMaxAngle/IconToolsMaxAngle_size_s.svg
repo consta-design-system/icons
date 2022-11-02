@@ -1,0 +1,32 @@
+<!-- ##color:multiple ##group:tools -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_3200_384)">
+    <mask
+      id="mask0_3200_384"
+      style="mask-type: alpha"
+      maskUnits="userSpaceOnUse"
+      x="-11"
+      y="1"
+      width="26"
+      height="26"
+    >
+      <circle cx="2" cy="14" r="13" fill="var(--color-typo-ghost)" />
+    </mask>
+    <g mask="url(#mask0_3200_384)">
+      <path
+        d="M15.8667 14H2L10.5333 0.466675"
+        stroke="var(--color-typo-secondary)"
+      />
+    </g>
+    <path
+      d="M6.5 6.20577C7.86817 6.99569 9.00431 8.13183 9.79423 9.5C10.5841 10.8682 11 12.4202 11 14"
+      stroke="var(--color-typo-primary)"
+      stroke-width="2"
+    />
+  </g>
+  <defs>
+    <clipPath id="clip0_3200_384">
+      <rect width="16" height="16" fill="white" />
+    </clipPath>
+  </defs>
+</svg>

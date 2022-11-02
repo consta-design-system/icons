@@ -1,0 +1,19 @@
+<!-- ##color:multiple ##group:solver -->
+<svg
+  viewBox="0 0 24 24"
+  fill="none"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M13 2H15H17V4V8V10V14V16V20V22H15H13V20H15V16H13V14H15V10H13V8H15V4H13V2Z"
+    fill="var(--color-control-typo-ghost)"
+  />
+  <path
+    d="M4 2V2C4 9.73199 10.268 16 18 16H22"
+    stroke="#91C2A6"
+    stroke-width="3"
+  />
+</svg>

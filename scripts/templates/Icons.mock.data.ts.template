@@ -1,0 +1,9 @@
+#imports#
+import { IconComponent } from '../Icon';
+
+type Group = {
+  name: string;
+  icons: Record<string, IconComponent>;
+};
+
+export const groupedIcons: Group[] = #groups#

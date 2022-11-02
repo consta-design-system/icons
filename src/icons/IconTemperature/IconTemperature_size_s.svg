@@ -1,0 +1,20 @@
+<!-- ##color:multiple ##group:seismic -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M8 12.7391C7.6767 12.913 7.25028 13 6.72074 13C5.22129 13 4.47157 12.1846 4.47157 10.5537V5.61231H3V4.47072H4.47157V2.43217L5.84281 2V4.47072H8V5.61231H5.84281V10.3173C5.84281 10.8772 5.94036 11.2767 6.13545 11.5159C6.33055 11.7551 6.65385 11.8747 7.10535 11.8747C7.45095 11.8747 7.74916 11.7823 8 11.5975V12.7391Z"
+    fill="var(--color-typo-alert)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M9 3.5C9 3.22386 9.29289 3 9.5 3H11.5C11.7071 3 12 3.22386 12 3.5C12 3.77614 11.7071 4 11.5 4H9.5C9.29289 4 9 3.77614 9 3.5Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M10.5 5C10.7761 5 11 5.22386 11 5.5V11.5C11 11.7761 10.7761 12 10.5 12C10.2239 12 10 11.7761 10 11.5V5.5C10 5.22386 10.2239 5 10.5 5Z"
+    fill="var(--color-typo-primary)"
+  />
+  <path d="M10.5 13L9 11H12L10.5 13Z" fill="var(--color-typo-primary)" />
+</svg>

@@ -1,0 +1,14 @@
+<!-- ##color:multiple ##group:colored -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="4" width="3" height="3" fill="var(--color-bg-normal)" />
+  <rect x="3" y="9" width="3" height="3" fill="var(--color-bg-normal)" />
+  <rect x="10" y="9" width="4" height="4" fill="var(--color-bg-border)" />
+  <rect x="10" y="3" width="4" height="4" fill="var(--color-bg-border)" />
+  <path
+    opacity="0.5"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M1 2V3H2V2L3 2V1H2H1V2ZM2 4H1V6H2V4ZM1 7H2V9H1V7ZM2 10H1V12H2V10ZM7 4H8V6H7V4ZM8 7H7V9H8V7ZM7 10H8V12H7V10ZM8 2V3H7V2L6 2V1H7H8V2ZM6 15H7H8V14V13H7V14H6V15ZM1 14V13H2L2 14H3L3 15H2H1V14ZM4 1V2L5 2V1H4ZM4 15V14H5V15H4Z"
+    fill="var(--color-bg-normal)"
+  />
+</svg>

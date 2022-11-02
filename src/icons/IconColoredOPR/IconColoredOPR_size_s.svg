@@ -1,0 +1,16 @@
+<!-- ##color:multiple ##group:colored -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M8.46153 1.8077L7.99999 0.700012L7.53845 1.8077L2.53845 13.8077L3.46153 14.1923L3.74999 13.5H12.25L12.5385 14.1923L13.4615 13.8077L8.46153 1.8077ZM11.8333 12.5L11 10.5H4.99999L4.16666 12.5H11.8333ZM9.74999 7.50001L10.5833 9.50001H5.41666L6.24999 7.50001H9.74999ZM9.33332 6.50001L7.99999 3.30001L6.66666 6.50001H9.33332Z"
+    fill="var(--color-bg-border)"
+  />
+  <path
+    d="M8 1V14"
+    stroke="var(--color-bg-normal)"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

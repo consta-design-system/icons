@@ -1,0 +1,13 @@
+<!-- ##color:multiple ##group:seismic -->
+<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11 8H2V5H11L14 2V5L11 8Z" fill="var(--color-bg-success)" />
+  <path
+    d="M11.0455 11H2V8H11L14 5V8L11.0455 11Z"
+    fill="var(--color-bg-caution)"
+  />
+  <path
+    d="M11.0455 14H2V11H11.0455L14 8V11.5L11.0455 14Z"
+    fill="var(--color-bg-alert)"
+  />
+  <path d="M2 5L5 2H14L11 5H2Z" fill="var(--color-bg-success)" />
+</svg>
