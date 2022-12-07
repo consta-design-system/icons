@@ -1,0 +1,9 @@
+<!-- ##color:mono ##group:objects -->
+<svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 4C2.89543 4 2 4.89543 2 6V9H26V6C26 4.89543 25.1046 4 24 4H4Z" />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M3 11H25V22C25 23.1046 24.1046 24 23 24H5C3.89543 24 3 23.1046 3 22V11ZM10 13H18V16H10V13Z"
+  />
+</svg>

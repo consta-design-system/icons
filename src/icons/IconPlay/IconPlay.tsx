@@ -1,10 +1,11 @@
 import { createIcon } from '../Icon';
+import IconPlaySizeL from './IconPlay_size_l';
 import IconPlaySizeM from './IconPlay_size_m';
 import IconPlaySizeS from './IconPlay_size_s';
 import IconPlaySizeXs from './IconPlay_size_xs';
 
 export const IconPlay = createIcon({
-  l: IconPlaySizeM,
+  l: IconPlaySizeL,
   m: IconPlaySizeM,
   s: IconPlaySizeS,
   xs: IconPlaySizeXs,

@@ -117,7 +117,8 @@ import { IconExpandWidthSide } from '../../IconExpandWidthSide';
 import { IconEye } from '../../IconEye';
 import { IconEyeClose } from '../../IconEyeClose';
 import { IconFacebook } from '../../IconFacebook';
-import { IconFavorite } from '../../IconFavorite';
+import { IconFavoriteFilled } from '../../IconFavoriteFilled';
+import { IconFavoriteStroked } from '../../IconFavoriteStroked';
 import { IconFilter } from '../../IconFilter';
 import { IconFishboneFilled } from '../../IconFishboneFilled';
 import { IconFishboneStroked } from '../../IconFishboneStroked';
@@ -276,6 +277,7 @@ import { IconSendMessage } from '../../IconSendMessage';
 import { IconSettings } from '../../IconSettings';
 import { IconShape } from '../../IconShape';
 import { IconShuffle } from '../../IconShuffle';
+import { IconSkype } from '../../IconSkype';
 import { IconSmileFilled } from '../../IconSmileFilled';
 import { IconSmileStroked } from '../../IconSmileStroked';
 import { IconSnowflake } from '../../IconSnowflake';
@@ -304,6 +306,7 @@ import { IconTeam } from '../../IconTeam';
 import { IconTechResponse } from '../../IconTechResponse';
 import { IconTemperature } from '../../IconTemperature';
 import { IconTest } from '../../IconTest';
+import { IconThumbDown } from '../../IconThumbDown';
 import { IconThumbUp } from '../../IconThumbUp';
 import { IconTie } from '../../IconTie';
 import { IconToolsApproach } from '../../IconToolsApproach';
@@ -340,7 +343,8 @@ import { IconVideo } from '../../IconVideo';
 import { IconVKontakte } from '../../IconVKontakte';
 import { IconVZD } from '../../IconVZD';
 import { IconWarning } from '../../IconWarning';
-import { IconWatch } from '../../IconWatch';
+import { IconWatchFilled } from '../../IconWatchFilled';
+import { IconWatchStroked } from '../../IconWatchStroked';
 import { IconWellAttributes } from '../../IconWellAttributes';
 import { IconWellBlue } from '../../IconWellBlue';
 import { IconWellConnection } from '../../IconWellConnection';
@@ -359,6 +363,9 @@ import { IconWells } from '../../IconWells';
 import { IconWellTrajectory } from '../../IconWellTrajectory';
 import { IconWideScreenFilled } from '../../IconWideScreenFilled';
 import { IconWideScreenStroked } from '../../IconWideScreenStroked';
+import { IconWifi } from '../../IconWifi';
+import { IconWifiOff } from '../../IconWifiOff';
+import { IconWifiWarning } from '../../IconWifiWarning';
 import { IconWorldFilled } from '../../IconWorldFilled';
 import { IconWorldStroked } from '../../IconWorldStroked';
 import { IconWrench } from '../../IconWrench';
@@ -425,8 +432,8 @@ export const groupedIcons: Group[] = [
       IconSaturation,
       IconSeismic2D,
       IconStratigraphy,
-      IconTraectoryBlue,
       IconTraectoryOrange,
+      IconTraectoryBlue,
       IconWellAttributes,
       IconWellBlue,
       IconWellFolder,
@@ -483,8 +490,8 @@ export const groupedIcons: Group[] = [
   {
     name: 'formatting',
     icons: {
-      IconAlignBlocksRight,
       IconAlignBlocksLeft,
+      IconAlignBlocksRight,
       IconCards,
       IconCollapse,
       IconExpand,
@@ -606,7 +613,8 @@ export const groupedIcons: Group[] = [
       IconTechResponse,
       IconTie,
       IconUnlock,
-      IconWatch,
+      IconWatchFilled,
+      IconWatchStroked,
       IconWrench,
     },
   },
@@ -683,8 +691,12 @@ export const groupedIcons: Group[] = [
       IconMic,
       IconPhone,
       IconSendMessage,
+      IconThumbDown,
       IconThumbUp,
       IconVideo,
+      IconWifiOff,
+      IconWifiWarning,
+      IconWifi,
     },
   },
   {
@@ -751,19 +763,10 @@ export const groupedIcons: Group[] = [
       IconFacebook,
       IconInstagramFilled,
       IconInstagramStroked,
+      IconSkype,
       IconVKontakte,
       IconYandexDzen,
       IconYoutube,
-    },
-  },
-  {
-    name: 'weather',
-    icons: {
-      IconFavorite,
-      IconLightningBolt,
-      IconMoon,
-      IconSnowflake,
-      IconSun,
     },
   },
   {
@@ -777,6 +780,17 @@ export const groupedIcons: Group[] = [
       IconSortUpCenter,
       IconUnsort,
       IconUnsortCenter,
+    },
+  },
+  {
+    name: 'weather',
+    icons: {
+      IconFavoriteFilled,
+      IconFavoriteStroked,
+      IconLightningBolt,
+      IconMoon,
+      IconSnowflake,
+      IconSun,
     },
   },
   {
