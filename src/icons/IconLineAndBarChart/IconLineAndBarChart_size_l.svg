@@ -1,0 +1,11 @@
+<!-- ##color:mono ##group:charts -->
+<svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M26 9.07034L18.3458 2L13.2219 8.15289L8.28473 4.69445L1 12.6726L3.19685 14.714L8.70475 8.65064L13.7606 12.1922L18.6298 6.34508L23.9666 11.2747L26 9.07034Z"
+  />
+  <path d="M21 12H18V26H21V12Z" />
+  <path d="M11 14H8V26H11V14Z" />
+  <path d="M6 19H3V26H6V19Z" />
+  <path d="M13 17H16V26H13V17Z" />
+  <path d="M23 19H26V26H23V19Z" />
+</svg>

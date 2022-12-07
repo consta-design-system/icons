@@ -1,10 +1,11 @@
 import { createIcon } from '../Icon';
+import IconMapStrokedSizeL from './IconMapStroked_size_l';
 import IconMapStrokedSizeM from './IconMapStroked_size_m';
 import IconMapStrokedSizeS from './IconMapStroked_size_s';
 import IconMapStrokedSizeXs from './IconMapStroked_size_xs';
 
 export const IconMapStroked = createIcon({
-  l: IconMapStrokedSizeM,
+  l: IconMapStrokedSizeL,
   m: IconMapStrokedSizeM,
   s: IconMapStrokedSizeS,
   xs: IconMapStrokedSizeXs,
