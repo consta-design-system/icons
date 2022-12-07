@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.2 (07/12/2022)
+Самое важное:
+- Добавили новые иконки
+
+---
+
+- [feat(Icons): add new icons and a few icons with 'l' size (#2)](https://github.com/consta-design-system/icons/commit/6f7cbf484174710a6517db836be4d837212fa984) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v0.0.1 (02/11/2022)
 Собрали все иконки в новую библиотеку, будем её развивать и поддерживать.
 Здесь немного больше иконок, чем в `@consta/uikit` , если вам там чего-то не хватает, стоит проверить. 

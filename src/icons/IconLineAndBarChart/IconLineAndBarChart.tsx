@@ -1,10 +1,11 @@
 import { createIcon } from '../Icon';
+import IconLineAndBarChartSizeL from './IconLineAndBarChart_size_l';
 import IconLineAndBarChartSizeM from './IconLineAndBarChart_size_m';
 import IconLineAndBarChartSizeS from './IconLineAndBarChart_size_s';
 import IconLineAndBarChartSizeXs from './IconLineAndBarChart_size_xs';
 
 export const IconLineAndBarChart = createIcon({
-  l: IconLineAndBarChartSizeM,
+  l: IconLineAndBarChartSizeL,
   m: IconLineAndBarChartSizeM,
   s: IconLineAndBarChartSizeS,
   xs: IconLineAndBarChartSizeXs,

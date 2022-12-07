@@ -1,10 +1,11 @@
 import { createIcon } from '../Icon';
+import IconPressureStrokedSizeL from './IconPressureStroked_size_l';
 import IconPressureStrokedSizeM from './IconPressureStroked_size_m';
 import IconPressureStrokedSizeS from './IconPressureStroked_size_s';
 import IconPressureStrokedSizeXs from './IconPressureStroked_size_xs';
 
 export const IconPressureStroked = createIcon({
-  l: IconPressureStrokedSizeM,
+  l: IconPressureStrokedSizeL,
   m: IconPressureStrokedSizeM,
   s: IconPressureStrokedSizeS,
   xs: IconPressureStrokedSizeXs,
