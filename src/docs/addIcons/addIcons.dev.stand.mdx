@@ -63,37 +63,38 @@ export const IconAdd = createIcon({
 
 ```jsx
 {
-   test: /\.svg$/,
-   use: [
-       {
-           loader: '@svgr/webpack',
-           options: {
-               template: (
-                   { template },
-                   opts,
-                   { imports, componentName, props, jsx, exports },
-               ) => {
-                   return template.ast`
-                       ${imports}
-                       import { createIcon } from '@consta/icons/Icon';
+  test: /\.icon\.svg$/,
+  use: [
+    {
+      loader: '@svgr/webpack',
+      options: {
+        template: (
+          { imports, componentName, props, jsx, exports },
+          { tpl },
+        ) => {
+          return tpl`
+                      ${imports}
+                      import { createIcon } from '@consta/icons/Ico
+                      const Icon = (${props}) => {
+                        props = { ...props };
+                        return ${jsx};
 
-                       const SvgComponent = (${props}) => {
-                         return ${jsx};
-                       };
-
-                       const ${componentName} = createIcon({
-                         l: SvgComponent,
-                         m: SvgComponent,
-                         s: SvgComponent,
-                         xs: SvgComponent,
-                         name: '${componentName}',
-                       });
-
-                       export default ${componentName};
-                 `;
-               },
-           },
-       },
-   ],
+                      export default createIcon({
+                        xs: Icon,
+                        s: Icon,
+                        m: Icon,
+                        l: Icon,
+                        name: '${componentName}',
+                        renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+                        color: 'mono',
+                      });
+                    `;
+        },
+        plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx'],
+        dimensions: false,
+        svgo: true,
+      },
+    },
+  ],
 },
 ```
