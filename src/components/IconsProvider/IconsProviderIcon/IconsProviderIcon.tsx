@@ -13,13 +13,9 @@ export const IconsProviderIcon = memo(
       return null;
     }
 
-    const { children, ...otherProps } = element.props;
-
     return (
       <svg key={cnIcons(name)}>
-        <symbol {...otherProps} id={`${cnIcons(name)}`}>
-          {children}
-        </symbol>
+        <symbol id={`${cnIcons(name)}`}>{element.props.children}</symbol>
       </svg>
     );
   },

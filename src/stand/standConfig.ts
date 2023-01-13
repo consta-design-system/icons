@@ -23,7 +23,7 @@ export const { createStand } = createConfig({
       initialOpen: true,
     },
   ],
-  group: 'Иконки',
+  group: 'Основные библиотеки',
   image,
   standPageDecoration,
   description: 'Иконки дизайн-системы Consta',
