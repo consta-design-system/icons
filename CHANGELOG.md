@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.0 (19/01/2023)
+Самое важное:
+- Добавили новые иконки
+
+---
+
+- [feat(Icons): add new icons (#4)](https://github.com/consta-design-system/icons/commit/562fdf0ca90d25dfebc73009a058790fd4862b47) - [@N1MBER](https://github.com/N1MBER)
+- [chore(deps): update @consta/stand](https://github.com/consta-design-system/icons/commit/5356447222ec8cebd40354be5358cb5c287432f7) - [@gizeasy](https://github.com/gizeasy)
+- [chore: edit config (#3)](https://github.com/consta-design-system/icons/commit/a6cfdab8e27583b8beb2f09d7ec7b6d7dbe2ad03) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.0.2 (07/12/2022)
 Самое важное:
 - Добавили новые иконки
