@@ -1,0 +1,10 @@
+<!-- ##color:mono ##group:social -->
+<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 8V13H9V10H12V8H7Z" />
+  <path d="M15 16H10V14L13 14V11H15V16Z" />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M4 21C2.89543 21 2 20.1046 2 19V5C2 3.89543 2.89543 3 4 3H18C19.1046 3 20 3.89543 20 5V17C20 18.1046 20.8954 19 22 19V21H4ZM18.5351 19C18.1948 18.4117 18 17.7286 18 17V5L4 5V19H18.5351Z"
+  />
+</svg>

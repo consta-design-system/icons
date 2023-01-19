@@ -81,6 +81,7 @@ import { IconColorText } from '../../IconColorText';
 import { IconColumns } from '../../IconColumns';
 import { IconCommentFilled } from '../../IconCommentFilled';
 import { IconCommentStroked } from '../../IconCommentStroked';
+import { IconConfluence } from '../../IconConfluence';
 import { IconConnection } from '../../IconConnection';
 import { IconContour } from '../../IconContour';
 import { IconCopy } from '../../IconCopy';
@@ -144,6 +145,7 @@ import { IconGeo } from '../../IconGeo';
 import { IconGis } from '../../IconGis';
 import { IconGisAttributes } from '../../IconGisAttributes';
 import { IconGisMultiple } from '../../IconGisMultiple';
+import { IconGitHub } from '../../IconGitHub';
 import { IconGradients } from '../../IconGradients';
 import { IconGrouping } from '../../IconGrouping';
 import { IconHamburger } from '../../IconHamburger';
@@ -170,6 +172,7 @@ import { IconIpadFilled } from '../../IconIpadFilled';
 import { IconIpadStroked } from '../../IconIpadStroked';
 import { IconIronMap } from '../../IconIronMap';
 import { IconItalic } from '../../IconItalic';
+import { IconJira } from '../../IconJira';
 import { IconKebab } from '../../IconKebab';
 import { IconKernFilled } from '../../IconKernFilled';
 import { IconKernStroked } from '../../IconKernStroked';
@@ -179,6 +182,8 @@ import { IconLayerBlue } from '../../IconLayerBlue';
 import { IconLayers } from '../../IconLayers';
 import { IconLayerYellow } from '../../IconLayerYellow';
 import { IconLeaf } from '../../IconLeaf';
+import { IconLentaFilled } from '../../IconLentaFilled';
+import { IconLentaStroked } from '../../IconLentaStroked';
 import { IconLightningBolt } from '../../IconLightningBolt';
 import { IconLineAndBarChart } from '../../IconLineAndBarChart';
 import { IconLink } from '../../IconLink';
@@ -382,15 +387,47 @@ type Group = {
 
 export const groupedIcons: Group[] = [
   {
+    name: 'action',
+    icons: {
+      IconAdd,
+      IconAddToComparison,
+      IconAllDone,
+      IconCancel,
+      IconCheck,
+      IconClose,
+      IconCopy,
+      IconDownload,
+      IconDraggable,
+      IconEdit,
+      IconExit,
+      IconEye,
+      IconEyeClose,
+      IconInComparison,
+      IconIntroduction,
+      IconLoading,
+      IconOpenInNew,
+      IconPaste,
+      IconRemove,
+      IconRemoveFromComparison,
+      IconReply,
+      IconResize,
+      IconRestart,
+      IconRevert,
+      IconShuffle,
+      IconTrash,
+      IconUpload,
+    },
+  },
+  {
     name: 'geo',
     icons: {
       Icon3DMap,
       IconAltitude,
       IconAmplitudes,
       IconAttribute,
-      IconAxisX,
       IconAxisY,
       IconAxisZ,
+      IconAxisX,
       IconDepth,
       IconDots,
       IconFractureBlue,
@@ -445,57 +482,14 @@ export const groupedIcons: Group[] = [
     },
   },
   {
-    name: 'action',
-    icons: {
-      IconAdd,
-      IconAddToComparison,
-      IconAllDone,
-      IconCancel,
-      IconCheck,
-      IconClose,
-      IconCopy,
-      IconDownload,
-      IconDraggable,
-      IconEdit,
-      IconExit,
-      IconEye,
-      IconEyeClose,
-      IconInComparison,
-      IconIntroduction,
-      IconLoading,
-      IconOpenInNew,
-      IconPaste,
-      IconRemove,
-      IconRemoveFromComparison,
-      IconReply,
-      IconResize,
-      IconRestart,
-      IconRevert,
-      IconShuffle,
-      IconTrash,
-      IconUpload,
-    },
-  },
-  {
-    name: 'indices',
-    icons: {
-      IconAlert,
-      IconHealth,
-      IconInfo,
-      IconQuestion,
-      IconRouble,
-      IconWarning,
-    },
-  },
-  {
     name: 'formatting',
     icons: {
       IconAlignBlocksLeft,
       IconAlignBlocksRight,
       IconCards,
       IconCollapse,
-      IconExpand,
       IconExpandWidthCorner,
+      IconExpand,
       IconExpandWidthSide,
       IconFitToDefault,
       IconGrouping,
@@ -515,15 +509,26 @@ export const groupedIcons: Group[] = [
     },
   },
   {
+    name: 'indices',
+    icons: {
+      IconAlert,
+      IconHealth,
+      IconInfo,
+      IconQuestion,
+      IconRouble,
+      IconWarning,
+    },
+  },
+  {
     name: 'text',
     icons: {
       IconAlignCenter,
-      IconAlignJustify,
       IconAlignLeft,
+      IconAlignJustify,
       IconAlignRight,
       IconBold,
-      IconColorFill,
       IconColorText,
+      IconColorFill,
       IconColumns,
       IconItalic,
       IconList,
@@ -541,8 +546,8 @@ export const groupedIcons: Group[] = [
       IconAmplitude,
       IconAttributes,
       IconContour,
-      IconCubeInterpretation,
       IconData,
+      IconCubeInterpretation,
       IconFolder3DCube,
       IconFolderContour,
       IconFolderCubeInterpretation,
@@ -588,8 +593,8 @@ export const groupedIcons: Group[] = [
       IconBookmarkFilled,
       IconBookmarkStroked,
       IconCalculator,
-      IconCalendar,
       IconCamera,
+      IconCalendar,
       IconCrown,
       IconDataNull,
       IconFlagFilled,
@@ -694,9 +699,9 @@ export const groupedIcons: Group[] = [
       IconThumbDown,
       IconThumbUp,
       IconVideo,
+      IconWifi,
       IconWifiOff,
       IconWifiWarning,
-      IconWifi,
     },
   },
   {
@@ -705,8 +710,8 @@ export const groupedIcons: Group[] = [
       IconColored2D,
       IconColored3D,
       IconColoredAll,
-      IconColoredAllTable,
       IconColoredCatch,
+      IconColoredAllTable,
       IconColoredCommonBig,
       IconColoredCommonThree,
       IconColoredCommonTwo,
@@ -738,6 +743,23 @@ export const groupedIcons: Group[] = [
     },
   },
   {
+    name: 'social',
+    icons: {
+      IconConfluence,
+      IconFacebook,
+      IconGitHub,
+      IconInstagramFilled,
+      IconInstagramStroked,
+      IconJira,
+      IconLentaFilled,
+      IconLentaStroked,
+      IconSkype,
+      IconVKontakte,
+      IconYandexDzen,
+      IconYoutube,
+    },
+  },
+  {
     name: 'cursor',
     icons: {
       IconCursorMouse,
@@ -758,15 +780,14 @@ export const groupedIcons: Group[] = [
     },
   },
   {
-    name: 'social',
+    name: 'weather',
     icons: {
-      IconFacebook,
-      IconInstagramFilled,
-      IconInstagramStroked,
-      IconSkype,
-      IconVKontakte,
-      IconYandexDzen,
-      IconYoutube,
+      IconFavoriteFilled,
+      IconFavoriteStroked,
+      IconLightningBolt,
+      IconMoon,
+      IconSnowflake,
+      IconSun,
     },
   },
   {
@@ -780,17 +801,6 @@ export const groupedIcons: Group[] = [
       IconSortUpCenter,
       IconUnsort,
       IconUnsortCenter,
-    },
-  },
-  {
-    name: 'weather',
-    icons: {
-      IconFavoriteFilled,
-      IconFavoriteStroked,
-      IconLightningBolt,
-      IconMoon,
-      IconSnowflake,
-      IconSun,
     },
   },
   {
@@ -846,22 +856,22 @@ export const groupedIcons: Group[] = [
     name: 'tools',
     icons: {
       IconToolsApproach,
-      IconToolsBuildTurn,
       IconToolsCurveHold,
-      IconToolsDiameter,
+      IconToolsBuildTurn,
       IconToolsDiameterInner,
-      IconToolsDiameterOuter,
       IconToolsDogled,
-      IconToolsHold,
+      IconToolsDiameterOuter,
       IconToolsHoldCurveHold,
-      IconToolsHoldFin,
+      IconToolsHold,
       IconToolsHoldMid,
-      IconToolsHoldStart,
       IconToolsIncline,
       IconToolsLeftDown,
+      IconToolsDiameter,
+      IconToolsHoldStart,
       IconToolsMaxAngle,
-      IconToolsRightTop,
+      IconToolsHoldFin,
       IconToolsSWell,
+      IconToolsRightTop,
     },
   },
   {
