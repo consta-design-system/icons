@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.1 (25/01/2023)
+- [fix(createIcon): fixed type](https://github.com/consta-design-system/icons/commit/f299b8dfc750b4f6f810552db1df413d8c53ae6f) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.1.0 (19/01/2023)
 Самое важное:
 - Добавили новые иконки
