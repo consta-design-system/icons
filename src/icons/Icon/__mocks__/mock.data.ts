@@ -1,3 +1,5 @@
+import { IconHelmet } from '##/icons/IconHelmet';
+
 import { Icon3DMap } from '../../Icon3DMap';
 import { IconAdd } from '../../IconAdd';
 import { IconAddToComparison } from '../../IconAddToComparison';
@@ -256,6 +258,7 @@ import { IconRevert } from '../../IconRevert';
 import { IconRigiss } from '../../IconRigiss';
 import { IconRing } from '../../IconRing';
 import { IconRouble } from '../../IconRouble';
+import { IconRoute } from '../../IconRoute';
 import { IconRulerFilled } from '../../IconRulerFilled';
 import { IconRulerStroked } from '../../IconRulerStroked';
 import { IconRUO } from '../../IconRUO';
@@ -582,6 +585,7 @@ export const groupedIcons: Group[] = [
       IconSelectOpen,
       IconTop,
       IconTopRight,
+      IconRoute,
     },
   },
   {
@@ -621,6 +625,7 @@ export const groupedIcons: Group[] = [
       IconWatchFilled,
       IconWatchStroked,
       IconWrench,
+      IconHelmet,
     },
   },
   {
