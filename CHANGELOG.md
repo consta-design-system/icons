@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.2.0 (22/02/2023)
+Добавили `IconHelmet` и `IconRoute`
+
+---
+
+- [feat(Icons): added IconHelmet and IconRoute (#5)](https://github.com/consta-design-system/icons/commit/14bbf92e085007fa26e88162fc06b878f27895a9) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v0.1.1 (25/01/2023)
 - [fix(createIcon): fixed type](https://github.com/consta-design-system/icons/commit/f299b8dfc750b4f6f810552db1df413d8c53ae6f) - [@gizeasy](https://github.com/gizeasy)
 
