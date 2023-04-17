@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.3.0 (17/04/2023)
+Добавили новые иконки: `IconFolderOpen`, `IconFolderClosed`, `IconVolumeUp` и `IconVolumeDown`
+
+---
+
+- [feat(Icons): add new icons (#7)](https://github.com/consta-design-system/icons/commit/f6b088fa86ad246e17966bbe62b57f55c1d0ae88) - [@N1MBER](https://github.com/N1MBER)
+- [chore(deps-dev): bump webpack from 5.74.0 to 5.76.0 (#6)](https://github.com/consta-design-system/icons/commit/b7e405a128fd4f4924b6ea45f7dd09c00a73e842) - [@dependabot[bot]](https://github.com/dependabot[bot])
+
+--------------------
+
 ## v0.2.0 (22/02/2023)
 Добавили `IconHelmet` и `IconRoute`
 
