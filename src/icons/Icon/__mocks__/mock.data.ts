@@ -129,9 +129,11 @@ import { IconFitToDefault } from '../../IconFitToDefault';
 import { IconFlagFilled } from '../../IconFlagFilled';
 import { IconFlagStroked } from '../../IconFlagStroked';
 import { IconFolder3DCube } from '../../IconFolder3DCube';
+import { IconFolderClosed } from '../../IconFolderClosed';
 import { IconFolderContour } from '../../IconFolderContour';
 import { IconFolderCubeInterpretation } from '../../IconFolderCubeInterpretation';
 import { IconFolderEmpty } from '../../IconFolderEmpty';
+import { IconFolderOpen } from '../../IconFolderOpen';
 import { IconFolders } from '../../IconFolders';
 import { IconFolderSectionsConnected } from '../../IconFolderSectionsConnected';
 import { IconForward } from '../../IconForward';
@@ -349,6 +351,8 @@ import { IconUpload } from '../../IconUpload';
 import { IconUser } from '../../IconUser';
 import { IconVideo } from '../../IconVideo';
 import { IconVKontakte } from '../../IconVKontakte';
+import { IconVolumeDown } from '../../IconVolumeDown';
+import { IconVolumeUp } from '../../IconVolumeUp';
 import { IconVZD } from '../../IconVZD';
 import { IconWarning } from '../../IconWarning';
 import { IconWatchFilled } from '../../IconWatchFilled';
@@ -604,6 +608,8 @@ export const groupedIcons: Group[] = [
       IconFlagFilled,
       IconFlagStroked,
       IconFolders,
+      IconFolderClosed,
+      IconFolderOpen,
       IconHome,
       IconLock,
       IconPicture,
@@ -832,6 +838,8 @@ export const groupedIcons: Group[] = [
       IconStop,
       IconWideScreenFilled,
       IconWideScreenStroked,
+      IconVolumeUp,
+      IconVolumeDown,
     },
   },
   { name: 'charts', icons: { IconLineAndBarChart } },
