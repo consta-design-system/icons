@@ -23,9 +23,9 @@ export const { createStand } = createConfig({
       initialOpen: true,
     },
   ],
-  group: 'Основные библиотеки',
+  group: 'Библиотеки',
   repositoryUrl: 'https://github.com/consta-design-system/icons',
   image,
   standPageDecoration,
-  description: 'Иконки дизайн-системы Consta',
+  description: 'Иконки дизайн-системы Consta для любых сервисов и продуктов',
 });
