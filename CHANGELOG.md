@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.4.1 (19/05/2023)
+- [fix(IconSave): fix icon (#12)](https://github.com/consta-design-system/icons/commit/b80cfde20e8f3e015c1ed6aa9511784e91124476) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v0.4.0 (19/05/2023)
 Самое важное:
 - Добавили новые иконки `IconArrowFirst `, `IconArrowLast `, `IconArrowNext`, `IconArrowPrevious`, `IconArrowRedone`,  `IconArrowUndone`, `IconPrinterFilled`, `IconPrinterStroked `, `IconSlide `, `IconTree`
