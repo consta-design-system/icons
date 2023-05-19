@@ -10,5 +10,4 @@ const IconWatchFilledSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWatchFilledSizeXs;

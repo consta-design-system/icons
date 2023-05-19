@@ -15,5 +15,4 @@ const IconLinkSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconLinkSizeXs;

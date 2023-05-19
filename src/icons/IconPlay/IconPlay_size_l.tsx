@@ -10,5 +10,4 @@ const IconPlaySizeL = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconPlaySizeL;

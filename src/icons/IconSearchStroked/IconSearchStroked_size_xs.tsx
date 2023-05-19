@@ -10,5 +10,4 @@ const IconSearchStrokedSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSearchStrokedSizeXs;

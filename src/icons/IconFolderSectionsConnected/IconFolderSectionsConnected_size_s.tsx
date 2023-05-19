@@ -29,5 +29,4 @@ const IconFolderSectionsConnectedSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFolderSectionsConnectedSizeS;

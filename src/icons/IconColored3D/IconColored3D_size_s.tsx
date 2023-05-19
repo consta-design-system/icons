@@ -27,5 +27,4 @@ const IconColored3DSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColored3DSizeS;

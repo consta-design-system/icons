@@ -16,5 +16,4 @@ const IconColoredFieldSizeXs = (props: SVGProps<SVGSVGElement>) => (
     <path d="M0 11s1.5-1 5.5-1 6.5 1 6.5 1" stroke="var(--color-bg-border)" />
   </svg>
 );
-
 export default IconColoredFieldSizeXs;

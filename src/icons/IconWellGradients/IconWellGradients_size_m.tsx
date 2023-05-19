@@ -21,5 +21,4 @@ const IconWellGradientsSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellGradientsSizeM;

@@ -3,8 +3,7 @@ import { SVGProps } from 'react';
 
 const IconFolderClosedSizeXs = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path d="M5 3C5 2.44772 4.55228 2 4 2H2C1.44772 2 1 2.44772 1 3V9C1 9.55228 1.44772 10 2 10H10C10.5523 10 11 9.55228 11 9V4C11 3.44772 10.5523 3 10 3H5Z" />
+    <path d="M5 3a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H5Z" />
   </svg>
 );
-
 export default IconFolderClosedSizeXs;

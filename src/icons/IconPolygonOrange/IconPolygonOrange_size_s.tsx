@@ -18,5 +18,4 @@ const IconPolygonOrangeSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconPolygonOrangeSizeS;

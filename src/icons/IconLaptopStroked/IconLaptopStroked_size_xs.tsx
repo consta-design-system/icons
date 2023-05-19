@@ -10,5 +10,4 @@ const IconLaptopStrokedSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconLaptopStrokedSizeXs;

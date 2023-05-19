@@ -11,5 +11,4 @@ const IconWatchStrokedSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWatchStrokedSizeM;

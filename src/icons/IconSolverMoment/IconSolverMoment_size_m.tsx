@@ -29,5 +29,4 @@ const IconSolverMomentSizeM = (props: SVGProps<SVGSVGElement>) => (
     <path d="M3 2v19h19" stroke="var(--color-control-typo-placeholder)" />
   </svg>
 );
-
 export default IconSolverMomentSizeM;

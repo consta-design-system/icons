@@ -20,5 +20,4 @@ const IconFrequencySizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFrequencySizeS;

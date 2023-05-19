@@ -19,5 +19,4 @@ const IconColoredGroupingSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredGroupingSizeS;

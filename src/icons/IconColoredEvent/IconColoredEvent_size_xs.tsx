@@ -16,5 +16,4 @@ const IconColoredEventSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredEventSizeXs;

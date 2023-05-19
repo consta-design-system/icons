@@ -15,5 +15,4 @@ const IconWellConnectionSizeS = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={12} cy={5} r={2} fill="var(--color-bg-success)" />
   </svg>
 );
-
 export default IconWellConnectionSizeS;

@@ -16,5 +16,4 @@ const IconToolsSWellSizeM = (props: SVGProps<SVGSVGElement>) => (
     <path fill="var(--color-typo-primary)" d="M8 6H4V2h4zM20 22h-4v-4h4z" />
   </svg>
 );
-
 export default IconToolsSWellSizeM;

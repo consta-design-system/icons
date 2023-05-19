@@ -16,5 +16,4 @@ const IconColoredFazaYellowSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredFazaYellowSizeXs;

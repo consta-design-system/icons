@@ -14,5 +14,4 @@ const IconColoredFolderSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredFolderSizeXs;

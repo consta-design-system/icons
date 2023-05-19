@@ -28,5 +28,4 @@ const IconLayerBlueSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconLayerBlueSizeS;

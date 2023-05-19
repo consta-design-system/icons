@@ -10,5 +10,4 @@ const IconScreenFilledSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconScreenFilledSizeXs;

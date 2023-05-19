@@ -34,5 +34,4 @@ const IconWellsSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellsSizeS;

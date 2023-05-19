@@ -10,5 +10,4 @@ const IconGeoSizeL = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconGeoSizeL;

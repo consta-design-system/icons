@@ -40,5 +40,4 @@ const IconFolder3DCubeSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFolder3DCubeSizeS;

@@ -22,5 +22,4 @@ const IconToolsDiameterOuterSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsDiameterOuterSizeS;

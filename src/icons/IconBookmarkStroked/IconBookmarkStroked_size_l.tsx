@@ -10,5 +10,4 @@ const IconBookmarkStrokedSizeL = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconBookmarkStrokedSizeL;

@@ -23,5 +23,4 @@ const IconWellOrangeSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellOrangeSizeS;

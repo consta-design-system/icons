@@ -10,5 +10,4 @@ const IconExpandWidthCornerSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconExpandWidthCornerSizeS;

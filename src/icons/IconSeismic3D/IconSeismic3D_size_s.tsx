@@ -17,5 +17,4 @@ const IconSeismic3DSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path d="m2 5 3-3h9l-3 3H2Z" fill="var(--color-bg-success)" />
   </svg>
 );
-
 export default IconSeismic3DSizeS;

@@ -17,5 +17,4 @@ const IconSolverHydraulicsSizeM = (props: SVGProps<SVGSVGElement>) => (
     <path d="M19.25 8V6.2H13V3.8h6.25V2L23 5l-3.75 3Z" fill="#91C2A6" />
   </svg>
 );
-
 export default IconSolverHydraulicsSizeM;

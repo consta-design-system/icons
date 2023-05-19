@@ -14,5 +14,4 @@ const IconColoredReserviorSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredReserviorSizeS;

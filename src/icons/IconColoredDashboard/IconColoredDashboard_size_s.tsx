@@ -17,5 +17,4 @@ const IconColoredDashboardSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredDashboardSizeS;

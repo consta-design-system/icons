@@ -20,5 +20,4 @@ const IconColoredPDFModellingSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredPDFModellingSizeS;

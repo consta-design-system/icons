@@ -18,5 +18,4 @@ const IconPolygonBlueSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconPolygonBlueSizeS;

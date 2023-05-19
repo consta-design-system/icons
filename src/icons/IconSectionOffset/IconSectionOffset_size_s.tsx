@@ -42,5 +42,4 @@ const IconSectionOffsetSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSectionOffsetSizeS;

@@ -30,5 +30,4 @@ const IconOilSaturationMapSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconOilSaturationMapSizeS;

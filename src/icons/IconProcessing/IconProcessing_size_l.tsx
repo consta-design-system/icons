@@ -10,5 +10,4 @@ const IconProcessingSizeL = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconProcessingSizeL;

@@ -26,5 +26,4 @@ const IconColoredPowerLinesSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredPowerLinesSizeXs;

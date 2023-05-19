@@ -6,5 +6,4 @@ const IconExpandWidthSideSizeXs = (props: SVGProps<SVGSVGElement>) => (
     <path d="M8 2h3v8H8V9h2V3H8V2Z" />
   </svg>
 );
-
 export default IconExpandWidthSideSizeXs;

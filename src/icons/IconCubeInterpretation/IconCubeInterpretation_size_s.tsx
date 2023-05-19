@@ -33,5 +33,4 @@ const IconCubeInterpretationSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconCubeInterpretationSizeS;

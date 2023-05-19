@@ -7,5 +7,4 @@ const IconWifiSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path d="M12.241 8.716a6.196 6.196 0 0 0-4.24-1.675 6.196 6.196 0 0 0-4.242 1.675l1.416 1.43A4.212 4.212 0 0 1 8 9.061c1.085 0 2.074.41 2.825 1.085l1.416-1.43ZM9.379 11.607a2.064 2.064 0 0 0-2.757 0L8 13l1.379-1.393Z" />
   </svg>
 );
-
 export default IconWifiSizeS;

@@ -46,5 +46,4 @@ const IconIntersectionPointsSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconIntersectionPointsSizeS;

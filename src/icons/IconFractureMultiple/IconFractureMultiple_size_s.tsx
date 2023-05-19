@@ -26,5 +26,4 @@ const IconFractureMultipleSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFractureMultipleSizeS;

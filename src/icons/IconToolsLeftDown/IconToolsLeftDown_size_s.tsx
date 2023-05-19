@@ -21,5 +21,4 @@ const IconToolsLeftDownSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsLeftDownSizeS;

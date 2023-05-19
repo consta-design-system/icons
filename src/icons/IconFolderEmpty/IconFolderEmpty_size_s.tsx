@@ -18,5 +18,4 @@ const IconFolderEmptySizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFolderEmptySizeS;

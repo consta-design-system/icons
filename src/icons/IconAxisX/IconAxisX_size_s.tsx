@@ -18,5 +18,4 @@ const IconAxisXSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconAxisXSizeS;

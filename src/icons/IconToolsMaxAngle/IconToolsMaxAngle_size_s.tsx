@@ -41,5 +41,4 @@ const IconToolsMaxAngleSizeS = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-
 export default IconToolsMaxAngleSizeS;

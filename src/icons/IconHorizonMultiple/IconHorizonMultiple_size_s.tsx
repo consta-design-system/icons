@@ -22,5 +22,4 @@ const IconHorizonMultipleSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconHorizonMultipleSizeS;

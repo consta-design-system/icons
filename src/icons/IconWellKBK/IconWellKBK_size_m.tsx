@@ -22,5 +22,4 @@ const IconWellKBKSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellKBKSizeM;

@@ -15,5 +15,4 @@ const IconSectionsConnectedSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSectionsConnectedSizeS;

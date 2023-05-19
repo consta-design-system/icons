@@ -22,5 +22,4 @@ const IconGisMultipleSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconGisMultipleSizeS;

@@ -22,5 +22,4 @@ const IconSolverViewportsSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSolverViewportsSizeM;

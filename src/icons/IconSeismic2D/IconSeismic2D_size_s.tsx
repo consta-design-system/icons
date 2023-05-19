@@ -20,5 +20,4 @@ const IconSeismic2DSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path d="M7 3a1 1 0 0 1 2 0v10a1 1 0 1 1-2 0V3Z" fill="#97B2C4" />
   </svg>
 );
-
 export default IconSeismic2DSizeS;

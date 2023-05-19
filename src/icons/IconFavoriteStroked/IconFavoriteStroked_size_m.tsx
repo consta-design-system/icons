@@ -10,5 +10,4 @@ const IconFavoriteStrokedSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFavoriteStrokedSizeM;

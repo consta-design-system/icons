@@ -6,5 +6,4 @@ const IconExpandWidthCornerSizeXs = (props: SVGProps<SVGSVGElement>) => (
     <path fillRule="evenodd" clipRule="evenodd" d="M10 10V5h1v6H5v-1h5Z" />
   </svg>
 );
-
 export default IconExpandWidthCornerSizeXs;

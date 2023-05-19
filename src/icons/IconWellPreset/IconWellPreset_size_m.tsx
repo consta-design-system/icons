@@ -21,5 +21,4 @@ const IconWellPresetSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellPresetSizeM;

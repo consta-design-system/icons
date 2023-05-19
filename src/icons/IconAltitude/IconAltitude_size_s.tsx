@@ -32,5 +32,4 @@ const IconAltitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconAltitudeSizeS;

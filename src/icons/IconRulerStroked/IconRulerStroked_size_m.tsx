@@ -10,5 +10,4 @@ const IconRulerStrokedSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconRulerStrokedSizeM;
