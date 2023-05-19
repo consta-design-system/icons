@@ -32,5 +32,4 @@ const IconDataSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconDataSizeS;

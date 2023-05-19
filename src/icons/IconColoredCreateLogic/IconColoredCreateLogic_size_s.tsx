@@ -27,5 +27,4 @@ const IconColoredCreateLogicSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredCreateLogicSizeS;

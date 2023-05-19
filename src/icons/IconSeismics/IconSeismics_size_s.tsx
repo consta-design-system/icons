@@ -30,5 +30,4 @@ const IconSeismicsSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSeismicsSizeS;

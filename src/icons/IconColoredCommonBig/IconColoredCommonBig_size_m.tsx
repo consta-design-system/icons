@@ -16,5 +16,4 @@ const IconColoredCommonBigSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredCommonBigSizeM;

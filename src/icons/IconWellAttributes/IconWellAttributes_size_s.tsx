@@ -28,5 +28,4 @@ const IconWellAttributesSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellAttributesSizeS;

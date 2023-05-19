@@ -22,5 +22,4 @@ const IconColoredLicenseAreaSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredLicenseAreaSizeXs;

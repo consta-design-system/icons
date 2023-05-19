@@ -21,5 +21,4 @@ const IconPorositySizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconPorositySizeS;

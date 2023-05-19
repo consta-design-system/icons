@@ -50,5 +50,4 @@ const IconMarkersOrangeSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconMarkersOrangeSizeS;

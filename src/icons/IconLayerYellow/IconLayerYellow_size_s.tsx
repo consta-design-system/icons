@@ -28,5 +28,4 @@ const IconLayerYellowSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconLayerYellowSizeS;

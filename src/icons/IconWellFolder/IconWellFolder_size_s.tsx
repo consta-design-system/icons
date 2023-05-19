@@ -28,5 +28,4 @@ const IconWellFolderSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellFolderSizeS;

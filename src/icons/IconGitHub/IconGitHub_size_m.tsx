@@ -10,5 +10,4 @@ const IconGitHubSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconGitHubSizeM;

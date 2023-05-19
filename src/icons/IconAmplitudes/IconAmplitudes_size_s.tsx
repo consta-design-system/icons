@@ -20,5 +20,4 @@ const IconAmplitudesSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconAmplitudesSizeS;

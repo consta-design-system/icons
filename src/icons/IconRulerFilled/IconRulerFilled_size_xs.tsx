@@ -6,5 +6,4 @@ const IconRulerFilledSizeXs = (props: SVGProps<SVGSVGElement>) => (
     <path d="M1 3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H9v2H8V3H6v3H5V3H3v2H2V3H1Z" />
   </svg>
 );
-
 export default IconRulerFilledSizeXs;

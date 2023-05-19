@@ -16,5 +16,4 @@ const IconColoredEconomicsSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredEconomicsSizeS;

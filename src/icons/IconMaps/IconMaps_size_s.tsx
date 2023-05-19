@@ -30,5 +30,4 @@ const IconMapsSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconMapsSizeS;

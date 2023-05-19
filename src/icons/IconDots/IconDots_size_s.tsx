@@ -15,5 +15,4 @@ const IconDotsSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconDotsSizeS;

@@ -10,5 +10,4 @@ const IconSmileFilledSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSmileFilledSizeS;

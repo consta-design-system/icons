@@ -17,5 +17,4 @@ const IconColoredTableSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path stroke="var(--color-bg-normal)" d="M5.5 6.5h5v3h-5z" />
   </svg>
 );
-
 export default IconColoredTableSizeS;

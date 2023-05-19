@@ -17,5 +17,4 @@ const IconSolverTrajectorySizeM = (props: SVGProps<SVGSVGElement>) => (
     <path d="M4 2c0 7.732 6.268 14 14 14h4" stroke="#91C2A6" strokeWidth={3} />
   </svg>
 );
-
 export default IconSolverTrajectorySizeM;

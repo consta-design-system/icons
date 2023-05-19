@@ -81,5 +81,4 @@ const IconContourSizeS = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-
 export default IconContourSizeS;

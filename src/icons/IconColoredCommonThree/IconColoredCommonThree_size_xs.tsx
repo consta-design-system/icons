@@ -16,5 +16,4 @@ const IconColoredCommonThreeSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredCommonThreeSizeXs;

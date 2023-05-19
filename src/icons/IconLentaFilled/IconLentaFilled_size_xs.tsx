@@ -10,5 +10,4 @@ const IconLentaFilledSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconLentaFilledSizeXs;

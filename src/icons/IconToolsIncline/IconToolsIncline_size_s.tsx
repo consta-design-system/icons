@@ -25,5 +25,4 @@ const IconToolsInclineSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsInclineSizeS;

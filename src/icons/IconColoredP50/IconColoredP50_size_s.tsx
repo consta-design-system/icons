@@ -22,5 +22,4 @@ const IconColoredP50SizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredP50SizeS;

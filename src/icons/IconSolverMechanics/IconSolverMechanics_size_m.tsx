@@ -20,5 +20,4 @@ const IconSolverMechanicsSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSolverMechanicsSizeM;

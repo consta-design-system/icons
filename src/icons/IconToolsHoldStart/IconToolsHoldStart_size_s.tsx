@@ -16,5 +16,4 @@ const IconToolsHoldStartSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsHoldStartSizeS;

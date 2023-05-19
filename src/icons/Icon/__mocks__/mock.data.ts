@@ -1,5 +1,3 @@
-import { IconHelmet } from '##/icons/IconHelmet';
-
 import { Icon3DMap } from '../../Icon3DMap';
 import { IconAdd } from '../../IconAdd';
 import { IconAddToComparison } from '../../IconAddToComparison';
@@ -15,8 +13,14 @@ import { IconAltitude } from '../../IconAltitude';
 import { IconAmplitude } from '../../IconAmplitude';
 import { IconAmplitudes } from '../../IconAmplitudes';
 import { IconArrowDown } from '../../IconArrowDown';
+import { IconArrowFirst } from '../../IconArrowFirst';
+import { IconArrowLast } from '../../IconArrowLast';
 import { IconArrowLeft } from '../../IconArrowLeft';
+import { IconArrowNext } from '../../IconArrowNext';
+import { IconArrowPrevious } from '../../IconArrowPrevious';
+import { IconArrowRedone } from '../../IconArrowRedone';
 import { IconArrowRight } from '../../IconArrowRight';
+import { IconArrowUndone } from '../../IconArrowUndone';
 import { IconArrowUp } from '../../IconArrowUp';
 import { IconArtBrush } from '../../IconArtBrush';
 import { IconAttach } from '../../IconAttach';
@@ -155,6 +159,7 @@ import { IconGrouping } from '../../IconGrouping';
 import { IconHamburger } from '../../IconHamburger';
 import { IconHand } from '../../IconHand';
 import { IconHealth } from '../../IconHealth';
+import { IconHelmet } from '../../IconHelmet';
 import { IconHome } from '../../IconHome';
 import { IconHorizonBlue } from '../../IconHorizonBlue';
 import { IconHorizonFolderBlue } from '../../IconHorizonFolderBlue';
@@ -247,6 +252,8 @@ import { IconPorosityMap } from '../../IconPorosityMap';
 import { IconPressureFilled } from '../../IconPressureFilled';
 import { IconPressureStroked } from '../../IconPressureStroked';
 import { IconPriceLabel } from '../../IconPriceLabel';
+import { IconPrinterFilled } from '../../IconPrinterFilled';
+import { IconPrinterStroked } from '../../IconPrinterStroked';
 import { IconProcessing } from '../../IconProcessing';
 import { IconQuestion } from '../../IconQuestion';
 import { IconQuote } from '../../IconQuote';
@@ -288,6 +295,7 @@ import { IconSettings } from '../../IconSettings';
 import { IconShape } from '../../IconShape';
 import { IconShuffle } from '../../IconShuffle';
 import { IconSkype } from '../../IconSkype';
+import { IconSlide } from '../../IconSlide';
 import { IconSmileFilled } from '../../IconSmileFilled';
 import { IconSmileStroked } from '../../IconSmileStroked';
 import { IconSnowflake } from '../../IconSnowflake';
@@ -342,6 +350,7 @@ import { IconTraectoryBlue } from '../../IconTraectoryBlue';
 import { IconTraectoryOrange } from '../../IconTraectoryOrange';
 import { IconTrajectory } from '../../IconTrajectory';
 import { IconTrash } from '../../IconTrash';
+import { IconTree } from '../../IconTree';
 import { IconType } from '../../IconType';
 import { IconUnderline } from '../../IconUnderline';
 import { IconUnlock } from '../../IconUnlock';
@@ -394,47 +403,15 @@ type Group = {
 
 export const groupedIcons: Group[] = [
   {
-    name: 'action',
-    icons: {
-      IconAdd,
-      IconAddToComparison,
-      IconAllDone,
-      IconCancel,
-      IconCheck,
-      IconClose,
-      IconCopy,
-      IconDownload,
-      IconDraggable,
-      IconEdit,
-      IconExit,
-      IconEye,
-      IconEyeClose,
-      IconInComparison,
-      IconIntroduction,
-      IconLoading,
-      IconOpenInNew,
-      IconPaste,
-      IconRemove,
-      IconRemoveFromComparison,
-      IconReply,
-      IconResize,
-      IconRestart,
-      IconRevert,
-      IconShuffle,
-      IconTrash,
-      IconUpload,
-    },
-  },
-  {
     name: 'geo',
     icons: {
       Icon3DMap,
       IconAltitude,
       IconAmplitudes,
       IconAttribute,
+      IconAxisX,
       IconAxisY,
       IconAxisZ,
-      IconAxisX,
       IconDepth,
       IconDots,
       IconFractureBlue,
@@ -476,8 +453,8 @@ export const groupedIcons: Group[] = [
       IconSaturation,
       IconSeismic2D,
       IconStratigraphy,
-      IconTraectoryOrange,
       IconTraectoryBlue,
+      IconTraectoryOrange,
       IconWellAttributes,
       IconWellBlue,
       IconWellFolder,
@@ -489,14 +466,65 @@ export const groupedIcons: Group[] = [
     },
   },
   {
+    name: 'action',
+    icons: {
+      IconAdd,
+      IconAddToComparison,
+      IconAllDone,
+      IconArrowFirst,
+      IconArrowLast,
+      IconArrowNext,
+      IconArrowPrevious,
+      IconArrowRedone,
+      IconArrowUndone,
+      IconCancel,
+      IconCheck,
+      IconClose,
+      IconCopy,
+      IconDownload,
+      IconDraggable,
+      IconEdit,
+      IconExit,
+      IconEye,
+      IconEyeClose,
+      IconInComparison,
+      IconIntroduction,
+      IconLoading,
+      IconOpenInNew,
+      IconPaste,
+      IconRemove,
+      IconRemoveFromComparison,
+      IconReply,
+      IconResize,
+      IconRestart,
+      IconRevert,
+      IconRoute,
+      IconShuffle,
+      IconSlide,
+      IconTrash,
+      IconUpload,
+    },
+  },
+  {
+    name: 'indices',
+    icons: {
+      IconAlert,
+      IconHealth,
+      IconInfo,
+      IconQuestion,
+      IconRouble,
+      IconWarning,
+    },
+  },
+  {
     name: 'formatting',
     icons: {
       IconAlignBlocksLeft,
       IconAlignBlocksRight,
       IconCards,
       IconCollapse,
-      IconExpandWidthCorner,
       IconExpand,
+      IconExpandWidthCorner,
       IconExpandWidthSide,
       IconFitToDefault,
       IconGrouping,
@@ -516,26 +544,15 @@ export const groupedIcons: Group[] = [
     },
   },
   {
-    name: 'indices',
-    icons: {
-      IconAlert,
-      IconHealth,
-      IconInfo,
-      IconQuestion,
-      IconRouble,
-      IconWarning,
-    },
-  },
-  {
     name: 'text',
     icons: {
       IconAlignCenter,
-      IconAlignLeft,
       IconAlignJustify,
+      IconAlignLeft,
       IconAlignRight,
       IconBold,
-      IconColorText,
       IconColorFill,
+      IconColorText,
       IconColumns,
       IconItalic,
       IconList,
@@ -553,12 +570,12 @@ export const groupedIcons: Group[] = [
       IconAmplitude,
       IconAttributes,
       IconContour,
-      IconData,
       IconCubeInterpretation,
+      IconData,
       IconFolder3DCube,
       IconFolderContour,
-      IconFolderCubeInterpretation,
       IconFolderEmpty,
+      IconFolderCubeInterpretation,
       IconFolderSectionsConnected,
       IconIntersectionPoints,
       IconPolygons,
@@ -589,7 +606,6 @@ export const groupedIcons: Group[] = [
       IconSelectOpen,
       IconTop,
       IconTopRight,
-      IconRoute,
     },
   },
   {
@@ -601,20 +617,23 @@ export const groupedIcons: Group[] = [
       IconBookmarkFilled,
       IconBookmarkStroked,
       IconCalculator,
-      IconCamera,
       IconCalendar,
+      IconCamera,
       IconCrown,
       IconDataNull,
-      IconFlagFilled,
       IconFlagStroked,
-      IconFolders,
       IconFolderClosed,
+      IconFlagFilled,
       IconFolderOpen,
+      IconFolders,
+      IconHelmet,
       IconHome,
       IconLock,
       IconPicture,
       IconPin,
       IconPriceLabel,
+      IconPrinterFilled,
+      IconPrinterStroked,
       IconProcessing,
       IconRing,
       IconRulerFilled,
@@ -627,11 +646,11 @@ export const groupedIcons: Group[] = [
       IconStorage,
       IconTechResponse,
       IconTie,
+      IconTree,
       IconUnlock,
       IconWatchFilled,
       IconWatchStroked,
       IconWrench,
-      IconHelmet,
     },
   },
   {
@@ -721,8 +740,8 @@ export const groupedIcons: Group[] = [
       IconColored2D,
       IconColored3D,
       IconColoredAll,
-      IconColoredCatch,
       IconColoredAllTable,
+      IconColoredCatch,
       IconColoredCommonBig,
       IconColoredCommonThree,
       IconColoredCommonTwo,
@@ -836,10 +855,10 @@ export const groupedIcons: Group[] = [
       IconScreenFilled,
       IconScreenStroked,
       IconStop,
+      IconVolumeDown,
+      IconVolumeUp,
       IconWideScreenFilled,
       IconWideScreenStroked,
-      IconVolumeUp,
-      IconVolumeDown,
     },
   },
   { name: 'charts', icons: { IconLineAndBarChart } },
@@ -869,22 +888,22 @@ export const groupedIcons: Group[] = [
     name: 'tools',
     icons: {
       IconToolsApproach,
-      IconToolsCurveHold,
       IconToolsBuildTurn,
+      IconToolsCurveHold,
+      IconToolsDiameter,
       IconToolsDiameterInner,
-      IconToolsDogled,
       IconToolsDiameterOuter,
-      IconToolsHoldCurveHold,
+      IconToolsDogled,
       IconToolsHold,
+      IconToolsHoldCurveHold,
+      IconToolsHoldFin,
       IconToolsHoldMid,
+      IconToolsHoldStart,
       IconToolsIncline,
       IconToolsLeftDown,
-      IconToolsDiameter,
-      IconToolsHoldStart,
       IconToolsMaxAngle,
-      IconToolsHoldFin,
-      IconToolsSWell,
       IconToolsRightTop,
+      IconToolsSWell,
     },
   },
   {

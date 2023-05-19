@@ -14,5 +14,4 @@ const IconColoredGasSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredGasSizeS;

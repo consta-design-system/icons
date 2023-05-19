@@ -10,5 +10,4 @@ const IconInstagramFilledSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconInstagramFilledSizeXs;

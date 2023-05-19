@@ -15,5 +15,4 @@ const IconToolsCurveHoldSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsCurveHoldSizeM;

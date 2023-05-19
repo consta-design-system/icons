@@ -17,5 +17,4 @@ const IconToolsHoldSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsHoldSizeM;

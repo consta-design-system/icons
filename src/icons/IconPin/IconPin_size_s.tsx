@@ -10,5 +10,4 @@ const IconPinSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconPinSizeS;

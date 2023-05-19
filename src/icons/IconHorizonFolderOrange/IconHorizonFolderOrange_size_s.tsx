@@ -36,5 +36,4 @@ const IconHorizonFolderOrangeSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconHorizonFolderOrangeSizeS;

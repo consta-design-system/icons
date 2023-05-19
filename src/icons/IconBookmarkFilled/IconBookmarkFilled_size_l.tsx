@@ -6,5 +6,4 @@ const IconBookmarkFilledSizeL = (props: SVGProps<SVGSVGElement>) => (
     <path d="M5 4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v22l-9-4-9 4V4Z" />
   </svg>
 );
-
 export default IconBookmarkFilledSizeL;

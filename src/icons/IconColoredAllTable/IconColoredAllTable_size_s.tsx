@@ -14,5 +14,4 @@ const IconColoredAllTableSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredAllTableSizeS;

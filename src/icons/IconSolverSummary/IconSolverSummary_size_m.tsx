@@ -16,5 +16,4 @@ const IconSolverSummarySizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSolverSummarySizeM;

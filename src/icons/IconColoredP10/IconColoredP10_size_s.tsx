@@ -22,5 +22,4 @@ const IconColoredP10SizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredP10SizeS;

@@ -44,5 +44,4 @@ const IconRigissSizeS = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-
 export default IconRigissSizeS;

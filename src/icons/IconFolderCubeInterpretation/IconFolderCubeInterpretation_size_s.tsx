@@ -42,5 +42,4 @@ const IconFolderCubeInterpretationSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFolderCubeInterpretationSizeS;

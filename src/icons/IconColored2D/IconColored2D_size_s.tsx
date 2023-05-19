@@ -13,5 +13,4 @@ const IconColored2DSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path fill="var(--color-bg-alert)" d="M7 7h2v2H7z" />
   </svg>
 );
-
 export default IconColored2DSizeS;

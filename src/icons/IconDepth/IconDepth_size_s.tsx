@@ -24,5 +24,4 @@ const IconDepthSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconDepthSizeS;

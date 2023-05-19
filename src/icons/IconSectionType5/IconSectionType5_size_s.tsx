@@ -14,5 +14,4 @@ const IconSectionType5SizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSectionType5SizeS;

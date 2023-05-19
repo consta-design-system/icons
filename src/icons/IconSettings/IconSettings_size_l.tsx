@@ -10,5 +10,4 @@ const IconSettingsSizeL = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconSettingsSizeL;

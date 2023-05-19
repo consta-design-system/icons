@@ -3,9 +3,8 @@ import { SVGProps } from 'react';
 
 const IconPrinterFilledSizeM = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path d="M5 2C4.44772 2 4 2.44772 4 3V5H20V3C20 2.44772 19.5523 2 19 2H5Z" />
-    <path d="M3 7C2.44772 7 2 7.44771 2 8V17C2 17.5523 2.44772 18 3 18H5V12.0001C5 11.4478 5.44772 11.0001 6 11.0001H18C18.5523 11.0001 19 11.4478 19 12.0001V18H21C21.5523 18 22 17.5523 22 17V8C22 7.44772 21.5523 7 21 7H3Z" />
-    <path d="M17 22H7V13.0001L17 13V22Z" />
+    <path d="M5 2a1 1 0 0 0-1 1v2h16V3a1 1 0 0 0-1-1H5ZM3 7a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h2v-6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v6h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H3Z" />
+    <path d="M17 22H7v-9h10v9Z" />
   </svg>
 );
 export default IconPrinterFilledSizeM;

@@ -8,5 +8,4 @@ const IconJiraSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path d="M7.643 7.884H2a2.551 2.551 0 0 0 2.547 2.556H5.59v1.006A2.551 2.551 0 0 0 8.133 14V8.375a.49.49 0 0 0-.49-.49Z" />
   </svg>
 );
-
 export default IconJiraSizeS;

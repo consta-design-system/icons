@@ -11,5 +11,4 @@ const IconRoubleSizeXs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconRoubleSizeXs;

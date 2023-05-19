@@ -6,5 +6,4 @@ const IconTopRightSizeXs = (props: SVGProps<SVGSVGElement>) => (
     <path d="M8.859 3.952 3.702 9.109l-.707-.707 5.157-5.157H4.409v-1h5.45v5.45h-1V3.952Z" />
   </svg>
 );
-
 export default IconTopRightSizeXs;

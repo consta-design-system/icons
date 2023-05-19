@@ -18,5 +18,4 @@ const IconToolsApproachSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsApproachSizeM;

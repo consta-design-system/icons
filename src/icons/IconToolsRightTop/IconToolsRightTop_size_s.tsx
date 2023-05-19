@@ -21,5 +21,4 @@ const IconToolsRightTopSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsRightTopSizeS;

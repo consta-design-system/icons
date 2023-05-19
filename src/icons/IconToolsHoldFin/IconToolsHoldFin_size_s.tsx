@@ -16,5 +16,4 @@ const IconToolsHoldFinSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconToolsHoldFinSizeS;

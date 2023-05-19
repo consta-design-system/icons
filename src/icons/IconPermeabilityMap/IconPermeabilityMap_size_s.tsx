@@ -26,5 +26,4 @@ const IconPermeabilityMapSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconPermeabilityMapSizeS;

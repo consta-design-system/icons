@@ -21,5 +21,4 @@ const IconTemperatureSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path d="M10.5 13 9 11h3l-1.5 2Z" fill="var(--color-typo-primary)" />
   </svg>
 );
-
 export default IconTemperatureSizeS;

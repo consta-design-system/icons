@@ -14,5 +14,4 @@ const IconFractureOrangeSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFractureOrangeSizeS;

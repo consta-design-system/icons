@@ -28,5 +28,4 @@ const IconStratigraphySizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconStratigraphySizeS;

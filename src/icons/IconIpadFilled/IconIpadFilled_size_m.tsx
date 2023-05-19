@@ -10,5 +10,4 @@ const IconIpadFilledSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconIpadFilledSizeM;

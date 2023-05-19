@@ -34,5 +34,4 @@ const IconGisAttributesSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconGisAttributesSizeS;

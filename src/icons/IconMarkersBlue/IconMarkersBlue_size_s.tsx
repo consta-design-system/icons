@@ -50,5 +50,4 @@ const IconMarkersBlueSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconMarkersBlueSizeS;

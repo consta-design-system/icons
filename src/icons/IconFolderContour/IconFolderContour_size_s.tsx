@@ -82,5 +82,4 @@ const IconFolderContourSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconFolderContourSizeS;

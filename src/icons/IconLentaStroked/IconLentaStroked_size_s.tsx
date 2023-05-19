@@ -11,5 +11,4 @@ const IconLentaStrokedSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconLentaStrokedSizeS;

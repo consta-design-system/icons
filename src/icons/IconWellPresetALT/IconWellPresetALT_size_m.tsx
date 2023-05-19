@@ -20,5 +20,4 @@ const IconWellPresetALTSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellPresetALTSizeM;

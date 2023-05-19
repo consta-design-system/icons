@@ -26,5 +26,4 @@ const IconColoredInfraBlueSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredInfraBlueSizeS;

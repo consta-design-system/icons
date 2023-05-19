@@ -17,5 +17,4 @@ const IconColoredTempiSizeS = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={13} cy={9} r={1} fill="var(--color-bg-normal)" />
   </svg>
 );
-
 export default IconColoredTempiSizeS;

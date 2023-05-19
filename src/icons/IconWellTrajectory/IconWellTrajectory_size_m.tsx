@@ -21,5 +21,4 @@ const IconWellTrajectorySizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconWellTrajectorySizeM;

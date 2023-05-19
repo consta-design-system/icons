@@ -10,5 +10,4 @@ const IconChatStrokedSizeL = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconChatStrokedSizeL;

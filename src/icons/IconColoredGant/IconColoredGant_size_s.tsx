@@ -15,5 +15,4 @@ const IconColoredGantSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconColoredGantSizeS;

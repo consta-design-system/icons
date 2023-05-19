@@ -28,5 +28,4 @@ const IconZoneBlueSizeS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
 export default IconZoneBlueSizeS;
