@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.4.0 (19/05/2023)
+Самое важное:
+- Добавили новые иконки `IconArrowFirst `, `IconArrowLast `, `IconArrowNext`, `IconArrowPrevious`, `IconArrowRedone`,  `IconArrowUndone`, `IconPrinterFilled`, `IconPrinterStroked `, `IconSlide `, `IconTree`
+
+---
+
+- [feat(Icons): add new icons (#11)](https://github.com/consta-design-system/icons/commit/7faf17efc3d3cd4e5887d26eb51c44108bff1615) - [@N1MBER](https://github.com/N1MBER)
+- [docs: edit stand description](https://github.com/consta-design-system/icons/commit/9f22aaa7a976f4948df793226b276578a1034c16) - [@gizeasy](https://github.com/gizeasy)
+- [chore(deps): bump decode-uri-component from 0.2.0 to 0.2.2 (#8)](https://github.com/consta-design-system/icons/commit/cda001373e78b69e772c501fd848f42bdf87572f) - [@dependabot[bot]](https://github.com/dependabot[bot])
+- [chore(deps): bump loader-utils from 2.0.2 to 2.0.4 (#9)](https://github.com/consta-design-system/icons/commit/ad233843766746273ac5b951198689903f75eacc) - [@dependabot[bot]](https://github.com/dependabot[bot])
+- [docs(icons): add aliases (#10)](https://github.com/consta-design-system/icons/commit/1d41d9f125af53c9780b8dd6b73cda4558ac86f7) - [@N1MBER](https://github.com/N1MBER)
+- [chore: update @consta/stand](https://github.com/consta-design-system/icons/commit/1becc385e52a3469ac97da5ea4f5755755e7fb1a) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.3.0 (17/04/2023)
 Добавили новые иконки: `IconFolderOpen`, `IconFolderClosed`, `IconVolumeUp` и `IconVolumeDown`
 
