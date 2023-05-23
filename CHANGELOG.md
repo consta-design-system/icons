@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.4.2 (23/05/2023)
+Запускать локальный сервер разработки и сборку пакетов теперь можно и на ОС Windows. 
+
+---
+
+- [chore: configure build for windows (#13)](https://github.com/consta-design-system/icons/commit/eaffa2b3cd22ad749c176c0c0037e97bb23c5960) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.4.1 (19/05/2023)
 - [fix(IconSave): fix icon (#12)](https://github.com/consta-design-system/icons/commit/b80cfde20e8f3e015c1ed6aa9511784e91124476) - [@N1MBER](https://github.com/N1MBER)
 
