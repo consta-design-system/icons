@@ -1,0 +1,39 @@
+import { MdxMenu } from '@consta/stand';
+
+```tsx
+import { AnimateIconBaseProvider } from '@consta/icons/AnimateIconBaseProvider';
+```
+
+<MdxMenu>
+
+- [Использование](#использвание)
+- [Свойства](#свойства)
+
+</MdxMenu>
+
+## Использование
+
+Чтобы использовать анимированные иконки, необходимо обернуть компонент в которых они используются в `AnimateIconBaseProvider`.
+
+> Используется в связке с хоком [withAnimateBaseHOC](##LIBS.LIB.STAND.TAB/lib:icons/stand:hocs-withanimatebasehoc-stable/tab:dev)
+
+```tsx
+const Icon = withAnimateBaseHOC({
+  icons: [IconArrowDown, IconArrowUp, IconDinosaur],
+});
+
+export const AnimateIconBaseProvider = () => {
+  return (
+    <AnimateIconBaseProvider activeIndex={1}>
+      <Icon size="m" view="alert" />
+    </AnimateIconBaseProvider>
+  );
+};
+```
+
+## Свойства
+
+| Свойство       | Тип               | По умолчанию | Описание                |
+| -------------- | ----------------- | ------------ | ----------------------- |
+| `activeIndex?` | `number`          | `0`          | Индекс акстивной иконки |
+| `children`     | `React.ReactNode` | -            | Дочерние компоненты     |

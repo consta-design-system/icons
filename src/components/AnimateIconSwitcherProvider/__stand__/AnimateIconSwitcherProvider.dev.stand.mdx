@@ -1,0 +1,39 @@
+import { MdxMenu } from '@consta/stand';
+
+```tsx
+import { AnimateIconSwitcherProvider } from '@consta/icons/AnimateIconSwitcherProvider';
+```
+
+<MdxMenu>
+
+- [Использование](#использвание)
+- [Свойства](#свойства)
+
+</MdxMenu>
+
+## Использование
+
+Чтобы использовать анимированные иконки, необходимо обернуть компонент в которых они используются в `AnimateIconSwitcherProvider`.
+
+> Используется в связке с хоком [withAnimateSwitcherHOC](##LIBS.LIB.STAND.TAB/lib:icons/stand:hocs-withanimateswitcherhoc-stable/tab:dev)
+
+```tsx
+const Icon = withAnimateSwitcherHOC({
+  icons: [IconArrowDown, IconArrowUp],
+});
+
+export const AnimateIconSwitcherProvider = () => {
+  return (
+    <AnimateIconSwitcherProvider active>
+      <Icon size="m" view="alert" />
+    </AnimateIconSwitcherProvider>
+  );
+};
+```
+
+## Свойства
+
+| Свойство   | Тип               | По умолчанию | Описание              |
+| ---------- | ----------------- | ------------ | --------------------- |
+| `active?`  | `boolean`         | `false`      | Флаг состояния иконки |
+| `children` | `React.ReactNode` | -            | Дочерние компоненты   |

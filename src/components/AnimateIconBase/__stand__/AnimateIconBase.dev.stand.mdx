@@ -1,0 +1,94 @@
+import { MdxMenu } from '@consta/stand';
+
+```tsx
+import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
+```
+
+<MdxMenu>
+
+- [Иконки](#иконки)
+- [Ориентация](#ориентация)
+- [Время анимации](#время-анимации)
+- [Импорт](#импорт)
+- [Список свойств](#свойства)
+
+</MdxMenu>
+
+## Иконки
+
+За перечень анимированных иконок отвечает свойство `icons`. Активная иконка определятся через свойство `activeIndex`.
+
+```tsx
+<AnimateIconBase
+  icons={[IconArrowDown, IconArrowUp, IconArrowLeft]}
+  activeIndex={2}
+/>
+```
+
+## Ориентация
+
+За ориентацию и поворот иконок отвечает свойство `directions`. Варианты: `up`, `right`, `down`, `left`, `upRight`, `downRight`, `upLeft`, `downLeft`.
+
+> Если указана только одна иконка, то свойство `activeIndex` будет отвечать за текущую ориентацию иконки.
+
+```tsx
+<AnimateIconBase
+  icons={[IconArrowDown, IconArrowUp, IconArrowLeft]}
+  directions={['up', 'down', 'right']}
+  activeIndex={2}
+/>
+```
+
+```tsx
+<AnimateIconBase
+  icons={[IconArrowDown]}
+  directions={['up', 'down', 'right']}
+  activeIndex={2}
+/>
+```
+
+## Время анимации
+
+Время выполнения анимации в миллисекундах определяется через свойство `transition`. По умолчанию равно 200 мс.
+
+```tsx
+<AnimateIconBase
+  icons={[IconArrowDown, IconArrowUp, IconArrowLeft]}
+  activeIndex={2}
+  transition={400}
+/>
+```
+
+## Импорт
+
+```tsx
+import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
+```
+
+## Свойства
+
+```tsx
+export const animateIconBasePropDirection = [
+  'up',
+  'right',
+  'down',
+  'left',
+  'upRight',
+  'downRight',
+  'upLeft',
+  'downLeft',
+] as const;
+export type AnimateIconBasePropDirection =
+  typeof animateIconBasePropDirection[number];
+```
+
+| Свойство                         | Тип                                                                                                           | По умолчанию | Описание                                                                                |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------- |
+| [`icons`](#иконки)               | `IconComponent[]`                                                                                             | -            | Перечень иконок                                                                         |
+| [`activeIndex?`](#иконки)        | `number`                                                                                                      | `0`          | Индекс активной иконки                                                                  |
+| [`directions?`](#ориентация)     | `AnimateIconBasePropDirection[]`                                                                              | -            | Перечень ориентаций для иконок                                                          |
+| [`transition?`](#время-анимации) | `number`                                                                                                      | `200`        | Время анимации в мс                                                                     |
+| `size?`                          | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | см. [Icon](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable/tab:dev/hash:размер)      |
+| `view?`                          | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | см. [Icon](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable/tav:dev/hash:внешний-вид) |
+| `className?`                     | `string`                                                                                                      | -            | Дополнительный CSS-класс                                                                |
+| `ref?`                           | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента                                               |

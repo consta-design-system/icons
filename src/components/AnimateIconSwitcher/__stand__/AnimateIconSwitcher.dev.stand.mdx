@@ -1,0 +1,82 @@
+import { MdxMenu } from '@consta/stand';
+
+```tsx
+import { AnimateIconSwitcher } from '@consta/icons/AnimateIconSwitcher';
+```
+
+<MdxMenu>
+
+- [Иконки](#иконки)
+- [Ориентация](#ориентация)
+- [Время анимации](#время-анимации)
+- [Импорт](#импорт)
+- [Список свойств](#свойства)
+
+</MdxMenu>
+
+## Иконки
+
+За начальное и конечное состояние иконки отвечают свойства `startIcon` и `endIcon` соответственно. Свойство `active` отвечает за то какое состояние будет применено.
+
+```tsx
+<AnimateIconSwitcher startIcon={IconArrowDown} endIcon={IconArrowUp} active />
+```
+
+## Ориентация
+
+За ориентацию и поворот иконок отвечают свойства `startDirection` и `endDirection`. Варианты: `up`, `right`, `down`, `left`, `upRight`, `downRight`, `upLeft`, `downLeft`.
+
+> Если указана только одна иконка, то свойство `active` будет отвечать за текущую ориентацию иконки.
+
+```tsx
+<AnimateIconSwitcher
+  startIcon={IconArrowDown}
+  endIcon={IconArrowUp}
+  startDirection="up"
+  endDirection="down"
+  active
+/>
+```
+
+```tsx
+<AnimateIconSwitcher
+  startIcon={IconArrowDown}
+  startDirection="up"
+  endDirection="down"
+  active
+/>
+```
+
+## Время анимации
+
+Время выполнения анимации в миллисекундах определяется через свойство `transition`. По умолчанию равно 200 мс.
+
+```tsx
+<AnimateIconSwitcher
+  startIcon={IconArrowDown}
+  endIcon={IconArrowUp}
+  active
+  transition={400}
+/>
+```
+
+## Импорт
+
+```tsx
+import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
+```
+
+## Свойства
+
+| Свойство                         | Тип                                                                                                           | По умолчанию | Описание                                                                                |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------- |
+| [`startIcon?`](#иконки)          | `IconComponent`                                                                                               | -            | Начальное состояние иконки                                                              |
+| [`endIcon?`](#иконки)            | `IconComponent`                                                                                               | -            | Конечное состояние иконки                                                               |
+| [`active?`](#иконки)             | `boolean`                                                                                                     | `false`      | Индекс активной иконки                                                                  |
+| [`startDirection?`](#ориентация) | `AnimateIconBasePropDirection`                                                                                | `'up'`       | Ориентация для начального состояния                                                     |
+| [`endDirection?`](#ориентация)   | `AnimateIconBasePropDirection`                                                                                | `'up'`       | Ориентация для конечного состояния                                                      |
+| [`transition?`](#время-анимации) | `number`                                                                                                      | `200`        | Время анимации в мс                                                                     |
+| `size?`                          | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | см. [Icon](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable/tab:dev/hash:размер)      |
+| `view?`                          | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | см. [Icon](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable/tav:dev/hash:внешний-вид) |
+| `className?`                     | `string`                                                                                                      | -            | Дополнительный CSS-класс                                                                |
+| `ref?`                           | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента                                               |
