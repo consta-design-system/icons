@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AnimateIconBaseProvider } from '../AnimateIconBaseProvider';
+import { AnimateIconBaseContext } from '##/components/AnimateIconBaseProvider';
 
 type AnimateIconSwitcherProviderProps = {
   children?: React.ReactNode;
@@ -10,11 +10,9 @@ type AnimateIconSwitcherProviderProps = {
 export const AnimateIconSwitcherProvider = (
   props: AnimateIconSwitcherProviderProps,
 ) => {
-  const { children, active } = props;
-
   return (
-    <AnimateIconBaseProvider activeIndex={active ? 1 : 0}>
-      {children}
-    </AnimateIconBaseProvider>
+    <AnimateIconBaseContext.Provider value={props.active ? 1 : 0}>
+      {props.children}
+    </AnimateIconBaseContext.Provider>
   );
 };

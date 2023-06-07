@@ -4,12 +4,9 @@ export default createStand({
   title: 'withAnimateBaseHOC',
   id: 'withAnimateBaseHOC',
   group: 'hocs',
-  description: 'Иконки на любые случаи.',
+  description: 'HOC для создания иконок c анимированной трансформацией',
   version: '1.0.0',
   status: 'stable',
   alias: ['иконки', 'изображения', 'иконка', 'изображение'],
-  sandbox: 'icon-cxx25f',
-  figma:
-    'https://www.figma.com/embed?embed_host=uikit.consta.design&url=https://www.figma.com/file/SLc0YGhuDotve6MTCBHlGxDU/Consta-Graphics?node-id=0%3A1',
   order: 10,
 });

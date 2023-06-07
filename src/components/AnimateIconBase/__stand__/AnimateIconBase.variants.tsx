@@ -1,40 +1,52 @@
-import { useSelect } from '@consta/stand';
-import React, { useMemo, useState } from 'react';
+import './AnimateIconBase.variants.css';
 
-import { IconComponent } from '##/icons/Icon';
+import { useSelect } from '@consta/stand';
+import { Button } from '@consta/uikit/Button';
+import React, { useEffect, useMemo, useState } from 'react';
+
+import {
+  IconComponent,
+  iconPropSize,
+  iconPropSizeDefault,
+  iconPropView,
+  iconPropViewDefault,
+} from '##/icons/Icon';
+import { IconAlert } from '##/icons/IconAlert';
 import { IconArrowDown } from '##/icons/IconArrowDown';
-import { IconArrowUp } from '##/icons/IconArrowUp';
 import { IconDinosaur } from '##/icons/IconDinosaur';
+import { cn } from '##/utils/bem';
 
 import { AnimateIconBase } from '../AnimateIconBase';
-import { AnimateIconBasePropDirection } from '../types';
 
 const transitions = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+const cnAnimateIconBaseVariants = cn('AnimateIconBaseVariants');
 
 const Variants = () => {
   const transition = useSelect('transition', transitions, 200);
   const icons = useSelect('icons', [1, 2, 3], 1);
+  const size = useSelect('size', iconPropSize, iconPropSizeDefault);
+  const view = useSelect('view', iconPropView, iconPropViewDefault);
 
   const [activeIndex, setActiveIndex] = useState(0);
 
   const { array, directions } = useMemo<{
     array: IconComponent[];
-    directions: AnimateIconBasePropDirection[];
+    directions: number[];
   }>(() => {
     if (icons === 1) {
       return {
         array: [IconArrowDown],
-        directions: ['up', 'left', 'down', 'right'],
+        directions: [0, 90, 180, 270],
       };
     }
     if (icons === 2) {
       return {
-        array: [IconArrowDown, IconArrowUp],
+        array: [IconArrowDown, IconAlert],
         directions: [],
       };
     }
     return {
-      array: [IconArrowDown, IconArrowUp, IconDinosaur],
+      array: [IconArrowDown, IconAlert, IconDinosaur],
       directions: [],
     };
   }, [icons]);
@@ -51,14 +63,22 @@ const Variants = () => {
     setActiveIndex(activeIndex + 1 > 2 ? 0 : activeIndex + 1);
   };
 
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [icons]);
+
   return (
-    <AnimateIconBase
-      transition={transition}
-      directions={directions}
-      onClick={onClick}
-      activeIndex={activeIndex}
-      icons={array}
-    />
+    <div className={cnAnimateIconBaseVariants()}>
+      <AnimateIconBase
+        transition={transition}
+        directions={directions}
+        activeIndex={activeIndex}
+        icons={array}
+        size={size}
+        view={view}
+      />
+      <Button label="Трансформировать" onClick={onClick} />
+    </div>
   );
 };
 

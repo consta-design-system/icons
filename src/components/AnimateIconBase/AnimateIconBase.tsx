@@ -1,8 +1,10 @@
-import { useForkRef } from '@consta/uikit/useForkRef';
+import './AnimateIconBase.css';
+
 import { useRefs } from '@consta/uikit/useRefs';
 import React, { forwardRef } from 'react';
 import { Transition } from 'react-transition-group';
 
+import { iconPropSizeDefault } from '##/icons/Icon';
 import { cnMixAnimateIcon } from '##/mixs/MixAnimateIcon/MixAnimateIcon';
 import { cn } from '##/utils/bem';
 
@@ -21,33 +23,19 @@ export const AnimateIconBase = forwardRef<
     directions,
     transition = 200,
     style,
+    size = iconPropSizeDefault,
+    view,
     ...otherProps
   } = props;
   const refs = useRefs<HTMLSpanElement>(icons.length);
 
-  const activeRef = useForkRef([refs[activeIndex], ref]);
-
   const AnimateIcon = icons[0];
 
-  return icons.length === 1 ? (
-    <AnimateIcon
-      ref={ref}
-      style={{
-        ['--mix-animate-icon-transition' as string]: `${transition}ms`,
-        ...style,
-      }}
-      className={cnAnimateIconBase(null, [
-        cnMixAnimateIcon({
-          transform: 'rotate',
-          direction: directions?.[activeIndex] ?? 'up',
-        }),
-        className,
-      ])}
-      {...otherProps}
-    />
-  ) : (
-    <>
-      {icons.map((Icon, index) => (
+  const innerRender =
+    icons.length === 1 ? (
+      <AnimateIcon size={size} view={view} />
+    ) : (
+      icons.map((Icon, index) => (
         <Transition
           in={activeIndex === index}
           key={cnAnimateIconBase({ key: index })}
@@ -57,24 +45,32 @@ export const AnimateIconBase = forwardRef<
         >
           {(animate) => (
             <Icon
-              ref={index === activeIndex ? activeRef : refs[index]}
-              style={{
-                ['--mix-animate-icon-transition' as string]: `${transition}ms`,
-                ...style,
-              }}
-              className={cnAnimateIconBase(null, [
-                cnMixAnimateIcon({
-                  transform: 'cubic',
-                  animate,
-                  direction: directions?.[index] ?? 'up',
-                }),
-                className,
-              ])}
-              {...otherProps}
+              ref={refs[index]}
+              className={cnMixAnimateIcon({
+                animate,
+              })}
+              size={size}
+              view={view}
             />
           )}
         </Transition>
-      ))}
-    </>
+      ))
+    );
+
+  return (
+    <span
+      {...otherProps}
+      className={cnAnimateIconBase({ size }, [className])}
+      style={{
+        ['--animate-icon-transition' as string]: `${transition}ms`,
+        ['--direction-transform' as string]: `rotate(${
+          directions?.[activeIndex] || 0
+        }deg)`,
+        ...style,
+      }}
+      ref={ref}
+    >
+      {innerRender}
+    </span>
   );
 });

@@ -1,4 +1,9 @@
 import { MdxMenu } from '@consta/stand';
+import {
+  AnimateIconBaseIcons,
+  AnimateIconBaseDirections,
+  AnimateIconBaseIconsAndDirections,
+} from './examples/AnimateIconBaseExamples/AnimateIconBaseExamples';
 
 ```tsx
 import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
@@ -7,7 +12,7 @@ import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
 <MdxMenu>
 
 - [Иконки](#иконки)
-- [Ориентация](#ориентация)
+- [Направление](#направление)
 - [Время анимации](#время-анимации)
 - [Импорт](#импорт)
 - [Список свойств](#свойства)
@@ -19,33 +24,62 @@ import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
 За перечень анимированных иконок отвечает свойство `icons`. Активная иконка определятся через свойство `activeIndex`.
 
 ```tsx
-<AnimateIconBase
-  icons={[IconArrowDown, IconArrowUp, IconArrowLeft]}
-  activeIndex={2}
-/>
+export const AnimateIconBaseIcons = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  return (
+    <AnimateIconBase
+      onClick={() => setActiveIndex((state) => (state + 1 > 2 ? 0 : state + 1))}
+      icons={[IconDocAdd, IconClose, IconRoute]}
+      activeIndex={activeIndex}
+    />
+  );
+};
 ```
 
-## Ориентация
+<AnimateIconBaseIcons />
 
-За ориентацию и поворот иконок отвечает свойство `directions`. Варианты: `up`, `right`, `down`, `left`, `upRight`, `downRight`, `upLeft`, `downLeft`.
+## Направление
 
-> Если указана только одна иконка, то свойство `activeIndex` будет отвечать за текущую ориентацию иконки.
+За направление иконок отвечает свойство `directions`, может принимать число указывающее на угол поворота иконки.
+
+> Если указана только одна иконка, то свойство `activeIndex` будет отвечать только за текущее направление иконки.
 
 ```tsx
-<AnimateIconBase
-  icons={[IconArrowDown, IconArrowUp, IconArrowLeft]}
-  directions={['up', 'down', 'right']}
-  activeIndex={2}
-/>
+export const AnimateIconBaseDirections = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  return (
+    <AnimateIconBase
+      onClick={() => setActiveIndex((state) => (state + 1 > 3 ? 0 : state + 1))}
+      icons={[IconDinosaur]}
+      directions={[0, 90, 180, 270]}
+      activeIndex={activeIndex}
+    />
+  );
+};
 ```
 
+<AnimateIconBaseDirections />
+
+Одновременное изменение направление и иконки.
+
 ```tsx
-<AnimateIconBase
-  icons={[IconArrowDown]}
-  directions={['up', 'down', 'right']}
-  activeIndex={2}
-/>
+export const AnimateIconBaseIconsAndDirections = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  return (
+    <AnimateIconBase
+      onClick={() => setActiveIndex((state) => (state + 1 > 2 ? 0 : state + 1))}
+      icons={[IconDocAdd, IconDinosaur, IconClose, IconRoute]}
+      directions={[0, 90, 180, 270]}
+      activeIndex={activeIndex}
+    />
+  );
+};
 ```
+
+<AnimateIconBaseIconsAndDirections />
 
 ## Время анимации
 
@@ -67,28 +101,13 @@ import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
 
 ## Свойства
 
-```tsx
-export const animateIconBasePropDirection = [
-  'up',
-  'right',
-  'down',
-  'left',
-  'upRight',
-  'downRight',
-  'upLeft',
-  'downLeft',
-] as const;
-export type AnimateIconBasePropDirection =
-  typeof animateIconBasePropDirection[number];
-```
-
-| Свойство                         | Тип                                                                                                           | По умолчанию | Описание                                                                                |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------- |
-| [`icons`](#иконки)               | `IconComponent[]`                                                                                             | -            | Перечень иконок                                                                         |
-| [`activeIndex?`](#иконки)        | `number`                                                                                                      | `0`          | Индекс активной иконки                                                                  |
-| [`directions?`](#ориентация)     | `AnimateIconBasePropDirection[]`                                                                              | -            | Перечень ориентаций для иконок                                                          |
-| [`transition?`](#время-анимации) | `number`                                                                                                      | `200`        | Время анимации в мс                                                                     |
-| `size?`                          | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | см. [Icon](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable/tab:dev/hash:размер)      |
-| `view?`                          | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | см. [Icon](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable/tav:dev/hash:внешний-вид) |
-| `className?`                     | `string`                                                                                                      | -            | Дополнительный CSS-класс                                                                |
-| `ref?`                           | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента                                               |
+| Свойство                         | Тип                                                                                                           | По умолчанию | Описание                                                                                                  |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------- |
+| [`icons`](#иконки)               | `IconComponent[]`                                                                                             | -            | Перечень иконок                                                                                           |
+| [`activeIndex?`](#иконки)        | `number`                                                                                                      | `0`          | Индекс активной иконки                                                                                    |
+| [`directions?`](#направление)    | `number[]`                                                                                                    | -            | Перечень направлений для иконок                                                                           |
+| [`transition?`](#время-анимации) | `number`                                                                                                      | `200`        | Время анимации в мс                                                                                       |
+| `size?`                          | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | Размер (см. [Icon](##LIBS.LIB.STAND.TAB/lib:icons/stand:icons-icon-stable/tab:dev/hash:размер))           |
+| `view?`                          | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | Внешний вид (см. [Icon](##LIBS.LIB.STAND.TAB/lib:icons/stand:icons-icon-stable/tab:dev/hash:внешний-вид)) |
+| `className?`                     | `string`                                                                                                      | -            | Дополнительный CSS-класс                                                                                  |
+| `ref?`                           | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента                                                                 |

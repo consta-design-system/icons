@@ -1,7 +1,6 @@
 import { IconProps } from '@consta/uikit/Icon';
-import React, { useContext } from 'react';
+import React, { forwardRef, useContext } from 'react';
 
-import { AnimateIconBasePropDirection } from '##/components/AnimateIconBase/types';
 import { AnimateIconBaseContext } from '##/components/AnimateIconBaseProvider';
 import { AnimateIconSwitcher } from '##/components/AnimateIconSwitcher';
 import { IconComponent } from '##/icons/Icon';
@@ -9,23 +8,23 @@ import { IconComponent } from '##/icons/Icon';
 export type WithAnimateBaseHOCProps = {
   startIcon?: IconComponent;
   endIcon?: IconComponent;
-  startDirection?: AnimateIconBasePropDirection;
-  endDirection?: AnimateIconBasePropDirection;
+  startDirection?: number;
+  endDirection?: number;
   transition?: number;
 };
 
 export const withAnimateSwitcherHOC = (
   params: WithAnimateBaseHOCProps,
 ): IconComponent => {
-  return React.forwardRef<HTMLSpanElement, IconProps>((props, ref) => {
-    const { activeIndex } = useContext(AnimateIconBaseContext);
+  return forwardRef<HTMLSpanElement, IconProps>((props, ref) => {
+    const activeIndex = useContext(AnimateIconBaseContext);
 
     return (
       <AnimateIconSwitcher
+        {...props}
+        {...params}
         active={activeIndex !== 0}
         ref={ref}
-        {...params}
-        {...props}
       />
     );
   });

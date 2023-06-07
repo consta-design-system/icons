@@ -4,12 +4,9 @@ export default createStand({
   title: 'AnimateIconSwitcher',
   id: 'AnimateIconSwitcher',
   group: 'components',
-  description: 'Иконки на любые случаи.',
+  description: 'Компонент для создания анимированных трансформаций иконок',
   version: '1.0.0',
   status: 'stable',
-  alias: ['иконки', 'изображения', 'иконка', 'изображение'],
-  sandbox: 'icon-cxx25f',
-  figma:
-    'https://www.figma.com/embed?embed_host=uikit.consta.design&url=https://www.figma.com/file/SLc0YGhuDotve6MTCBHlGxDU/Consta-Graphics?node-id=0%3A1',
+  alias: ['иконки', 'изображения', 'иконка', 'изображение', 'анимация'],
   order: 10,
 });

@@ -1,13 +1,6 @@
-import React, { createContext, useMemo } from 'react';
+import React from 'react';
 
-type AnimateIconBaseContextProps = {
-  activeIndex?: number;
-};
-
-export const AnimateIconBaseContext =
-  createContext<AnimateIconBaseContextProps>({
-    activeIndex: 0,
-  });
+import { AnimateIconBaseContext } from './context';
 
 type AnimateIconBaseProviderProps = {
   children?: React.ReactNode;
@@ -17,13 +10,9 @@ type AnimateIconBaseProviderProps = {
 export const AnimateIconBaseProvider = (
   props: AnimateIconBaseProviderProps,
 ) => {
-  const { children, activeIndex } = props;
-
-  const value = useMemo(() => ({ activeIndex }), [activeIndex]);
-
   return (
-    <AnimateIconBaseContext.Provider value={value}>
-      {children}
+    <AnimateIconBaseContext.Provider value={props.activeIndex || 0}>
+      {props.children}
     </AnimateIconBaseContext.Provider>
   );
 };

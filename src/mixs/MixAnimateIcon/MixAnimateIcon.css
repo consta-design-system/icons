@@ -1,68 +1,27 @@
 .icons--MixAnimateIcon {
-  --mix-animate-icon-transition: 0.3s;
-  transition: transform var(--mix-animate-icon-transition);
-  transform: var(--direction-transform);
-
-  &_transform {
-    &_cubic {
-      transition-timing-function: cubic-bezier(0.7, 0, 0.5, 1);
-    }
-  }
-
-  &_direction {
-    &_up {
-      --direction-transform: rotate(0deg);
-    }
-
-    &_right {
-      --direction-transform: rotate(90deg);
-    }
-
-    &_down {
-      --direction-transform: rotate(180deg);
-    }
-
-    &_left {
-      --direction-transform: rotate(270deg);
-    }
-
-    &_upRight {
-      --direction-transform: rotate(45deg);
-    }
-
-    &_downRight {
-      --direction-transform: rotate(135deg);
-    }
-
-    &_downLeft {
-      --direction-transform: rotate(225deg);
-    }
-
-    &_upLeft {
-      --direction-transform: rotate(315deg);
-    }
-  }
+  position: absolute;
 
   &_animate {
     &_entered,
     &_entering {
       opacity: 1;
-      transform: scale(1) var(--direction-transform);
+      transform: scale(1);
     }
 
     &_exited,
     &_exiting {
       opacity: 0;
-      transform: scale(0.1) var(--direction-transform);
+      transform: scale(0.1);
     }
 
     &_entered,
     &_entering,
     &_exiting {
-      position: absolute;
       transition:
-        transform var(--mix-animate-icon-transition),
-        opacity var(--mix-animate-icon-transition);
+        transform var(--animate-icon-transition)
+        var(--animate-icon-transition-function),
+        opacity var(--animate-icon-transition)
+        var(--animate-icon-transition-function);
     }
   }
 }

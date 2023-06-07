@@ -1,6 +1,5 @@
-import React, { forwardRef, useMemo } from 'react';
-
-import { IconComponent } from '##/icons/Icon';
+import { isNotNil } from '@consta/uikit/__internal__/src/utils/type-guards';
+import React, { forwardRef } from 'react';
 
 import { AnimateIconBase } from '../AnimateIconBase';
 import { AnimateIconSwitcherProps } from './types';
@@ -11,31 +10,20 @@ export const AnimateIconSwitcher = forwardRef<
 >((props, ref) => {
   const {
     startIcon,
-    startDirection = 'up',
+    startDirection = 0,
     endIcon,
-    endDirection = 'up',
+    endDirection = 0,
     active,
     ...otherProps
   } = props;
 
-  const icons = useMemo(() => {
-    const arr: IconComponent[] = [];
-    if (startIcon) {
-      arr.push(startIcon);
-    }
-    if (endIcon) {
-      arr.push(endIcon);
-    }
-    return arr;
-  }, [startIcon, endIcon]);
-
   return (
     <AnimateIconBase
+      {...otherProps}
       ref={ref}
       activeIndex={active ? 1 : 0}
-      icons={icons}
+      icons={[startIcon, endIcon].filter(isNotNil)}
       directions={[startDirection, endDirection]}
-      {...otherProps}
     />
   );
 });

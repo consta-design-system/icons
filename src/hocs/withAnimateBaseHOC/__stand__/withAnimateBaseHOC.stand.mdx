@@ -1,5 +1,80 @@
+import { MdxMenu } from '@consta/stand';
+import { WithAnimateBaseHOCExample } from './examples/WithAnimateBaseHOCExample/WithAnimateBaseHOCExample';
+
 ```tsx
 import { withAnimateBaseHOC } from '@consta/icons/withAnimateBaseHOC';
 ```
 
-Хок для создания анимированных иконок.
+<MdxMenu>
+
+- [Применение](#применение)
+- [Список свойств](#свойства)
+
+</MdxMenu>
+
+## Применение
+
+`withAnimateBaseHOC ` создает привычную иконку для компонентов дизайн системы,
+которая в свою очередь слушает состояние анимации из `AnimateIconBaseProvider`
+
+Пример ниже показывает как анимировать изменение иконки в нутри любого компонента
+
+```tsx
+import React, { useState } from 'react';
+
+import { Badge, BadgePropStatus } from '@consta/uikit/Badge';
+import { AnimateIconBaseProvider } from '@consta/icons/AnimateIconBaseProvider';
+import { withAnimateBaseHOC } from '@consta/icons/withAnimateBaseHOC';
+import { IconAlert } from '@consta/icons/IconAlert';
+import { IconQuestion } from '@consta/icons/IconQuestion';
+import { IconWarning } from '@consta/icons/IconWarning';
+
+type Status = {
+  label: string;
+  status: BadgePropStatus;
+};
+
+const statuses: Status[] = [
+  {
+    label: 'Ошибка',
+    status: 'error',
+  },
+  {
+    label: 'Предупреждение',
+    status: 'warning',
+  },
+  {
+    label: 'Вопрос',
+    status: 'system',
+  },
+];
+
+const MyAnimateIcon = withAnimateBaseHOC({
+  icons: [IconAlert, IconWarning, IconQuestion],
+});
+
+export const WithAnimateBaseHOCExample = () => {
+  const [state, setState] = useState(0);
+  return (
+    <AnimateIconBaseProvider activeIndex={state}>
+      <Badge
+        size="l"
+        onClick={() => setState((state) => (state + 1 > 2 ? 0 : state + 1))}
+        iconLeft={MyAnimateIcon}
+        label={statuses[state].label}
+        status={statuses[state].status}
+      />
+    </AnimateIconBaseProvider>
+  );
+};
+```
+
+<WithAnimateBaseHOCExample />
+
+## Свойства
+
+| Свойство           | Тип               | По умолчанию | Описание                                                                                                                                                 |
+| ------------------ | ----------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`icons`](#иконки) | `IconComponent[]` | -            | Перечень иконок (см. [AnimateIconBase](##LIBS.LIB.STAND.TAB/lib:icons/stand:components-animateiconbase-stable/tab:dev/hash:иконки))                      |
+| `directions?`      | `number[]`        | -            | Перечень направлений для иконок (см. [AnimateIconBase](##LIBS.LIB.STAND.TAB/lib:icons/stand:components-animateiconbase-stable/tab:dev/hash:направление)) |
+| `transition?`      | `number`          | `200`        | Время анимации в мс. (см. [AnimateIconBase](##LIBS.LIB.STAND.TAB/lib:icons/stand:components-animateiconbase-stable/tab:dev/hash:время-анимации))         |

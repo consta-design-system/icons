@@ -1,4 +1,9 @@
 import { MdxMenu } from '@consta/stand';
+import {
+  AnimateIconSwitcherIcons,
+  AnimateIconSwitcherDirections,
+  AnimateIconSwitcherIconsAndDirections,
+} from './examples/AnimateIconSwitcherExamples/AnimateIconSwitcherExamples';
 
 ```tsx
 import { AnimateIconSwitcher } from '@consta/icons/AnimateIconSwitcher';
@@ -7,7 +12,7 @@ import { AnimateIconSwitcher } from '@consta/icons/AnimateIconSwitcher';
 <MdxMenu>
 
 - [Иконки](#иконки)
-- [Ориентация](#ориентация)
+- [Направление](#направление)
 - [Время анимации](#время-анимации)
 - [Импорт](#импорт)
 - [Список свойств](#свойства)
@@ -19,33 +24,66 @@ import { AnimateIconSwitcher } from '@consta/icons/AnimateIconSwitcher';
 За начальное и конечное состояние иконки отвечают свойства `startIcon` и `endIcon` соответственно. Свойство `active` отвечает за то какое состояние будет применено.
 
 ```tsx
-<AnimateIconSwitcher startIcon={IconArrowDown} endIcon={IconArrowUp} active />
+export const AnimateIconSwitcherIcons = () => {
+  const [active, setActive] = useFlag();
+
+  return (
+    <AnimateIconSwitcher
+      onClick={setActive.toggle}
+      startIcon={IconDocAdd}
+      endIcon={IconDinosaur}
+      active={active}
+    />
+  );
+};
 ```
 
-## Ориентация
+<AnimateIconSwitcherIcons />
 
-За ориентацию и поворот иконок отвечают свойства `startDirection` и `endDirection`. Варианты: `up`, `right`, `down`, `left`, `upRight`, `downRight`, `upLeft`, `downLeft`.
+## Направление
 
-> Если указана только одна иконка, то свойство `active` будет отвечать за текущую ориентацию иконки.
+За направление иконок отвечает свойство `directions`, может принимать число указывающее на угол поворота иконки.
+
+> Если указана только одна иконка, то свойство `active` будет отвечать только за текущее направление иконки.
 
 ```tsx
-<AnimateIconSwitcher
-  startIcon={IconArrowDown}
-  endIcon={IconArrowUp}
-  startDirection="up"
-  endDirection="down"
-  active
-/>
+export const AnimateIconSwitcherDirections = () => {
+  const [active, setActive] = useFlag();
+
+  return (
+    <AnimateIconSwitcher
+      onClick={setActive.toggle}
+      startIcon={IconArrowDown}
+      startDirection={0}
+      endDirection={180}
+      active={active}
+    />
+  );
+};
 ```
 
+<AnimateIconSwitcherDirections />
+
+Изменение иконки и направления:
+
 ```tsx
-<AnimateIconSwitcher
-  startIcon={IconArrowDown}
-  startDirection="up"
-  endDirection="down"
-  active
-/>
+export const AnimateIconSwitcherIconsAndDirections = () => {
+  const [active, setActive] = useFlag();
+
+  return (
+    <AnimateIconSwitcher
+      onClick={setActive.toggle}
+      startIcon={IconDocAdd}
+      endIcon={IconDinosaur}
+      startDirection={0}
+      endDirection={180}
+      active={active}
+    />
+  );
+};
 ```
+
+<AnimateIconSwitcherIconsAndDirections />
 
 ## Время анимации
 
@@ -68,15 +106,15 @@ import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
 
 ## Свойства
 
-| Свойство                         | Тип                                                                                                           | По умолчанию | Описание                                                                                |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------- |
-| [`startIcon?`](#иконки)          | `IconComponent`                                                                                               | -            | Начальное состояние иконки                                                              |
-| [`endIcon?`](#иконки)            | `IconComponent`                                                                                               | -            | Конечное состояние иконки                                                               |
-| [`active?`](#иконки)             | `boolean`                                                                                                     | `false`      | Индекс активной иконки                                                                  |
-| [`startDirection?`](#ориентация) | `AnimateIconBasePropDirection`                                                                                | `'up'`       | Ориентация для начального состояния                                                     |
-| [`endDirection?`](#ориентация)   | `AnimateIconBasePropDirection`                                                                                | `'up'`       | Ориентация для конечного состояния                                                      |
-| [`transition?`](#время-анимации) | `number`                                                                                                      | `200`        | Время анимации в мс                                                                     |
-| `size?`                          | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | см. [Icon](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable/tab:dev/hash:размер)      |
-| `view?`                          | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | см. [Icon](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable/tav:dev/hash:внешний-вид) |
-| `className?`                     | `string`                                                                                                      | -            | Дополнительный CSS-класс                                                                |
-| `ref?`                           | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента                                               |
+| Свойство                          | Тип                                                                                                           | По умолчанию | Описание                                                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------- |
+| [`startIcon?`](#иконки)           | `IconComponent`                                                                                               | -            | Начальное состояние иконки                                                                                |
+| [`endIcon?`](#иконки)             | `IconComponent`                                                                                               | -            | Конечное состояние иконки                                                                                 |
+| [`active?`](#иконки)              | `boolean`                                                                                                     | -            | Состояние перехода                                                                                        |
+| [`startDirection?`](#направление) | `number`                                                                                                      | `0`          | Направление для начального состояния                                                                      |
+| [`endDirection?`](#направление)   | `number`                                                                                                      | `0`          | Направление для конечного состояния                                                                       |
+| [`transition?`](#время-анимации)  | `number`                                                                                                      | `200`        | Время анимации в мс                                                                                       |
+| `size?`                           | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | Размер (см. [Icon](##LIBS.LIB.STAND.TAB/lib:icons/stand:icons-icon-stable/tab:dev/hash:размер))           |
+| `view?`                           | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | Внешний вид (см. [Icon](##LIBS.LIB.STAND.TAB/lib:icons/stand:icons-icon-stable/tab:dev/hash:внешний-вид)) |
+| `className?`                      | `string`                                                                                                      | -            | Дополнительный CSS-класс                                                                                  |
+| `ref?`                            | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента                                                                 |
