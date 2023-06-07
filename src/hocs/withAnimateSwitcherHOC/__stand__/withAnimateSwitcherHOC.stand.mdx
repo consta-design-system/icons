@@ -1,0 +1,61 @@
+import { MdxMenu } from '@consta/stand';
+import { WithAnimateSwitcherHOCExample } from './examples/WithAnimateSwitcherHOCExample/WithAnimateSwitcherHOCExample';
+
+```tsx
+import { withAnimateSwitcherHOC } from '@consta/icons/withAnimateSwitcherHOC';
+```
+
+<MdxMenu>
+
+- [Применение](#иконки)
+- [Список свойств](#свойства)
+
+</MdxMenu>
+
+## Применение
+
+`withAnimateSwitcherHOC ` создает привычную иконку для компонентов дизайн системы,
+которая в свою очередь слушает состояние анимации из `AnimateIconSwitcherProvider`
+
+Пример ниже показывает как анимировать изменение иконки в нутри любого компонента
+
+```tsx
+import React from 'react';
+import { Button } from '@consta/uikit/Button';
+import { useFlag } from '@consta/uikit/useFlag';
+import { AnimateIconSwitcherProvider } from '@consta/icons/AnimateIconSwitcherProvider';
+import { withAnimateSwitcherHOC } from '@consta/icons/withAnimateSwitcherHOC';
+import { IconAdd } from '@consta/icons/IconAdd';
+import { IconTrash } from '@consta/icons/IconTrash';
+
+const MyAnimateIcon = withAnimateSwitcherHOC({
+  startIcon: IconAdd,
+  endIcon: IconTrash,
+});
+
+export const WithAnimateSwitcherHOCExample = () => {
+  const [state, setState] = useFlag();
+  return (
+    <AnimateIconSwitcherProvider active={state}>
+      <Button
+        size="l"
+        onClick={setState.toggle}
+        iconLeft={MyAnimateIcon}
+        label={state ? 'Удалить' : 'Добавить'}
+      />
+    </AnimateIconSwitcherProvider>
+  );
+};
+```
+
+<WithAnimateSwitcherHOCExample />
+
+## Свойства
+
+| Свойство          | Тип             | По умолчанию | Описание                                                                                                                                                              |
+| ----------------- | --------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `startIcon?`      | `IconComponent` | -            | Начальное состояние иконки (см. [AnimateIconSwitcher](##LIBS.LIB.STAND.TAB/lib:icons/stand:components-animateiconswitcher-stable/tab:dev/hash:иконки))                |
+| `endIcon?`        | `IconComponent` | -            | Конечное состояние иконки (см. [AnimateIconSwitcher](##LIBS.LIB.STAND.TAB/lib:icons/stand:components-animateiconswitcher-stable/tab:dev/hash:иконки))                 |
+| `startDirection?` | `number`        | `0`          | Направление для начального состояния (см. [AnimateIconSwitcher](##LIBS.LIB.STAND.TAB/lib:icons/stand:components-animateiconswitcher-stable/tab:dev/hash:направление)) |
+| `endDirection?`   | `number`        | `0`          | Направление для конечного состояния (см. [AnimateIconSwitcher](##LIBS.LIB.STAND.TAB/lib:icons/stand:components-animateiconswitcher-stable/tab:dev/hash:направление))  |
+| transition?       | `number`        | `200`        | Время анимации в мс. (см. [AnimateIconSwitcher](##LIBS.LIB.STAND.TAB/lib:icons/stand:components-animateiconswitcher-stable/tab:dev/hash:время-анимации))              |
