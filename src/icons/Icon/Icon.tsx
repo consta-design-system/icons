@@ -5,7 +5,6 @@ import React, { forwardRef, useContext, useEffect, useMemo } from 'react';
 import { cnIcons, IconsContext } from '##/components/IconsProvider';
 
 import { cn } from '../../utils/bem';
-import { PropsWithHTMLAttributesAndRef } from '../../utils/types/PropsWithHTMLAttributes';
 
 export const iconPropSize = ['m', 's', 'xs', 'l'] as const;
 export type IconPropSize = typeof iconPropSize[number];
@@ -25,13 +24,11 @@ export const iconPropView = [
 export type IconPropView = typeof iconPropView[number];
 export const iconPropViewDefault = iconPropView[0];
 
-export type IconProps = PropsWithHTMLAttributesAndRef<
-  {
-    view?: IconPropView;
-    size?: IconPropSize;
-  },
-  HTMLSpanElement
->;
+export type IconProps = {
+  view?: IconPropView;
+  size?: IconPropSize;
+} & React.RefAttributes<HTMLSpanElement> &
+  React.HTMLAttributes<HTMLSpanElement>;
 
 export type IconComponent = React.FC<IconProps>;
 

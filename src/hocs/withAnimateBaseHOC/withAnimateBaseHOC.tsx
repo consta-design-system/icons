@@ -1,9 +1,8 @@
-import { IconProps } from '@consta/uikit/Icon';
 import React, { forwardRef, useContext } from 'react';
 
 import { AnimateIconBase } from '##/components/AnimateIconBase';
 import { AnimateIconBaseContext } from '##/components/AnimateIconBaseProvider';
-import { IconComponent } from '##/icons/Icon';
+import { IconComponent, IconProps } from '##/icons/Icon';
 
 export type WithAnimateBaseHOCProps = {
   icons: IconComponent[];

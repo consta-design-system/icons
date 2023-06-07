@@ -1,4 +1,4 @@
-import { IconComponent, IconProps } from '@consta/uikit/Icon';
+import { IconComponent, IconProps } from '##/icons/Icon';
 
 export type AnimateIconSwitcherProps = {
   startIcon?: IconComponent;
