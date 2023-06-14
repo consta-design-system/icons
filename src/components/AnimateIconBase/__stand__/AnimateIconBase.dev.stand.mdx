@@ -21,7 +21,7 @@ import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
 
 ## Иконки
 
-За перечень анимированных иконок отвечает свойство `icons`. Активная иконка определятся через свойство `activeIndex`.
+За перечень анимированных иконок отвечает свойство `icons`. Активная иконка определяется через свойство `activeIndex`.
 
 ```tsx
 export const AnimateIconBaseIcons = () => {
@@ -41,9 +41,9 @@ export const AnimateIconBaseIcons = () => {
 
 ## Направление
 
-За направление иконок отвечает свойство `directions`, может принимать число указывающее на угол поворота иконки.
+За направление иконки отвечает свойство `directions`, которое может быть равно углу её поворота.
 
-> Если указана только одна иконка, то свойство `activeIndex` будет отвечать только за текущее направление иконки.
+> Если указана одна иконка, то свойство `activeIndex` будет отвечать только за её текущее направление.
 
 ```tsx
 export const AnimateIconBaseDirections = () => {
@@ -62,7 +62,7 @@ export const AnimateIconBaseDirections = () => {
 
 <AnimateIconBaseDirections />
 
-Одновременное изменение направление и иконки.
+Одновременное изменение направления и иконки.
 
 ```tsx
 export const AnimateIconBaseIconsAndDirections = () => {
