@@ -33,4 +33,6 @@ export const { createStand } = createConfig({
   image,
   standPageDecoration,
   description: 'Иконки дизайн-системы Consta для любых сервисов и продуктов',
+  figmaUrl:
+    'https://www.figma.com/file/ArxQ0PPwc1poFIFPD03XyI/Consta-Graphics-(Community)?type=design&node-id=0-1&t=myF42h4nWvzjwuym-0',
 });
