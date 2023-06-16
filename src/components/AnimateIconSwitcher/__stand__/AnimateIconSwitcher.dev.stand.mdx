@@ -1,0 +1,121 @@
+import { MdxMenu } from '@consta/stand';
+import {
+  AnimateIconSwitcherIcons,
+  AnimateIconSwitcherDirections,
+  AnimateIconSwitcherIconsAndDirections,
+} from './examples/AnimateIconSwitcherExamples/AnimateIconSwitcherExamples';
+
+```tsx
+import { AnimateIconSwitcher } from '@consta/icons/AnimateIconSwitcher';
+```
+
+<MdxMenu>
+
+- [Иконки](#иконки)
+- [Направление](#направление)
+- [Время анимации](#время-анимации)
+- [Импорт](#импорт)
+- [Список свойств](#свойства)
+
+</MdxMenu>
+
+## Иконки
+
+За начальное и конечное состояние иконки отвечают свойства `startIcon` и `endIcon` соответственно.
+Свойство `active` отвечает за то, какое состояние будет применено.
+
+```tsx
+export const AnimateIconSwitcherIcons = () => {
+  const [active, setActive] = useFlag();
+
+  return (
+    <AnimateIconSwitcher
+      onClick={setActive.toggle}
+      startIcon={IconDocAdd}
+      endIcon={IconDinosaur}
+      active={active}
+    />
+  );
+};
+```
+
+<AnimateIconSwitcherIcons />
+
+## Направление
+
+За направление иконки отвечает свойство `directions`, которое может быть равно углу её поворота.
+
+> Если указана только одна иконка, то свойство `active` будет отвечать только за текущее направление иконки.
+
+```tsx
+export const AnimateIconSwitcherDirections = () => {
+  const [active, setActive] = useFlag();
+
+  return (
+    <AnimateIconSwitcher
+      onClick={setActive.toggle}
+      startIcon={IconArrowDown}
+      startDirection={0}
+      endDirection={180}
+      active={active}
+    />
+  );
+};
+```
+
+<AnimateIconSwitcherDirections />
+
+Изменение иконки и направления:
+
+```tsx
+export const AnimateIconSwitcherIconsAndDirections = () => {
+  const [active, setActive] = useFlag();
+
+  return (
+    <AnimateIconSwitcher
+      onClick={setActive.toggle}
+      startIcon={IconDocAdd}
+      endIcon={IconDinosaur}
+      startDirection={0}
+      endDirection={180}
+      active={active}
+    />
+  );
+};
+```
+
+<AnimateIconSwitcherIconsAndDirections />
+
+## Время анимации
+
+Время выполнения анимации в миллисекундах определяется через свойство `transition`. По умолчанию равно 200 мс.
+
+```tsx
+<AnimateIconSwitcher
+  startIcon={IconArrowDown}
+  endIcon={IconArrowUp}
+  active
+  transition={400}
+/>
+```
+
+## Импорт
+
+```tsx
+import { AnimateIconBase } from '@consta/icons/AnimateIconBase';
+```
+
+## Свойства
+
+| Свойство                          | Тип                                                                                                           | По умолчанию | Описание                                                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------- |
+| [`startIcon?`](#иконки)           | `IconComponent`                                                                                               | -            | Начальное состояние иконки                                                                                |
+| [`endIcon?`](#иконки)             | `IconComponent`                                                                                               | -            | Конечное состояние иконки                                                                                 |
+| [`active?`](#иконки)              | `boolean`                                                                                                     | -            | Состояние перехода                                                                                        |
+| [`startDirection?`](#направление) | `number`                                                                                                      | `0`          | Направление для начального состояния                                                                      |
+| [`endDirection?`](#направление)   | `number`                                                                                                      | `0`          | Направление для конечного состояния                                                                       |
+| [`transition?`](#время-анимации)  | `number`                                                                                                      | `200`        | Время анимации в мс                                                                                       |
+| `size?`                           | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | Размер (см. [Icon](##LIBS.LIB.STAND.TAB/lib:icons/stand:icons-icon-stable/tab:dev/hash:размер))           |
+| `view?`                           | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | Внешний вид (см. [Icon](##LIBS.LIB.STAND.TAB/lib:icons/stand:icons-icon-stable/tab:dev/hash:внешний-вид)) |
+| `className?`                      | `string`                                                                                                      | -            | Дополнительный CSS-класс                                                                                  |
+| `ref?`                            | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента                                                                 |

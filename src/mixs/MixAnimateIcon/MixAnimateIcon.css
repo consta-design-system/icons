@@ -1,0 +1,27 @@
+.icons--MixAnimateIcon {
+  position: absolute;
+
+  &_animate {
+    &_entered,
+    &_entering {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &_exited,
+    &_exiting {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+
+    &_entered,
+    &_entering,
+    &_exiting {
+      transition:
+        transform var(--animate-icon-transition)
+        var(--animate-icon-transition-function),
+        opacity var(--animate-icon-transition)
+        var(--animate-icon-transition-function);
+    }
+  }
+}

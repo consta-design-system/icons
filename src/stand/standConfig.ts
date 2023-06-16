@@ -22,6 +22,11 @@ export const { createStand } = createConfig({
       id: 'components',
       initialOpen: true,
     },
+    {
+      title: 'HOCS',
+      id: 'hocs',
+      initialOpen: true,
+    },
   ],
   group: 'Библиотеки',
   repositoryUrl: 'https://github.com/consta-design-system/icons',
