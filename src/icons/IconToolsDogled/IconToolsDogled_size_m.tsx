@@ -9,19 +9,19 @@ const IconToolsDogledSizeM = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      d="M3 21C21 21 21 19.5 21 3L3 21Z"
-      fill="url(#paint0_linear_3200_364)"
+      d="M3 21c18 0 18-1.5 18-18L3 21Z"
+      fill="url(#SvgIconToolsDogled_size_m__a)"
     />
-    <path d="M3 21C20 21 21 20.5 21 3" stroke="#B5E2FC" strokeWidth={2} />
+    <path d="M3 21c17 0 18-.5 18-18" stroke="#B5E2FC" strokeWidth={2} />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M7.2929 4.46448L4.46448 7.2929L7.58582 10.4142L6 12.0001H12V6.00006L10.4142 7.58582L7.2929 4.46448Z"
+      d="M7.293 4.464 4.464 7.293l3.122 3.121L6 12h6V6l-1.586 1.586-3.121-3.122Z"
       fill="var(--color-typo-primary)"
     />
     <defs>
       <linearGradient
-        id="paint0_linear_3200_364"
+        id="SvgIconToolsDogled_size_m__a"
         x1={17.5}
         y1={17.5}
         x2={12}

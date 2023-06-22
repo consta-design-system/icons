@@ -8,7 +8,7 @@ const IconContourSizeS = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g clipPath="url(#a)">
+    <g clipPath="url(#SvgIconContour_size_s__a)">
       <path
         d="M3 2.079a.7.7 0 0 1 1.015-.625L12.45 5.7a1 1 0 0 1 .55.893v6.752a.7.7 0 0 1-1.015.626L3.55 9.724A1 1 0 0 1 3 8.831V2.079Z"
         fill="#CCD9E0"
@@ -18,7 +18,7 @@ const IconContourSizeS = (props: SVGProps<SVGSVGElement>) => (
         fill="var(--color-bg-warning)"
       />
     </g>
-    <g clipPath="url(#b)">
+    <g clipPath="url(#SvgIconContour_size_s__b)">
       <path
         d="M15 2.853a.7.7 0 0 0-.848-.684L1.788 4.85A1 1 0 0 0 1 5.826v6.83a.7.7 0 0 0 .848.684l12.364-2.68A1 1 0 0 0 15 9.684v-6.83Z"
         fill="var(--color-bg-ghost)"
@@ -40,7 +40,7 @@ const IconContourSizeS = (props: SVGProps<SVGSVGElement>) => (
         fill="var(--color-bg-alert)"
       />
     </g>
-    <g clipPath="url(#c)">
+    <g clipPath="url(#SvgIconContour_size_s__c)">
       <path
         d="M3 2.135a.7.7 0 0 1 1.014-.626l8.435 4.234a1 1 0 0 1 .551.894v6.753a.7.7 0 0 1-1.014.625L3.551 9.781A1 1 0 0 1 3 8.887V2.135Z"
         fill="#CCD9E0"
@@ -59,20 +59,20 @@ const IconContourSizeS = (props: SVGProps<SVGSVGElement>) => (
       />
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="SvgIconContour_size_s__a">
         <path
           d="M3 2c0-.552.402-.802.897-.558L8 3.466V12L3.897 9.977C3.402 9.732 3 9.087 3 8.534V2Z"
           fill="#fff"
         />
       </clipPath>
-      <clipPath id="b">
+      <clipPath id="SvgIconContour_size_s__b">
         <path
           fill="#fff"
           transform="matrix(.97815 -.20791 0 1 1 5.009)"
           d="M0 0h14.313v8.453H0z"
         />
       </clipPath>
-      <clipPath id="c">
+      <clipPath id="SvgIconContour_size_s__c">
         <path
           d="m8 3.508 4.103 2.024c.495.244.897.89.897 1.442v6.492c0 .552-.402.802-.897.558L8 12V3.508Z"
           fill="#fff"

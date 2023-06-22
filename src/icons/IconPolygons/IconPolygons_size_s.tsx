@@ -19,7 +19,7 @@ const IconPolygonsSizeS = (props: SVGProps<SVGSVGElement>) => (
       fill="var(--color-bg-ghost)"
     />
     <mask
-      id="a"
+      id="SvgIconPolygons_size_s__a"
       style={{
         maskType: 'alpha',
       }}
@@ -34,7 +34,7 @@ const IconPolygonsSizeS = (props: SVGProps<SVGSVGElement>) => (
         fill="#D9D9D9"
       />
     </mask>
-    <g mask="url(#a)">
+    <g mask="url(#SvgIconPolygons_size_s__a)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

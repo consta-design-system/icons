@@ -3,7 +3,7 @@ import { SVGProps } from 'react';
 
 const IconLeafSizeXs = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <g clipPath="url(#a)">
+    <g clipPath="url(#SvgIconLeaf_size_xs__a)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -11,7 +11,7 @@ const IconLeafSizeXs = (props: SVGProps<SVGSVGElement>) => (
       />
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="SvgIconLeaf_size_xs__a">
         <path d="M0 0h11v11H0z" />
       </clipPath>
     </defs>

@@ -3,7 +3,7 @@ import { SVGProps } from 'react';
 
 const IconWarningSizeS = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <g clipPath="url(#a)">
+    <g clipPath="url(#SvgIconWarning_size_s__a)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -11,7 +11,7 @@ const IconWarningSizeS = (props: SVGProps<SVGSVGElement>) => (
       />
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="SvgIconWarning_size_s__a">
         <path d="M0 0h16v16H0z" />
       </clipPath>
     </defs>

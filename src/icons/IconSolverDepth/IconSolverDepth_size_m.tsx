@@ -9,7 +9,7 @@ const IconSolverDepthSizeM = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <mask
-      id="mask0_3200_233"
+      id="SvgIconSolverDepth_size_m__b"
       style={{
         maskType: 'alpha',
       }}
@@ -19,25 +19,24 @@ const IconSolverDepthSizeM = (props: SVGProps<SVGSVGElement>) => (
       width={13}
       height={20}
     >
-      <rect
-        width={13}
-        height={20}
-        transform="matrix(1 1.74846e-07 1.74846e-07 -1 4 21.9999)"
-        fill="url(#paint0_linear_3200_233)"
+      <path
+        transform="matrix(1 0 0 -1 4 22)"
+        fill="url(#SvgIconSolverDepth_size_m__a)"
+        d="M0 0h13v20H0z"
       />
     </mask>
-    <g mask="url(#mask0_3200_233)">
-      <rect x={4} y={2} width={13} height={20} fill="#91C2A6" />
+    <g mask="url(#SvgIconSolverDepth_size_m__b)">
+      <path fill="#91C2A6" d="M4 2h13v20H4z" />
     </g>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M14 4H20V6H14V4ZM14 11H20V13H14V11ZM20 18H14V20H20V18Z"
+      d="M14 4h6v2h-6V4Zm0 7h6v2h-6v-2Zm6 7h-6v2h6v-2Z"
       fill="var(--color-control-typo-ghost)"
     />
     <defs>
       <linearGradient
-        id="paint0_linear_3200_233"
+        id="SvgIconSolverDepth_size_m__a"
         x1={6.5}
         y1={0}
         x2={6.5}

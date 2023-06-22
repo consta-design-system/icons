@@ -9,90 +9,30 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      d="M1 13H11C11 13.5523 10.5523 14 10 14H2C1.44772 14 1 13.5523 1 13Z"
-      fill="url(#paint0_linear_23779_1144)"
+      d="M1 13h10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Z"
+      fill="url(#SvgIconAmplitude_size_s__a)"
     />
-    <rect
-      x={1}
-      y={12}
-      width={10}
-      height={1}
-      fill="url(#paint1_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={11}
-      width={10}
-      height={1}
-      fill="url(#paint2_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={10}
-      width={10}
-      height={1}
-      fill="url(#paint3_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={9}
-      width={10}
-      height={1}
-      fill="url(#paint4_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={8}
-      width={10}
-      height={1}
-      fill="url(#paint5_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={7}
-      width={10}
-      height={1}
-      fill="url(#paint6_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={4}
-      width={10}
-      height={1}
-      fill="url(#paint7_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={5}
-      width={10}
-      height={1}
-      fill="url(#paint8_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={6}
-      width={10}
-      height={1}
-      fill="url(#paint9_linear_23779_1144)"
-    />
-    <rect
-      x={1}
-      y={3}
-      width={10}
-      height={1}
-      fill="url(#paint10_linear_23779_1144)"
+    <path fill="url(#SvgIconAmplitude_size_s__b)" d="M1 12h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__c)" d="M1 11h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__d)" d="M1 10h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__e)" d="M1 9h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__f)" d="M1 8h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__g)" d="M1 7h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__h)" d="M1 4h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__i)" d="M1 5h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__j)" d="M1 6h10v1H1z" />
+    <path fill="url(#SvgIconAmplitude_size_s__k)" d="M1 3h10v1H1z" />
+    <path
+      d="M1 3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H1Z"
+      fill="url(#SvgIconAmplitude_size_s__l)"
     />
     <path
-      d="M1 3C1 2.44772 1.44772 2 2 2H10C10.5523 2 11 2.44772 11 3H1Z"
-      fill="url(#paint11_linear_23779_1144)"
-    />
-    <path
-      d="M14 4H15L13.5 2L12 4H13V12H12L13.5 14L15 12H14V4Z"
+      d="M14 4h1l-1.5-2L12 4h1v8h-1l1.5 2 1.5-2h-1V4Z"
       fill="var(--color-typo-primary)"
     />
     <defs>
       <linearGradient
-        id="paint0_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__a"
         x1={11}
         y1={13.5}
         x2={1}
@@ -103,7 +43,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#950BFF" />
       </linearGradient>
       <linearGradient
-        id="paint1_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__b"
         x1={11}
         y1={12.5}
         x2={1}
@@ -114,7 +54,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#BE37FF" />
       </linearGradient>
       <linearGradient
-        id="paint2_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__c"
         x1={11}
         y1={11.5}
         x2={1}
@@ -125,7 +65,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#F1D3FF" />
       </linearGradient>
       <linearGradient
-        id="paint3_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__d"
         x1={11}
         y1={10.5}
         x2={1}
@@ -136,7 +76,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#9797FD" />
       </linearGradient>
       <linearGradient
-        id="paint4_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__e"
         x1={11}
         y1={9.5}
         x2={1}
@@ -147,7 +87,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#FF86FF" />
       </linearGradient>
       <linearGradient
-        id="paint5_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__f"
         x1={11}
         y1={8.5}
         x2={1}
@@ -158,7 +98,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#FFF1D3" />
       </linearGradient>
       <linearGradient
-        id="paint6_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__g"
         x1={11}
         y1={7.5}
         x2={1}
@@ -169,7 +109,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#FFDD86" />
       </linearGradient>
       <linearGradient
-        id="paint7_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__h"
         x1={11}
         y1={4.5}
         x2={1}
@@ -180,7 +120,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#FF950B" />
       </linearGradient>
       <linearGradient
-        id="paint8_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__i"
         x1={11}
         y1={5.5}
         x2={1}
@@ -191,7 +131,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#FFBE37" />
       </linearGradient>
       <linearGradient
-        id="paint9_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__j"
         x1={11}
         y1={6.5}
         x2={1}
@@ -202,7 +142,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#EA9312" />
       </linearGradient>
       <linearGradient
-        id="paint10_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__k"
         x1={11}
         y1={3.5}
         x2={1}
@@ -213,7 +153,7 @@ const IconAmplitudeSizeS = (props: SVGProps<SVGSVGElement>) => (
         <stop offset={1} stopColor="#FD002D" />
       </linearGradient>
       <linearGradient
-        id="paint11_linear_23779_1144"
+        id="SvgIconAmplitude_size_s__l"
         x1={11}
         y1={2.5}
         x2={1}
