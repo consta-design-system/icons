@@ -8,9 +8,9 @@ const IconToolsMaxAngleSizeS = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g clipPath="url(#a)">
+    <g clipPath="url(#SvgIconToolsMaxAngle_size_s__a)">
       <mask
-        id="b"
+        id="SvgIconToolsMaxAngle_size_s__b"
         style={{
           maskType: 'alpha',
         }}
@@ -22,7 +22,7 @@ const IconToolsMaxAngleSizeS = (props: SVGProps<SVGSVGElement>) => (
       >
         <circle cx={2} cy={14} r={13} fill="var(--color-typo-ghost)" />
       </mask>
-      <g mask="url(#b)">
+      <g mask="url(#SvgIconToolsMaxAngle_size_s__b)">
         <path
           d="M15.867 14H2L10.533.467"
           stroke="var(--color-typo-secondary)"
@@ -35,7 +35,7 @@ const IconToolsMaxAngleSizeS = (props: SVGProps<SVGSVGElement>) => (
       />
     </g>
     <defs>
-      <clipPath id="a">
+      <clipPath id="SvgIconToolsMaxAngle_size_s__a">
         <path fill="#fff" d="M0 0h16v16H0z" />
       </clipPath>
     </defs>

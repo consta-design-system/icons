@@ -16,7 +16,7 @@ const svgParse = async ({
   let svg = await readFile(path, 'utf8');
   const hasGradient = svg.includes('linearGradient');
   const color = svg.includes('color:multiple') ? 'multiple' : 'mono';
-  const withoutSvgr = svg.includes('withoutSvgr');
+  const withoutSvgo = svg.includes('withoutSvgo');
 
   if (cleanFill && color === 'mono') {
     svg = svgCleanFill(svg);
@@ -25,23 +25,24 @@ const svgParse = async ({
   const jsCode = await transform(
     svg,
     {
-      plugins: !withoutSvgr
+      plugins: !withoutSvgo
         ? ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier']
         : ['@svgr/plugin-jsx', '@svgr/plugin-prettier'],
       typescript: true,
       dimensions: false,
-      svgo,
-      ...(withoutSvgr
+      svgo: !withoutSvgo,
+      ...(withoutSvgo
         ? {}
         : {
             svgoConfig: {
               plugins: [
+                'preset-default',
                 {
-                  name: 'preset-default',
-                  prefixIds: {
+                  name: 'prefixIds',
+                  params: {
+                    delim: `__`,
                     prefix: `Svg${fileName}`,
                   },
-                  cleanupIDs: false,
                 },
               ],
             },

@@ -39,10 +39,8 @@ declare module '*.image.svg' {
 }
 
 declare module '*.icon.svg' {
-  import { IconProps } from '##/icons/Icon';
+  import { IconComponent } from '##/icons/Icon';
 
-  export const ReactComponent: React.FC<IconProps>;
-
-  const src: React.FC<IconProps>;
+  const src: IconComponent;
   export default src;
 }
