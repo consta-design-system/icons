@@ -1,6 +1,10 @@
 import './Icon.css';
 
-import React, { forwardRef, useContext, useEffect, useMemo } from 'react';
+import {
+  ComponentWithAs,
+  forwardRefWithAs,
+} from '@consta/uikit/__internal__/src/utils/types/PropsWithAsAttributes';
+import React, { useContext, useEffect, useMemo } from 'react';
 
 import { cnIcons, IconsContext } from '##/components/IconsProvider';
 
@@ -27,10 +31,10 @@ export const iconPropViewDefault = iconPropView[0];
 export type IconProps = {
   view?: IconPropView;
   size?: IconPropSize;
-} & React.RefAttributes<HTMLSpanElement> &
-  React.HTMLAttributes<HTMLSpanElement>;
+};
 
-export type IconComponent = React.FC<IconProps>;
+export type IconComponent<AS extends keyof JSX.IntrinsicElements = 'span'> =
+  ComponentWithAs<IconProps, AS>;
 
 export const cnIcon = cn('Icon');
 
@@ -58,53 +62,63 @@ export type CreateIconArguments = {
   color?: 'mono' | 'multiple';
 };
 
-export function createIcon(createProps: CreateIconArguments) {
-  const { name, renderType = renderTypeDefault, color = 'mono' } = createProps;
-  const IconComponent: IconComponent = forwardRef<HTMLSpanElement, IconProps>(
-    (props, ref) => {
-      const { size = 'm', className, view } = props;
-      const Svg = createProps[size];
-      const { addIcon, removeIcon } = useContext(IconsContext);
+export const createIcon = (
+  createProps: CreateIconArguments,
+): IconComponent<'span'> =>
+  forwardRefWithAs<IconProps, 'span'>((props, ref) => {
+    const {
+      name,
+      renderType = renderTypeDefault,
+      color = 'mono',
+    } = createProps;
+    const {
+      size = 'm',
+      className,
+      view,
+      as = 'span',
+      children,
+      ...otherProps
+    } = props;
+    const Svg = createProps[size];
+    const { addIcon, removeIcon } = useContext(IconsContext);
 
-      const SvgElement = useMemo(() => {
-        return renderType[size] === 'use'
-          ? Svg({ className: cnIcon('Svg', { color }) })
-          : null;
-      }, [Svg]);
+    const SvgElement = useMemo(() => {
+      return renderType[size] === 'use'
+        ? Svg({ className: cnIcon('Svg', { color }) })
+        : null;
+    }, [Svg]);
 
-      const { children, ...otherProps } = SvgElement?.props ?? {};
+    const Tag = as as string;
 
-      useEffect(() => {
+    const { children: _children, ...svgProps } = SvgElement?.props ?? {};
+
+    useEffect(() => {
+      if (renderType[size] === 'use') {
+        addIcon?.(name, size, SvgElement);
+      }
+    }, [SvgElement, renderType, size]);
+
+    useEffect(() => {
+      return () => {
         if (renderType[size] === 'use') {
-          addIcon?.(name, size, SvgElement);
+          removeIcon?.(name, size);
         }
-      }, [SvgElement, renderType, size]);
+      };
+    }, [Svg, renderType, size]);
 
-      useEffect(() => {
-        return () => {
-          if (renderType[size] === 'use') {
-            removeIcon?.(name, size);
-          }
-        };
-      }, [Svg, renderType, size]);
-
-      return (
-        <span
-          {...props}
-          className={cnIcon({ size, view, color }, [name, className])}
-          ref={ref}
-        >
-          {addIcon && renderType[size] === 'use' ? (
-            <svg {...otherProps}>
-              <use x="0" y="0" xlinkHref={`#${cnIcons(`${name}_${size}`)}`} />
-            </svg>
-          ) : (
-            <Svg className={cnIcon('Svg')} />
-          )}
-        </span>
-      );
-    },
-  );
-
-  return IconComponent;
-}
+    return (
+      <Tag
+        {...otherProps}
+        className={cnIcon({ size, view, color }, [name, className])}
+        ref={ref}
+      >
+        {addIcon && renderType[size] === 'use' ? (
+          <svg {...svgProps}>
+            <use x="0" y="0" xlinkHref={`#${cnIcons(`${name}_${size}`)}`} />
+          </svg>
+        ) : (
+          <Svg className={cnIcon('Svg')} />
+        )}
+      </Tag>
+    );
+  });

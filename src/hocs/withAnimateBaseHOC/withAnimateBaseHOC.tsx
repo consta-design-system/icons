@@ -12,17 +12,16 @@ export type WithAnimateBaseHOCProps = {
 
 export const withAnimateBaseHOC = (
   params: WithAnimateBaseHOCProps,
-): IconComponent => {
-  return forwardRef<HTMLSpanElement, IconProps>((props, ref) => {
+): IconComponent =>
+  forwardRef<HTMLSpanElement, IconProps>((props, ref) => {
     const activeIndex = useContext(AnimateIconBaseContext);
 
     return (
       <AnimateIconBase
-        {...props}
         {...params}
+        {...props}
         activeIndex={activeIndex}
         ref={ref}
       />
     );
-  });
-};
+  }) as IconComponent;
