@@ -1,0 +1,13 @@
+import * as React from 'react';
+import { SVGProps } from 'react';
+
+const IconAreaChartSizeS = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3.8 6.95L1 4.15V15H15V4.15H12.9L9.75 1L3.8 6.95ZM13 10.1154V6.15H12.0716L9.75 3.82843L3.8 9.77843L3 8.97843V12.0934L3.8 12.8846L9.75 7L12.9 10.1154H13Z"
+    />
+  </svg>
+);
+export default IconAreaChartSizeS;
