@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.6.0 (06/07/2023)
+Самое важное:
+- Добавили новые иконки `IconAreaChart`, `IconWindow`, `IconDebug`
+
+---
+
+- [feat(Icons): added new icons ](https://github.com/consta-design-system/icons/commit/cc53a2004b25cc3eaa99342dba1ef8edd0d24915) - [@N1MBER](https://github.com/N1MBER)
+- [docs: edit add icon (#17)](https://github.com/consta-design-system/icons/commit/ca7d814cfc438f5269dc5c145c50daea02873a5b) - [@gizeasy](https://github.com/gizeasy)
+- [docs(standConfig): add figmaUrl (#14)](https://github.com/consta-design-system/icons/commit/8868975718321a975d407e442f7cc853d188246e) - [@gizeasy](https://github.com/gizeasy)
+- [docs(AnimateIcon): review (#16)](https://github.com/consta-design-system/icons/commit/e7537434f0d61cf708b12168253e4434ef59be8a) - [@gizeasy](https://github.com/gizeasy)
+- [refactor: types and imports](https://github.com/consta-design-system/icons/commit/a0e755dd6bf6f2c02d125bd9162c7db423d1c24b) - [@gizeasy](https://github.com/gizeasy)
+- [chore: edit build config](https://github.com/consta-design-system/icons/commit/8e6e2d4f05bba6282e5010abdc34f19342609213) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.5.0 (07/06/2023)
 Добавили функционал анимирования переходов иконок:
 - `AnimateIconBase` - Компонент для создания анимированных трансформаций между не ограниченным количеством иконок.
