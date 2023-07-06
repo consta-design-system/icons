@@ -1,6 +1,6 @@
 {
   "name": "@consta/icons",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "scripts": {
     "postinstall": "husky install",
     "tsc-dry-run": "tsc --noEmit",
