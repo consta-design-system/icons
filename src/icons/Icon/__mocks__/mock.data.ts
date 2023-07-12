@@ -12,6 +12,7 @@ import { IconAllDone } from '../../IconAllDone';
 import { IconAltitude } from '../../IconAltitude';
 import { IconAmplitude } from '../../IconAmplitude';
 import { IconAmplitudes } from '../../IconAmplitudes';
+import { IconAreaChart } from '../../IconAreaChart';
 import { IconArrowDown } from '../../IconArrowDown';
 import { IconArrowFirst } from '../../IconArrowFirst';
 import { IconArrowLast } from '../../IconArrowLast';
@@ -96,6 +97,7 @@ import { IconCubeInterpretation } from '../../IconCubeInterpretation';
 import { IconCursorMouse } from '../../IconCursorMouse';
 import { IconData } from '../../IconData';
 import { IconDataNull } from '../../IconDataNull';
+import { IconDebug } from '../../IconDebug';
 import { IconDepth } from '../../IconDepth';
 import { IconDiamond } from '../../IconDiamond';
 import { IconDinosaur } from '../../IconDinosaur';
@@ -172,6 +174,7 @@ import { IconIncident } from '../../IconIncident';
 import { IconInclinometry } from '../../IconInclinometry';
 import { IconInComparison } from '../../IconInComparison';
 import { IconInfo } from '../../IconInfo';
+import { IconInfoCircle } from '../../IconInfoCircle';
 import { IconInstagramFilled } from '../../IconInstagramFilled';
 import { IconInstagramStroked } from '../../IconInstagramStroked';
 import { IconInterpretations } from '../../IconInterpretations';
@@ -387,6 +390,7 @@ import { IconWideScreenStroked } from '../../IconWideScreenStroked';
 import { IconWifi } from '../../IconWifi';
 import { IconWifiOff } from '../../IconWifiOff';
 import { IconWifiWarning } from '../../IconWifiWarning';
+import { IconWindow } from '../../IconWindow';
 import { IconWorldFilled } from '../../IconWorldFilled';
 import { IconWorldStroked } from '../../IconWorldStroked';
 import { IconWrench } from '../../IconWrench';
@@ -916,6 +920,15 @@ export const groupedIcons: Group[] = [
       IconWellPreset,
       IconWellPresetALT,
       IconWellTrajectory,
+    },
+  },
+  {
+    name: 'new',
+    icons: {
+      IconAreaChart,
+      IconDebug,
+      IconInfoCircle,
+      IconWindow,
     },
   },
 ];
