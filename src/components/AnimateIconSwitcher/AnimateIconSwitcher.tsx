@@ -1,12 +1,13 @@
 import { isNotNil } from '@consta/uikit/__internal__/src/utils/type-guards';
-import React, { forwardRef } from 'react';
+import { forwardRefWithAs } from '@consta/uikit/__internal__/src/utils/types/PropsWithAsAttributes';
+import React from 'react';
 
 import { AnimateIconBase } from '../AnimateIconBase';
 import { AnimateIconSwitcherProps } from './types';
 
-export const AnimateIconSwitcher = forwardRef<
-  HTMLSpanElement,
-  AnimateIconSwitcherProps
+export const AnimateIconSwitcher = forwardRefWithAs<
+  AnimateIconSwitcherProps,
+  'span'
 >((props, ref) => {
   const {
     startIcon,
