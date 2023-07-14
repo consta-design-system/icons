@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.7.0 (14/07/2023)
+Самое важное:
+- добавлена иконка `IconInfoCircle`
+- в иконки добавлено свойство `as`, для возможности указывать тэг родителя и все свойства относящиеся к этому тэгу
+
+---
+
+- [chore(deps-dev): bump stylelint from 10.1.0 to 15.10.1 (#21)](https://github.com/consta-design-system/icons/commit/a980cef6be3ea30125f5d26543c76defdc57932f) - [@dependabot[bot]](https://github.com/dependabot[bot])
+- [chore(deps-dev): bump semver from 7.3.7 to 7.5.2 (#18)](https://github.com/consta-design-system/icons/commit/827d5df86a1dde67809807088d39048d609d492e) - [@dependabot[bot]](https://github.com/dependabot[bot])
+- [feat(IconInfoCircle): added new icon (#22)](https://github.com/consta-design-system/icons/commit/02ad081a7d519814195532c22ecc42c12c6638f9) - [@N1MBER](https://github.com/N1MBER)
+- [feat(Icons): add as prop (#19)](https://github.com/consta-design-system/icons/commit/d35d3c1bd65bd784ac82493069eb2dcb5d81667a) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v0.6.0 (06/07/2023)
 Самое важное:
 - Добавили новые иконки `IconAreaChart`, `IconWindow`, `IconDebug`
