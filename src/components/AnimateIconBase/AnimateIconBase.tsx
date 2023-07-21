@@ -5,7 +5,7 @@ import { useRefs } from '@consta/uikit/useRefs';
 import React from 'react';
 import { Transition } from 'react-transition-group';
 
-import { iconPropSizeDefault } from '##/icons/Icon';
+import { cnIcon, iconPropSizeDefault } from '##/icons/Icon';
 import { cnMixAnimateIcon } from '##/mixs/MixAnimateIcon/MixAnimateIcon';
 import { cn } from '##/utils/bem';
 
@@ -21,7 +21,6 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
       icons,
       directions,
       transition = 200,
-      style,
       as = 'span',
       size = iconPropSizeDefault,
       view,
@@ -29,13 +28,13 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
     } = props;
     const refs = useRefs<HTMLElement>(icons.length);
 
-    const AnimateIcon = icons[0];
+    const SingleIcon = icons[0];
 
     const Tag = as as string;
 
     const innerRender =
       icons.length === 1 ? (
-        <AnimateIcon size={size} view={view} />
+        <SingleIcon size={size} view={view} />
       ) : (
         icons.map((Icon, index) => (
           <Transition
@@ -62,15 +61,14 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
     return (
       <Tag
         {...otherProps}
-        className={cnAnimateIconBase({ size }, [className])}
+        className={cnIcon({ size }, [cnAnimateIconBase(), className])}
+        ref={ref}
         style={{
           ['--animate-icon-transition' as string]: `${transition}ms`,
-          ['--direction-transform' as string]: `rotate(${
-            directions?.[activeIndex] || 0
-          }deg)`,
-          ...style,
+          ...(typeof directions?.[activeIndex] === 'number' && {
+            ['--animate-icon-direction' as string]: `rotate(${directions[activeIndex]}deg)`,
+          }),
         }}
-        ref={ref}
       >
         {innerRender}
       </Tag>
