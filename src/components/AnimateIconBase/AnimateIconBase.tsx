@@ -5,7 +5,7 @@ import { useRefs } from '@consta/uikit/useRefs';
 import React from 'react';
 import { Transition } from 'react-transition-group';
 
-import { iconPropSizeDefault } from '##/icons/Icon';
+import { cnIcon, iconPropSizeDefault } from '##/icons/Icon';
 import { cnMixAnimateIcon } from '##/mixs/MixAnimateIcon/MixAnimateIcon';
 import { cn } from '##/utils/bem';
 
@@ -62,7 +62,7 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
     return (
       <Tag
         {...otherProps}
-        className={cnAnimateIconBase({ size }, [className])}
+        className={cnAnimateIconBase(null, [className, cnIcon({ size, view })])}
         style={{
           ['--animate-icon-transition' as string]: `${transition}ms`,
           ['--direction-transform' as string]: `rotate(${
@@ -72,7 +72,7 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
         }}
         ref={ref}
       >
-        {innerRender}
+        <span className={cnAnimateIconBase('Wrapper')}>{innerRender}</span>
       </Tag>
     );
   },
