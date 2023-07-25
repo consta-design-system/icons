@@ -1,29 +1,8 @@
 .icons--AnimateIconBase {
   --animate-icon-transition-function: cubic-bezier(0.7, 0, 0.5, 1);
   --animate-icon-transition: 0.3s;
-  display: inline-flex;
-  width: var(--icon-size);
-  height: var(--icon-size);
   transition:
     transform var(--animate-icon-transition)
     var(--animate-icon-transition-function);
-  transform: var(--direction-transform);
-
-  &_size {
-    &_xs {
-      --icon-size: var(--graphics-size-xs);
-    }
-
-    &_s {
-      --icon-size: var(--graphics-size-s);
-    }
-
-    &_m {
-      --icon-size: var(--graphics-size-m);
-    }
-
-    &_l {
-      --icon-size: calc(var(--graphics-size-xl) - var(--graphics-size-xs));
-    }
-  }
+  transform: var(--animate-icon-direction);
 }

@@ -24,7 +24,11 @@ export const AnimateIconSwitcher = forwardRefWithAs<
       ref={ref}
       activeIndex={active ? 1 : 0}
       icons={[startIcon, endIcon].filter(isNotNil)}
-      directions={[startDirection, endDirection]}
+      directions={
+        startDirection || endDirection
+          ? [startDirection, endDirection]
+          : undefined
+      }
     />
   );
 });
