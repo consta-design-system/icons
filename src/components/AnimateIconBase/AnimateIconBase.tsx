@@ -24,6 +24,7 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
       as = 'span',
       size = iconPropSizeDefault,
       view,
+      style,
       ...otherProps
     } = props;
     const refs = useRefs<HTMLElement>(icons.length);
@@ -64,6 +65,7 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
         className={cnIcon({ size }, [cnAnimateIconBase(), className])}
         ref={ref}
         style={{
+          ...style,
           ['--animate-icon-transition' as string]: `${transition}ms`,
           ...(typeof directions?.[activeIndex] === 'number' && {
             ['--animate-icon-direction' as string]: `rotate(${directions[activeIndex]}deg)`,
