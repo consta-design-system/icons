@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.8.0 (25/07/2023)
+Самое важное:
+
+- Добавлена иконка `IconClear`.
+- Корневой `css` класс анимированных иконок теперь такой же, как и в статичных.
+
+---
+
+- [fix(AnimateIconBase): fixed style prop](https://github.com/consta-design-system/icons/commit/b5841b6d080689b9a21e2afec24772068a89a8db) - [@gizeasy](https://github.com/gizeasy)
+- [chore(deps): bump word-wrap from 1.2.3 to 1.2.4 (#23)](https://github.com/consta-design-system/icons/commit/945ff8198d00e0ff5a283689e7e7899fdd90504f) - [@dependabot](https://github.com/dependabot[bot])
+- [feat(IconClear): add new Icon (#26)](https://github.com/consta-design-system/icons/commit/9b650dc33672b97181ea1edc6c15f8d47cc99c36) - [@N1MBER](https://github.com/N1MBER)
+- [feat(AnimateIconBase): rename root css class (#25)](https://github.com/consta-design-system/icons/commit/78290d94553df11b862482c8ead884a49d3cbfa0) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.7.0 (14/07/2023)
 Самое важное:
 - добавлена иконка `IconInfoCircle`
