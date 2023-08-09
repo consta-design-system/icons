@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconPrinterStrokedSizeM from './IconPrinterStroked_size_m';
-import IconPrinterStrokedSizeS from './IconPrinterStroked_size_s';
-import IconPrinterStrokedSizeXs from './IconPrinterStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconPrinterStroked = createIcon({
-  l: IconPrinterStrokedSizeM,
-  m: IconPrinterStrokedSizeM,
-  s: IconPrinterStrokedSizeS,
-  xs: IconPrinterStrokedSizeXs,
-  name: 'IconPrinterStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconPrinterStroked = createIconInner(props, svg);

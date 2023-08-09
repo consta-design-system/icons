@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import Icon3DMapSizeS from './Icon3DMap_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const Icon3DMap = createIcon({
-  l: Icon3DMapSizeS,
-  m: Icon3DMapSizeS,
-  s: Icon3DMapSizeS,
-  xs: Icon3DMapSizeS,
-  name: 'Icon3DMap',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const Icon3DMap = createIconInner(props, svg);

@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconDocAddSizeL from './IconDocAdd_size_l';
-import IconDocAddSizeM from './IconDocAdd_size_m';
-import IconDocAddSizeS from './IconDocAdd_size_s';
-import IconDocAddSizeXs from './IconDocAdd_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconDocAdd = createIcon({
-  l: IconDocAddSizeL,
-  m: IconDocAddSizeM,
-  s: IconDocAddSizeS,
-  xs: IconDocAddSizeXs,
-  name: 'IconDocAdd',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconDocAdd = createIconInner(props, svg);

@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconToolsDiameterSizeS from './IconToolsDiameter_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconToolsDiameter = createIcon({
-  l: IconToolsDiameterSizeS,
-  m: IconToolsDiameterSizeS,
-  s: IconToolsDiameterSizeS,
-  xs: IconToolsDiameterSizeS,
-  name: 'IconToolsDiameter',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconToolsDiameter = createIconInner(props, svg);

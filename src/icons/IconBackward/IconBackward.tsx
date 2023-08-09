@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconBackwardSizeM from './IconBackward_size_m';
-import IconBackwardSizeS from './IconBackward_size_s';
-import IconBackwardSizeXs from './IconBackward_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconBackward = createIcon({
-  l: IconBackwardSizeM,
-  m: IconBackwardSizeM,
-  s: IconBackwardSizeS,
-  xs: IconBackwardSizeXs,
-  name: 'IconBackward',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconBackward = createIconInner(props, svg);

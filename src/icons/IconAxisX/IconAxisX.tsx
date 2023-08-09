@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconAxisXSizeS from './IconAxisX_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconAxisX = createIcon({
-  l: IconAxisXSizeS,
-  m: IconAxisXSizeS,
-  s: IconAxisXSizeS,
-  xs: IconAxisXSizeS,
-  name: 'IconAxisX',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconAxisX = createIconInner(props, svg);

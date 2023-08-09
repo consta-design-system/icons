@@ -3,11 +3,7 @@ import { SVGProps } from 'react';
 
 const IconAreaChartSizeXs = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M1 3.25L3 5.25L7.25 1L9.5 3.25H11V11H1V3.25ZM10 8.07692H9.5L7.25 6L3 9.92308L2 9V5.66421L3 6.66421L7.25 2.41421L9.08579 4.25H10V8.07692Z"
-    />
+    <path d="M10.5 8.577V10.5H3.112l.227-.21L7.25 6.68l1.91 1.764.145.133H10.5ZM2.66 10.29l.228.21H1.5V9.219l.16.148 1 .923Z" />
   </svg>
 );
 export default IconAreaChartSizeXs;

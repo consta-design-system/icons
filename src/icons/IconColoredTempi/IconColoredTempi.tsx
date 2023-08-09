@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredTempiSizeS from './IconColoredTempi_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredTempi = createIcon({
-  l: IconColoredTempiSizeS,
-  m: IconColoredTempiSizeS,
-  s: IconColoredTempiSizeS,
-  xs: IconColoredTempiSizeS,
-  name: 'IconColoredTempi',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredTempi = createIconInner(props, svg);

@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconDragSizeM from './IconDrag_size_m';
-import IconDragSizeS from './IconDrag_size_s';
-import IconDragSizeXs from './IconDrag_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconDrag = createIcon({
-  l: IconDragSizeM,
-  m: IconDragSizeM,
-  s: IconDragSizeS,
-  xs: IconDragSizeXs,
-  name: 'IconDrag',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconDrag = createIconInner(props, svg);

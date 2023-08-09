@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconFolder3DCubeSizeS from './IconFolder3DCube_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconFolder3DCube = createIcon({
-  l: IconFolder3DCubeSizeS,
-  m: IconFolder3DCubeSizeS,
-  s: IconFolder3DCubeSizeS,
-  xs: IconFolder3DCubeSizeS,
-  name: 'IconFolder3DCube',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconFolder3DCube = createIconInner(props, svg);

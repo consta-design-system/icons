@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconDrillingPartLeftStrokedSizeM from './IconDrillingPartLeftStroked_size_m';
-import IconDrillingPartLeftStrokedSizeS from './IconDrillingPartLeftStroked_size_s';
-import IconDrillingPartLeftStrokedSizeXs from './IconDrillingPartLeftStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconDrillingPartLeftStroked = createIcon({
-  l: IconDrillingPartLeftStrokedSizeM,
-  m: IconDrillingPartLeftStrokedSizeM,
-  s: IconDrillingPartLeftStrokedSizeS,
-  xs: IconDrillingPartLeftStrokedSizeXs,
-  name: 'IconDrillingPartLeftStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconDrillingPartLeftStroked = createIconInner(props, svg);

@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconLentaStrokedSizeM from './IconLentaStroked_size_m';
-import IconLentaStrokedSizeS from './IconLentaStroked_size_s';
-import IconLentaStrokedSizeXs from './IconLentaStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconLentaStroked = createIcon({
-  l: IconLentaStrokedSizeM,
-  m: IconLentaStrokedSizeM,
-  s: IconLentaStrokedSizeS,
-  xs: IconLentaStrokedSizeXs,
-  name: 'IconLentaStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconLentaStroked = createIconInner(props, svg);

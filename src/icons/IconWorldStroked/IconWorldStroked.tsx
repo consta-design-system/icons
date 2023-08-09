@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconWorldStrokedSizeL from './IconWorldStroked_size_l';
-import IconWorldStrokedSizeM from './IconWorldStroked_size_m';
-import IconWorldStrokedSizeS from './IconWorldStroked_size_s';
-import IconWorldStrokedSizeXs from './IconWorldStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconWorldStroked = createIcon({
-  l: IconWorldStrokedSizeL,
-  m: IconWorldStrokedSizeM,
-  s: IconWorldStrokedSizeS,
-  xs: IconWorldStrokedSizeXs,
-  name: 'IconWorldStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconWorldStroked = createIconInner(props, svg);

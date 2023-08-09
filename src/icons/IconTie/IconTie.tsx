@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconTieSizeM from './IconTie_size_m';
-import IconTieSizeS from './IconTie_size_s';
-import IconTieSizeXs from './IconTie_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconTie = createIcon({
-  l: IconTieSizeM,
-  m: IconTieSizeM,
-  s: IconTieSizeS,
-  xs: IconTieSizeXs,
-  name: 'IconTie',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconTie = createIconInner(props, svg);

@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconKernFilledSizeL from './IconKernFilled_size_l';
-import IconKernFilledSizeM from './IconKernFilled_size_m';
-import IconKernFilledSizeS from './IconKernFilled_size_s';
-import IconKernFilledSizeXs from './IconKernFilled_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconKernFilled = createIcon({
-  l: IconKernFilledSizeL,
-  m: IconKernFilledSizeM,
-  s: IconKernFilledSizeS,
-  xs: IconKernFilledSizeXs,
-  name: 'IconKernFilled',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconKernFilled = createIconInner(props, svg);

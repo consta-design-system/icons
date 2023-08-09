@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconGisAttributesSizeS from './IconGisAttributes_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconGisAttributes = createIcon({
-  l: IconGisAttributesSizeS,
-  m: IconGisAttributesSizeS,
-  s: IconGisAttributesSizeS,
-  xs: IconGisAttributesSizeS,
-  name: 'IconGisAttributes',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconGisAttributes = createIconInner(props, svg);

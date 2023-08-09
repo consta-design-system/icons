@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconWideScreenFilledSizeM from './IconWideScreenFilled_size_m';
-import IconWideScreenFilledSizeS from './IconWideScreenFilled_size_s';
-import IconWideScreenFilledSizeXs from './IconWideScreenFilled_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconWideScreenFilled = createIcon({
-  l: IconWideScreenFilledSizeM,
-  m: IconWideScreenFilledSizeM,
-  s: IconWideScreenFilledSizeS,
-  xs: IconWideScreenFilledSizeXs,
-  name: 'IconWideScreenFilled',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconWideScreenFilled = createIconInner(props, svg);

@@ -8,7 +8,7 @@ import {
   iconPropSizeDefault,
   iconPropView,
   iconPropViewDefault,
-} from '../Icon';
+} from '..';
 
 const Variants = () => {
   const size = useSelect('size', iconPropSize, iconPropSizeDefault);

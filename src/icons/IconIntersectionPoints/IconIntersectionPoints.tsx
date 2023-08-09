@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconIntersectionPointsSizeS from './IconIntersectionPoints_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconIntersectionPoints = createIcon({
-  l: IconIntersectionPointsSizeS,
-  m: IconIntersectionPointsSizeS,
-  s: IconIntersectionPointsSizeS,
-  xs: IconIntersectionPointsSizeS,
-  name: 'IconIntersectionPoints',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconIntersectionPoints = createIconInner(props, svg);

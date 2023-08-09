@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconWellAttributesSizeS from './IconWellAttributes_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconWellAttributes = createIcon({
-  l: IconWellAttributesSizeS,
-  m: IconWellAttributesSizeS,
-  s: IconWellAttributesSizeS,
-  xs: IconWellAttributesSizeS,
-  name: 'IconWellAttributes',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconWellAttributes = createIconInner(props, svg);

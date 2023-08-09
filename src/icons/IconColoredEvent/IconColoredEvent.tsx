@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredEventSizeXs from './IconColoredEvent_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredEvent = createIcon({
-  l: IconColoredEventSizeXs,
-  m: IconColoredEventSizeXs,
-  s: IconColoredEventSizeXs,
-  xs: IconColoredEventSizeXs,
-  name: 'IconColoredEvent',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredEvent = createIconInner(props, svg);

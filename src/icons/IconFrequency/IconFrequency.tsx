@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconFrequencySizeS from './IconFrequency_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconFrequency = createIcon({
-  l: IconFrequencySizeS,
-  m: IconFrequencySizeS,
-  s: IconFrequencySizeS,
-  xs: IconFrequencySizeS,
-  name: 'IconFrequency',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconFrequency = createIconInner(props, svg);

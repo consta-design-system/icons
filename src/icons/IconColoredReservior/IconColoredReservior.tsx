@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredReserviorSizeS from './IconColoredReservior_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredReservior = createIcon({
-  l: IconColoredReserviorSizeS,
-  m: IconColoredReserviorSizeS,
-  s: IconColoredReserviorSizeS,
-  xs: IconColoredReserviorSizeS,
-  name: 'IconColoredReservior',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredReservior = createIconInner(props, svg);

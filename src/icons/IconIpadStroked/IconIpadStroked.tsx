@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconIpadStrokedSizeM from './IconIpadStroked_size_m';
-import IconIpadStrokedSizeS from './IconIpadStroked_size_s';
-import IconIpadStrokedSizeXs from './IconIpadStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconIpadStroked = createIcon({
-  l: IconIpadStrokedSizeM,
-  m: IconIpadStrokedSizeM,
-  s: IconIpadStrokedSizeS,
-  xs: IconIpadStrokedSizeXs,
-  name: 'IconIpadStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconIpadStroked = createIconInner(props, svg);

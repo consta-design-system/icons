@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSunSizeM from './IconSun_size_m';
-import IconSunSizeS from './IconSun_size_s';
-import IconSunSizeXs from './IconSun_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSun = createIcon({
-  l: IconSunSizeM,
-  m: IconSunSizeM,
-  s: IconSunSizeS,
-  xs: IconSunSizeXs,
-  name: 'IconSun',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSun = createIconInner(props, svg);

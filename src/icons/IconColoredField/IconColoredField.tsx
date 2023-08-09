@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredFieldSizeXs from './IconColoredField_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredField = createIcon({
-  l: IconColoredFieldSizeXs,
-  m: IconColoredFieldSizeXs,
-  s: IconColoredFieldSizeXs,
-  xs: IconColoredFieldSizeXs,
-  name: 'IconColoredField',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredField = createIconInner(props, svg);

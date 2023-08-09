@@ -1,13 +1,6 @@
-import { createIcon } from '../Icon';
-import IconConfluenceSizeM from './IconConfluence_size_m';
-import IconConfluenceSizeS from './IconConfluence_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconConfluence = createIcon({
-  l: IconConfluenceSizeM,
-  m: IconConfluenceSizeM,
-  s: IconConfluenceSizeS,
-  xs: IconConfluenceSizeM,
-  name: 'IconConfluence',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconConfluence = createIconInner(props, svg);

@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconGradientsSizeM from './IconGradients_size_m';
-import IconGradientsSizeS from './IconGradients_size_s';
-import IconGradientsSizeXs from './IconGradients_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconGradients = createIcon({
-  l: IconGradientsSizeM,
-  m: IconGradientsSizeM,
-  s: IconGradientsSizeS,
-  xs: IconGradientsSizeXs,
-  name: 'IconGradients',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconGradients = createIconInner(props, svg);

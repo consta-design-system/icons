@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconAlignJustifySizeM from './IconAlignJustify_size_m';
-import IconAlignJustifySizeS from './IconAlignJustify_size_s';
-import IconAlignJustifySizeXs from './IconAlignJustify_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconAlignJustify = createIcon({
-  l: IconAlignJustifySizeM,
-  m: IconAlignJustifySizeM,
-  s: IconAlignJustifySizeS,
-  xs: IconAlignJustifySizeXs,
-  name: 'IconAlignJustify',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconAlignJustify = createIconInner(props, svg);

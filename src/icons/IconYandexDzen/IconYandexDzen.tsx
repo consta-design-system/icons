@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconYandexDzenSizeM from './IconYandexDzen_size_m';
-import IconYandexDzenSizeS from './IconYandexDzen_size_s';
-import IconYandexDzenSizeXs from './IconYandexDzen_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconYandexDzen = createIcon({
-  l: IconYandexDzenSizeM,
-  m: IconYandexDzenSizeM,
-  s: IconYandexDzenSizeS,
-  xs: IconYandexDzenSizeXs,
-  name: 'IconYandexDzen',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconYandexDzen = createIconInner(props, svg);

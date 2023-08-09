@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconOilSaturationMapSizeS from './IconOilSaturationMap_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconOilSaturationMap = createIcon({
-  l: IconOilSaturationMapSizeS,
-  m: IconOilSaturationMapSizeS,
-  s: IconOilSaturationMapSizeS,
-  xs: IconOilSaturationMapSizeS,
-  name: 'IconOilSaturationMap',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconOilSaturationMap = createIconInner(props, svg);

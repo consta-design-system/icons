@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSortUpCenterSizeM from './IconSortUpCenter_size_m';
-import IconSortUpCenterSizeS from './IconSortUpCenter_size_s';
-import IconSortUpCenterSizeXs from './IconSortUpCenter_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSortUpCenter = createIcon({
-  l: IconSortUpCenterSizeM,
-  m: IconSortUpCenterSizeM,
-  s: IconSortUpCenterSizeS,
-  xs: IconSortUpCenterSizeXs,
-  name: 'IconSortUpCenter',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSortUpCenter = createIconInner(props, svg);

@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredEconomicsSizeS from './IconColoredEconomics_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredEconomics = createIcon({
-  l: IconColoredEconomicsSizeS,
-  m: IconColoredEconomicsSizeS,
-  s: IconColoredEconomicsSizeS,
-  xs: IconColoredEconomicsSizeS,
-  name: 'IconColoredEconomics',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredEconomics = createIconInner(props, svg);

@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconTableSizeM from './IconTable_size_m';
-import IconTableSizeS from './IconTable_size_s';
-import IconTableSizeXs from './IconTable_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconTable = createIcon({
-  l: IconTableSizeM,
-  m: IconTableSizeM,
-  s: IconTableSizeS,
-  xs: IconTableSizeXs,
-  name: 'IconTable',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconTable = createIconInner(props, svg);

@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconContourSizeS from './IconContour_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconContour = createIcon({
-  l: IconContourSizeS,
-  m: IconContourSizeS,
-  s: IconContourSizeS,
-  xs: IconContourSizeS,
-  name: 'IconContour',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconContour = createIconInner(props, svg);

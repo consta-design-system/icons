@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredGasSizeS from './IconColoredGas_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredGas = createIcon({
-  l: IconColoredGasSizeS,
-  m: IconColoredGasSizeS,
-  s: IconColoredGasSizeS,
-  xs: IconColoredGasSizeS,
-  name: 'IconColoredGas',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredGas = createIconInner(props, svg);

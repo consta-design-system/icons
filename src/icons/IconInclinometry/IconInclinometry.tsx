@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconInclinometrySizeS from './IconInclinometry_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconInclinometry = createIcon({
-  l: IconInclinometrySizeS,
-  m: IconInclinometrySizeS,
-  s: IconInclinometrySizeS,
-  xs: IconInclinometrySizeS,
-  name: 'IconInclinometry',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconInclinometry = createIconInner(props, svg);

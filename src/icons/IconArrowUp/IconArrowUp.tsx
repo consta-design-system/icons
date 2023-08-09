@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconArrowUpSizeM from './IconArrowUp_size_m';
-import IconArrowUpSizeS from './IconArrowUp_size_s';
-import IconArrowUpSizeXs from './IconArrowUp_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconArrowUp = createIcon({
-  l: IconArrowUpSizeM,
-  m: IconArrowUpSizeM,
-  s: IconArrowUpSizeS,
-  xs: IconArrowUpSizeXs,
-  name: 'IconArrowUp',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconArrowUp = createIconInner(props, svg);

@@ -6,7 +6,7 @@ const IconAreaChartSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M3.8 6.95L1 4.15V15H15V4.15H12.9L9.75 1L3.8 6.95ZM13 10.1154V6.15H12.0716L9.75 3.82843L3.8 9.77843L3 8.97843V12.0934L3.8 12.8846L9.75 7L12.9 10.1154H13Z"
+      d="M3.8 6.95 1 4.15V15h14V4.15h-2.1L9.75 1 3.8 6.95Zm9.2 3.165V6.15h-.928L9.75 3.828 3.8 9.778l-.8-.8v3.115l.8.792L9.75 7l3.15 3.115h.1Z"
     />
   </svg>
 );

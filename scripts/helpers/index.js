@@ -154,6 +154,7 @@ const crateSvgComponentsMap = (sizesPath) => {
 
 const createSvgComponent = async ({
   componentName,
+  fileName,
   pathOutdir,
   templatePath,
   sizes: sizesProp,
@@ -193,9 +194,29 @@ const createSvgComponent = async ({
     .replace(/#sizeS#/g, sizesMap.s)
     .replace(/#sizeXs#/g, sizesMap.xs);
 
-  const jsPatch = `${pathOutdir}/${componentName}.tsx`;
+  const jsPatch = `${pathOutdir}/${fileName}.tsx`;
   await ensureDir(dirname(jsPatch));
   await writeFile(jsPatch, jsCode);
+};
+
+const createTypesForLazyIcons = async (componentsNames, src) => {
+  const text = `export type LazyIconPropName = '${componentsNames.join(
+    `' | '`,
+  )}';`;
+  await writeFile(
+    join(src, 'components', 'LazyIcon', `typeLazyIconPropName.ts`),
+    text,
+  );
+};
+
+const createNamesForLazyIcons = async (componentsNames, src) => {
+  const text = `import { LazyIconPropName } from '../typeLazyIconPropName';\n\nexport const iconNames: LazyIconPropName[] = [\n  '${componentsNames.join(
+    `',\n  '`,
+  )}',\n];\n`;
+  await writeFile(
+    join(src, 'components', 'LazyIcon', '__stand__', 'iconNames.ts'),
+    text,
+  );
 };
 
 const iconsTransformed = async (ignore, src) => {
@@ -287,6 +308,25 @@ const iconsTransformed = async (ignore, src) => {
       await createSvgComponent({
         sizes,
         componentName,
+        fileName: `props`,
+        pathOutdir: `./src/icons/${componentName}/`,
+        templatePath: './scripts/templates/IconProps.js.template',
+        hasGradient,
+        color,
+      });
+      await createSvgComponent({
+        sizes,
+        componentName,
+        fileName: `svg`,
+        pathOutdir: `./src/icons/${componentName}/`,
+        templatePath: './scripts/templates/IconSvg.js.template',
+        hasGradient,
+        color,
+      });
+      await createSvgComponent({
+        sizes,
+        componentName,
+        fileName: componentName,
         pathOutdir: `./src/icons/${componentName}/`,
         templatePath: './scripts/templates/Icon.js.template',
         hasGradient,
@@ -295,6 +335,8 @@ const iconsTransformed = async (ignore, src) => {
     }
   });
   await createIconsMockData(svgComponents, src);
+  await createTypesForLazyIcons(Object.keys(svgComponents), src);
+  await createNamesForLazyIcons(Object.keys(svgComponents), src);
 };
 
 const copyAssets = async (ignore, src, distPaths) => {

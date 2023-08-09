@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconTreeSizeM from './IconTree_size_m';
-import IconTreeSizeS from './IconTree_size_s';
-import IconTreeSizeXs from './IconTree_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconTree = createIcon({
-  l: IconTreeSizeM,
-  m: IconTreeSizeM,
-  s: IconTreeSizeS,
-  xs: IconTreeSizeXs,
-  name: 'IconTree',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconTree = createIconInner(props, svg);

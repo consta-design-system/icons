@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconIpadFilledSizeM from './IconIpadFilled_size_m';
-import IconIpadFilledSizeS from './IconIpadFilled_size_s';
-import IconIpadFilledSizeXs from './IconIpadFilled_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconIpadFilled = createIcon({
-  l: IconIpadFilledSizeM,
-  m: IconIpadFilledSizeM,
-  s: IconIpadFilledSizeS,
-  xs: IconIpadFilledSizeXs,
-  name: 'IconIpadFilled',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconIpadFilled = createIconInner(props, svg);

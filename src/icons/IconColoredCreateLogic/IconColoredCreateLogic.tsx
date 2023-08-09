@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredCreateLogicSizeS from './IconColoredCreateLogic_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredCreateLogic = createIcon({
-  l: IconColoredCreateLogicSizeS,
-  m: IconColoredCreateLogicSizeS,
-  s: IconColoredCreateLogicSizeS,
-  xs: IconColoredCreateLogicSizeS,
-  name: 'IconColoredCreateLogic',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredCreateLogic = createIconInner(props, svg);

@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconFractureBlueSizeS from './IconFractureBlue_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconFractureBlue = createIcon({
-  l: IconFractureBlueSizeS,
-  m: IconFractureBlueSizeS,
-  s: IconFractureBlueSizeS,
-  xs: IconFractureBlueSizeS,
-  name: 'IconFractureBlue',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconFractureBlue = createIconInner(props, svg);

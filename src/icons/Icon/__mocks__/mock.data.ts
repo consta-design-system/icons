@@ -48,6 +48,7 @@ import { IconCards } from '../../IconCards';
 import { IconChatFilled } from '../../IconChatFilled';
 import { IconChatStroked } from '../../IconChatStroked';
 import { IconCheck } from '../../IconCheck';
+import { IconClear } from '../../IconClear';
 import { IconClose } from '../../IconClose';
 import { IconCollapse } from '../../IconCollapse';
 import { IconColored2D } from '../../IconColored2D';
@@ -398,7 +399,7 @@ import { IconYandexDzen } from '../../IconYandexDzen';
 import { IconYoutube } from '../../IconYoutube';
 import { IconZoneBlue } from '../../IconZoneBlue';
 import { IconZoneOrange } from '../../IconZoneOrange';
-import { IconComponent } from '../Icon';
+import { IconComponent } from '..';
 
 type Group = {
   name: string;
@@ -418,8 +419,8 @@ export const groupedIcons: Group[] = [
       IconAxisZ,
       IconDepth,
       IconDots,
-      IconFractureBlue,
       IconFractureFolder,
+      IconFractureBlue,
       IconFractureGreen,
       IconFractureMultiple,
       IconFractureOrange,
@@ -483,6 +484,7 @@ export const groupedIcons: Group[] = [
       IconArrowUndone,
       IconCancel,
       IconCheck,
+      IconClear,
       IconClose,
       IconCopy,
       IconDownload,
@@ -510,10 +512,21 @@ export const groupedIcons: Group[] = [
     },
   },
   {
+    name: 'indices',
+    icons: {
+      IconAlert,
+      IconHealth,
+      IconInfo,
+      IconQuestion,
+      IconRouble,
+      IconWarning,
+    },
+  },
+  {
     name: 'formatting',
     icons: {
-      IconAlignBlocksRight,
       IconAlignBlocksLeft,
+      IconAlignBlocksRight,
       IconCards,
       IconCollapse,
       IconExpand,
@@ -534,17 +547,6 @@ export const groupedIcons: Group[] = [
       IconPanelTop,
       IconShape,
       IconTable2,
-    },
-  },
-  {
-    name: 'indices',
-    icons: {
-      IconAlert,
-      IconHealth,
-      IconInfo,
-      IconQuestion,
-      IconRouble,
-      IconWarning,
     },
   },
   {
@@ -590,10 +592,19 @@ export const groupedIcons: Group[] = [
       IconSectionType4,
       IconSectionType5,
       IconSectionsConnected,
-      IconSeismic3D,
       IconSeismics,
+      IconSeismic3D,
       IconTemperature,
       IconWellConnection,
+    },
+  },
+  {
+    name: 'new',
+    icons: {
+      IconAreaChart,
+      IconDebug,
+      IconInfoCircle,
+      IconWindow,
     },
   },
   {
@@ -920,15 +931,6 @@ export const groupedIcons: Group[] = [
       IconWellPreset,
       IconWellPresetALT,
       IconWellTrajectory,
-    },
-  },
-  {
-    name: 'new',
-    icons: {
-      IconAreaChart,
-      IconDebug,
-      IconInfoCircle,
-      IconWindow,
     },
   },
 ];

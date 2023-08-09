@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconCameraSizeL from './IconCamera_size_l';
-import IconCameraSizeM from './IconCamera_size_m';
-import IconCameraSizeS from './IconCamera_size_s';
-import IconCameraSizeXs from './IconCamera_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconCamera = createIcon({
-  l: IconCameraSizeL,
-  m: IconCameraSizeM,
-  s: IconCameraSizeS,
-  xs: IconCameraSizeXs,
-  name: 'IconCamera',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconCamera = createIconInner(props, svg);

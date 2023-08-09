@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconFractureGreenSizeS from './IconFractureGreen_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconFractureGreen = createIcon({
-  l: IconFractureGreenSizeS,
-  m: IconFractureGreenSizeS,
-  s: IconFractureGreenSizeS,
-  xs: IconFractureGreenSizeS,
-  name: 'IconFractureGreen',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconFractureGreen = createIconInner(props, svg);

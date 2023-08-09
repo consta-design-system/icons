@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconHelmetSizeM from './IconHelmet_size_m';
-import IconHelmetSizeS from './IconHelmet_size_s';
-import IconHelmetSizeXs from './IconHelmet_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconHelmet = createIcon({
-  l: IconHelmetSizeM,
-  m: IconHelmetSizeM,
-  s: IconHelmetSizeS,
-  xs: IconHelmetSizeXs,
-  name: 'IconHelmet',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconHelmet = createIconInner(props, svg);

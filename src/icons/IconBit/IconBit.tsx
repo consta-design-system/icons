@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconBitSizeL from './IconBit_size_l';
-import IconBitSizeM from './IconBit_size_m';
-import IconBitSizeS from './IconBit_size_s';
-import IconBitSizeXs from './IconBit_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconBit = createIcon({
-  l: IconBitSizeL,
-  m: IconBitSizeM,
-  s: IconBitSizeS,
-  xs: IconBitSizeXs,
-  name: 'IconBit',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconBit = createIconInner(props, svg);

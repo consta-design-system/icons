@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconPrinterFilledSizeM from './IconPrinterFilled_size_m';
-import IconPrinterFilledSizeS from './IconPrinterFilled_size_s';
-import IconPrinterFilledSizeXs from './IconPrinterFilled_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconPrinterFilled = createIcon({
-  l: IconPrinterFilledSizeM,
-  m: IconPrinterFilledSizeM,
-  s: IconPrinterFilledSizeS,
-  xs: IconPrinterFilledSizeXs,
-  name: 'IconPrinterFilled',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconPrinterFilled = createIconInner(props, svg);

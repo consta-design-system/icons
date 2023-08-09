@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconMapStrokedSizeL from './IconMapStroked_size_l';
-import IconMapStrokedSizeM from './IconMapStroked_size_m';
-import IconMapStrokedSizeS from './IconMapStroked_size_s';
-import IconMapStrokedSizeXs from './IconMapStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconMapStroked = createIcon({
-  l: IconMapStrokedSizeL,
-  m: IconMapStrokedSizeM,
-  s: IconMapStrokedSizeS,
-  xs: IconMapStrokedSizeXs,
-  name: 'IconMapStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconMapStroked = createIconInner(props, svg);

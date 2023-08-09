@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconCrownSizeM from './IconCrown_size_m';
-import IconCrownSizeS from './IconCrown_size_s';
-import IconCrownSizeXs from './IconCrown_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconCrown = createIcon({
-  l: IconCrownSizeM,
-  m: IconCrownSizeM,
-  s: IconCrownSizeS,
-  xs: IconCrownSizeXs,
-  name: 'IconCrown',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconCrown = createIconInner(props, svg);

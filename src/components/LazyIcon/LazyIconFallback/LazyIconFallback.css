@@ -1,0 +1,9 @@
+.icons--LazyIconFallback_animate {
+  animation: iconsLazyIconFallbackAnimate 1s ease infinite;
+}
+
+@keyframes iconsLazyIconFallbackAnimate {
+  50% {
+    transform: scale(0.5);
+  }
+}

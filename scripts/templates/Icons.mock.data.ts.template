@@ -1,5 +1,5 @@
 #imports#
-import { IconComponent } from '../Icon';
+import { IconComponent } from '..';
 
 type Group = {
   name: string;

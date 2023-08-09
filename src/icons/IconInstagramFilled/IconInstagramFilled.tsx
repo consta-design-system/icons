@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconInstagramFilledSizeM from './IconInstagramFilled_size_m';
-import IconInstagramFilledSizeS from './IconInstagramFilled_size_s';
-import IconInstagramFilledSizeXs from './IconInstagramFilled_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconInstagramFilled = createIcon({
-  l: IconInstagramFilledSizeM,
-  m: IconInstagramFilledSizeM,
-  s: IconInstagramFilledSizeS,
-  xs: IconInstagramFilledSizeXs,
-  name: 'IconInstagramFilled',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconInstagramFilled = createIconInner(props, svg);
