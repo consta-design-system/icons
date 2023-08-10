@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.9.0 (10/08/2023)
+Самое важное:
+
+- Добавили `LazyIcon` - иконку с отложенной (ленивой) загрузкой.
+- Добавили `createLazyIcon` - функцию, которая возвращает иконку с отложенной загрузкой и интерфейсом обычной иконки.
+
+---
+
+- [feat(LazyIcon): add LazyIcon and createLazyIcon (#28)](https://github.com/consta-design-system/icons/commit/a3950e2f3afb5324f1d26d602113f673c6a62fa2) - [@gizeasy](https://github.com/gizeasy)
+- [chore: edit deploy config and codeowners (#27)](https://github.com/consta-design-system/icons/commit/0e961bef6ed4fe4f38593e771dcc7e5921c0b2fc) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.8.0 (25/07/2023)
 Самое важное:
 
