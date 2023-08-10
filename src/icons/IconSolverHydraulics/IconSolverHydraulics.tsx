@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSolverHydraulicsSizeM from './IconSolverHydraulics_size_m';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSolverHydraulics = createIcon({
-  l: IconSolverHydraulicsSizeM,
-  m: IconSolverHydraulicsSizeM,
-  s: IconSolverHydraulicsSizeM,
-  xs: IconSolverHydraulicsSizeM,
-  name: 'IconSolverHydraulics',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSolverHydraulics = createIconInner(props, svg);

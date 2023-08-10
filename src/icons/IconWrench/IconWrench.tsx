@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconWrenchSizeM from './IconWrench_size_m';
-import IconWrenchSizeS from './IconWrench_size_s';
-import IconWrenchSizeXs from './IconWrench_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconWrench = createIcon({
-  l: IconWrenchSizeM,
-  m: IconWrenchSizeM,
-  s: IconWrenchSizeS,
-  xs: IconWrenchSizeXs,
-  name: 'IconWrench',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconWrench = createIconInner(props, svg);

@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconToolsRightTopSizeS from './IconToolsRightTop_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconToolsRightTop = createIcon({
-  l: IconToolsRightTopSizeS,
-  m: IconToolsRightTopSizeS,
-  s: IconToolsRightTopSizeS,
-  xs: IconToolsRightTopSizeS,
-  name: 'IconToolsRightTop',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconToolsRightTop = createIconInner(props, svg);

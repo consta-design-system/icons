@@ -1,0 +1,70 @@
+import { MdxMenu } from '@consta/stand';
+import {
+  LazyIconExample,
+  CreateLazyIconExample,
+} from './examples/LazyIconExample/LazyIconExample';
+
+```tsx
+import { LazyIcon } from '@consta/icons/IconsProvider';
+```
+
+<MdxMenu>
+
+- [Использование](#использование)
+- [Свойства](#свойства)
+- [createLazyIcon](#createLazyIcon)
+
+</MdxMenu>
+
+Иконка с отложенной (ленивой) загрузкой. Построена на [`React.lazy`](https://react.dev/reference/react/lazy).
+Особенность компонента состоит в том, что иконки не будут попадать в главный бандл,
+а подгрузятся по мере их появления на странице. Каждая иконка будет лежать в отдельном чанке.
+
+> Для конкретной работы в сборщике проекта должен быть настроен [`Module Federation`](https://webpack.js.org/concepts/module-federation/).
+> Если используете [`Create React App`](https://create-react-app.dev/docs/getting-started), то все будет работать из коробки.
+
+## Использование
+
+```tsx
+export const LazyIconExample = () => {
+  return <LazyIcon name="IconAdd" />;
+};
+```
+
+<LazyIconExample />
+
+## Свойства
+
+| Свойство     | Тип                                                                                                           | По умолчанию | Описание                                                         |
+| ------------ | ------------------------------------------------------------------------------------------------------------- | ------------ | ---------------------------------------------------------------- |
+| `name`       | `string`                                                                                                      | -            | Имя иконки                                                       |
+| `size?`      | `'xs'`, `'s'`, `'m'`, `'l'`                                                                                   | `'m'`        | Размер                                                           |
+| `view?`      | `'alert'`, `'brand'`, `'ghost'`, `'link'`, `'primary'`, `'secondary'`, `'success'`, `'warning'`, `'disabled'` | -            | Вид иконки                                                       |
+| `as`         | `keyof JSX.IntrinsicElements`                                                                                 | `'span'`     | HTML-тег, в виде которого этот компонент будет представлен в DOM |
+| `className?` | `string`                                                                                                      | -            | Дополнительный CSS-класс                                         |
+| `ref?`       | `React.Ref<HTMLSpanElement>`                                                                                  | -            | Ссылка на корневой DOM-элемент компонента                        |
+
+## createLazyIcon
+
+Функция возвращает иконку с отложенной загрузкой и интерфейсом обычной,
+для вставки в другие компоненты кита.
+
+```tsx
+type createLazyIcon = (name: LazyIconPropName): IconComponent
+```
+
+### Пример
+
+```tsx
+const Icon = createLazyIcon('IconAdd');
+
+export const CreateLazyIconExample = () => {
+  return (
+    <Example>
+      <Button onlyIcon iconLeft={Icon} />
+    </Example>
+  );
+};
+```
+
+<CreateLazyIconExample />

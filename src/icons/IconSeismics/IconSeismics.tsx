@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSeismicsSizeS from './IconSeismics_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSeismics = createIcon({
-  l: IconSeismicsSizeS,
-  m: IconSeismicsSizeS,
-  s: IconSeismicsSizeS,
-  xs: IconSeismicsSizeS,
-  name: 'IconSeismics',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSeismics = createIconInner(props, svg);

@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredGRRSizeS from './IconColoredGRR_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredGRR = createIcon({
-  l: IconColoredGRRSizeS,
-  m: IconColoredGRRSizeS,
-  s: IconColoredGRRSizeS,
-  xs: IconColoredGRRSizeS,
-  name: 'IconColoredGRR',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredGRR = createIconInner(props, svg);

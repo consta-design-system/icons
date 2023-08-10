@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconMaxWidthSizeM from './IconMaxWidth_size_m';
-import IconMaxWidthSizeS from './IconMaxWidth_size_s';
-import IconMaxWidthSizeXs from './IconMaxWidth_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconMaxWidth = createIcon({
-  l: IconMaxWidthSizeM,
-  m: IconMaxWidthSizeM,
-  s: IconMaxWidthSizeS,
-  xs: IconMaxWidthSizeXs,
-  name: 'IconMaxWidth',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconMaxWidth = createIconInner(props, svg);

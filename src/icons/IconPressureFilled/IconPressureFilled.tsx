@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconPressureFilledSizeL from './IconPressureFilled_size_l';
-import IconPressureFilledSizeM from './IconPressureFilled_size_m';
-import IconPressureFilledSizeS from './IconPressureFilled_size_s';
-import IconPressureFilledSizeXs from './IconPressureFilled_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconPressureFilled = createIcon({
-  l: IconPressureFilledSizeL,
-  m: IconPressureFilledSizeM,
-  s: IconPressureFilledSizeS,
-  xs: IconPressureFilledSizeXs,
-  name: 'IconPressureFilled',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconPressureFilled = createIconInner(props, svg);

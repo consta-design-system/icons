@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconWatchStrokedSizeL from './IconWatchStroked_size_l';
-import IconWatchStrokedSizeM from './IconWatchStroked_size_m';
-import IconWatchStrokedSizeS from './IconWatchStroked_size_s';
-import IconWatchStrokedSizeXs from './IconWatchStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconWatchStroked = createIcon({
-  l: IconWatchStrokedSizeL,
-  m: IconWatchStrokedSizeM,
-  s: IconWatchStrokedSizeS,
-  xs: IconWatchStrokedSizeXs,
-  name: 'IconWatchStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconWatchStroked = createIconInner(props, svg);

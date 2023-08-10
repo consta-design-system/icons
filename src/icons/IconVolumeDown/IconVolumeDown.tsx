@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconVolumeDownSizeM from './IconVolumeDown_size_m';
-import IconVolumeDownSizeS from './IconVolumeDown_size_s';
-import IconVolumeDownSizeXs from './IconVolumeDown_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconVolumeDown = createIcon({
-  l: IconVolumeDownSizeM,
-  m: IconVolumeDownSizeM,
-  s: IconVolumeDownSizeS,
-  xs: IconVolumeDownSizeXs,
-  name: 'IconVolumeDown',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconVolumeDown = createIconInner(props, svg);

@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconLaptopStrokedSizeM from './IconLaptopStroked_size_m';
-import IconLaptopStrokedSizeS from './IconLaptopStroked_size_s';
-import IconLaptopStrokedSizeXs from './IconLaptopStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconLaptopStroked = createIcon({
-  l: IconLaptopStrokedSizeM,
-  m: IconLaptopStrokedSizeM,
-  s: IconLaptopStrokedSizeS,
-  xs: IconLaptopStrokedSizeXs,
-  name: 'IconLaptopStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconLaptopStroked = createIconInner(props, svg);

@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconCollapseSizeM from './IconCollapse_size_m';
-import IconCollapseSizeS from './IconCollapse_size_s';
-import IconCollapseSizeXs from './IconCollapse_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconCollapse = createIcon({
-  l: IconCollapseSizeM,
-  m: IconCollapseSizeM,
-  s: IconCollapseSizeS,
-  xs: IconCollapseSizeXs,
-  name: 'IconCollapse',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconCollapse = createIconInner(props, svg);

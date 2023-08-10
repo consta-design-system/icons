@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconMarkersBlueSizeS from './IconMarkersBlue_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconMarkersBlue = createIcon({
-  l: IconMarkersBlueSizeS,
-  m: IconMarkersBlueSizeS,
-  s: IconMarkersBlueSizeS,
-  xs: IconMarkersBlueSizeS,
-  name: 'IconMarkersBlue',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconMarkersBlue = createIconInner(props, svg);

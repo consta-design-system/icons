@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredPowerLinesSizeXs from './IconColoredPowerLines_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredPowerLines = createIcon({
-  l: IconColoredPowerLinesSizeXs,
-  m: IconColoredPowerLinesSizeXs,
-  s: IconColoredPowerLinesSizeXs,
-  xs: IconColoredPowerLinesSizeXs,
-  name: 'IconColoredPowerLines',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredPowerLines = createIconInner(props, svg);

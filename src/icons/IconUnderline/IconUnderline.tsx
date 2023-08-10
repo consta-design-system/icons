@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconUnderlineSizeM from './IconUnderline_size_m';
-import IconUnderlineSizeS from './IconUnderline_size_s';
-import IconUnderlineSizeXs from './IconUnderline_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconUnderline = createIcon({
-  l: IconUnderlineSizeM,
-  m: IconUnderlineSizeM,
-  s: IconUnderlineSizeS,
-  xs: IconUnderlineSizeXs,
-  name: 'IconUnderline',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconUnderline = createIconInner(props, svg);

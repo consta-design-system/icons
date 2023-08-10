@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSolverMechanicsSizeM from './IconSolverMechanics_size_m';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSolverMechanics = createIcon({
-  l: IconSolverMechanicsSizeM,
-  m: IconSolverMechanicsSizeM,
-  s: IconSolverMechanicsSizeM,
-  xs: IconSolverMechanicsSizeM,
-  name: 'IconSolverMechanics',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSolverMechanics = createIconInner(props, svg);

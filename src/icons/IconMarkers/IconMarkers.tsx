@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconMarkersSizeS from './IconMarkers_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconMarkers = createIcon({
-  l: IconMarkersSizeS,
-  m: IconMarkersSizeS,
-  s: IconMarkersSizeS,
-  xs: IconMarkersSizeS,
-  name: 'IconMarkers',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconMarkers = createIconInner(props, svg);

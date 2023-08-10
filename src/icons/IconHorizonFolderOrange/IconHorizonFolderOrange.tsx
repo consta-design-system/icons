@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconHorizonFolderOrangeSizeS from './IconHorizonFolderOrange_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconHorizonFolderOrange = createIcon({
-  l: IconHorizonFolderOrangeSizeS,
-  m: IconHorizonFolderOrangeSizeS,
-  s: IconHorizonFolderOrangeSizeS,
-  xs: IconHorizonFolderOrangeSizeS,
-  name: 'IconHorizonFolderOrange',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconHorizonFolderOrange = createIconInner(props, svg);

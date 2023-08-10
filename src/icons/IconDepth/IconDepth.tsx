@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconDepthSizeS from './IconDepth_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconDepth = createIcon({
-  l: IconDepthSizeS,
-  m: IconDepthSizeS,
-  s: IconDepthSizeS,
-  xs: IconDepthSizeS,
-  name: 'IconDepth',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconDepth = createIconInner(props, svg);

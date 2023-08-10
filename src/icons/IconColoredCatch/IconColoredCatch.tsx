@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredCatchSizeXs from './IconColoredCatch_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredCatch = createIcon({
-  l: IconColoredCatchSizeXs,
-  m: IconColoredCatchSizeXs,
-  s: IconColoredCatchSizeXs,
-  xs: IconColoredCatchSizeXs,
-  name: 'IconColoredCatch',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredCatch = createIconInner(props, svg);

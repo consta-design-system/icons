@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconNodeStepSizeM from './IconNodeStep_size_m';
-import IconNodeStepSizeS from './IconNodeStep_size_s';
-import IconNodeStepSizeXs from './IconNodeStep_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconNodeStep = createIcon({
-  l: IconNodeStepSizeM,
-  m: IconNodeStepSizeM,
-  s: IconNodeStepSizeS,
-  xs: IconNodeStepSizeXs,
-  name: 'IconNodeStep',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconNodeStep = createIconInner(props, svg);

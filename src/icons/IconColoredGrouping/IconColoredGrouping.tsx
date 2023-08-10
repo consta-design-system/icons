@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredGroupingSizeS from './IconColoredGrouping_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredGrouping = createIcon({
-  l: IconColoredGroupingSizeS,
-  m: IconColoredGroupingSizeS,
-  s: IconColoredGroupingSizeS,
-  xs: IconColoredGroupingSizeS,
-  name: 'IconColoredGrouping',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredGrouping = createIconInner(props, svg);

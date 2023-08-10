@@ -1,11 +1,6 @@
-import { createIcon } from '../Icon';
-#sizesImports#
-export const #componentName# = createIcon({
-  l: #componentName#Size#sizeL#,
-  m: #componentName#Size#sizeM#,
-  s: #componentName#Size#sizeS#,
-  xs: #componentName#Size#sizeXs#,
-  name: '#componentName#',
-  renderType: #renderType#,
-  color: '#color#',
-});
+import { createIconInner } from '##/icons/Icon/createIconInner';
+
+import props from './props';
+import svg from './svg';
+
+export const #componentName# = createIconInner(props, svg);

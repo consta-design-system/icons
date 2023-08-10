@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconTeamSizeM from './IconTeam_size_m';
-import IconTeamSizeS from './IconTeam_size_s';
-import IconTeamSizeXs from './IconTeam_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconTeam = createIcon({
-  l: IconTeamSizeM,
-  m: IconTeamSizeM,
-  s: IconTeamSizeS,
-  xs: IconTeamSizeXs,
-  name: 'IconTeam',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconTeam = createIconInner(props, svg);

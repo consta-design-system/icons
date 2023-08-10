@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconToolsHoldFinSizeS from './IconToolsHoldFin_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconToolsHoldFin = createIcon({
-  l: IconToolsHoldFinSizeS,
-  m: IconToolsHoldFinSizeS,
-  s: IconToolsHoldFinSizeS,
-  xs: IconToolsHoldFinSizeS,
-  name: 'IconToolsHoldFin',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconToolsHoldFin = createIconInner(props, svg);

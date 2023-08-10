@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredCommonBigSizeM from './IconColoredCommonBig_size_m';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredCommonBig = createIcon({
-  l: IconColoredCommonBigSizeM,
-  m: IconColoredCommonBigSizeM,
-  s: IconColoredCommonBigSizeM,
-  xs: IconColoredCommonBigSizeM,
-  name: 'IconColoredCommonBig',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredCommonBig = createIconInner(props, svg);

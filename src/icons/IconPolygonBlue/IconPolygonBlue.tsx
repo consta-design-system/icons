@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconPolygonBlueSizeS from './IconPolygonBlue_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconPolygonBlue = createIcon({
-  l: IconPolygonBlueSizeS,
-  m: IconPolygonBlueSizeS,
-  s: IconPolygonBlueSizeS,
-  xs: IconPolygonBlueSizeS,
-  name: 'IconPolygonBlue',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconPolygonBlue = createIconInner(props, svg);

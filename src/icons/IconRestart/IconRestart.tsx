@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconRestartSizeM from './IconRestart_size_m';
-import IconRestartSizeS from './IconRestart_size_s';
-import IconRestartSizeXs from './IconRestart_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconRestart = createIcon({
-  l: IconRestartSizeM,
-  m: IconRestartSizeM,
-  s: IconRestartSizeS,
-  xs: IconRestartSizeXs,
-  name: 'IconRestart',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconRestart = createIconInner(props, svg);

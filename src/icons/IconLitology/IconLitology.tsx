@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconLitologySizeS from './IconLitology_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconLitology = createIcon({
-  l: IconLitologySizeS,
-  m: IconLitologySizeS,
-  s: IconLitologySizeS,
-  xs: IconLitologySizeS,
-  name: 'IconLitology',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconLitology = createIconInner(props, svg);

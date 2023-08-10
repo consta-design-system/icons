@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconPanelRightSizeM from './IconPanelRight_size_m';
-import IconPanelRightSizeS from './IconPanelRight_size_s';
-import IconPanelRightSizeXs from './IconPanelRight_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconPanelRight = createIcon({
-  l: IconPanelRightSizeM,
-  m: IconPanelRightSizeM,
-  s: IconPanelRightSizeS,
-  xs: IconPanelRightSizeXs,
-  name: 'IconPanelRight',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconPanelRight = createIconInner(props, svg);

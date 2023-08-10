@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredDashboardSizeS from './IconColoredDashboard_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredDashboard = createIcon({
-  l: IconColoredDashboardSizeS,
-  m: IconColoredDashboardSizeS,
-  s: IconColoredDashboardSizeS,
-  xs: IconColoredDashboardSizeS,
-  name: 'IconColoredDashboard',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredDashboard = createIconInner(props, svg);

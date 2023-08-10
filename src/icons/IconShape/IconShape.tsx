@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconShapeSizeM from './IconShape_size_m';
-import IconShapeSizeS from './IconShape_size_s';
-import IconShapeSizeXs from './IconShape_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconShape = createIcon({
-  l: IconShapeSizeM,
-  m: IconShapeSizeM,
-  s: IconShapeSizeS,
-  xs: IconShapeSizeXs,
-  name: 'IconShape',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconShape = createIconInner(props, svg);

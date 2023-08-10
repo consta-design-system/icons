@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconCheckSizeM from './IconCheck_size_m';
-import IconCheckSizeS from './IconCheck_size_s';
-import IconCheckSizeXs from './IconCheck_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconCheck = createIcon({
-  l: IconCheckSizeM,
-  m: IconCheckSizeM,
-  s: IconCheckSizeS,
-  xs: IconCheckSizeXs,
-  name: 'IconCheck',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconCheck = createIconInner(props, svg);

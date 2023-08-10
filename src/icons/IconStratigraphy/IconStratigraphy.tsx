@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconStratigraphySizeS from './IconStratigraphy_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconStratigraphy = createIcon({
-  l: IconStratigraphySizeS,
-  m: IconStratigraphySizeS,
-  s: IconStratigraphySizeS,
-  xs: IconStratigraphySizeS,
-  name: 'IconStratigraphy',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconStratigraphy = createIconInner(props, svg);

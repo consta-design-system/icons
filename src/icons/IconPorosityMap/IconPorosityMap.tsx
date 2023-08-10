@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconPorosityMapSizeS from './IconPorosityMap_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconPorosityMap = createIcon({
-  l: IconPorosityMapSizeS,
-  m: IconPorosityMapSizeS,
-  s: IconPorosityMapSizeS,
-  xs: IconPorosityMapSizeS,
-  name: 'IconPorosityMap',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconPorosityMap = createIconInner(props, svg);

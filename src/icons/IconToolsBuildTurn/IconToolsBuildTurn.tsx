@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconToolsBuildTurnSizeM from './IconToolsBuildTurn_size_m';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconToolsBuildTurn = createIcon({
-  l: IconToolsBuildTurnSizeM,
-  m: IconToolsBuildTurnSizeM,
-  s: IconToolsBuildTurnSizeM,
-  xs: IconToolsBuildTurnSizeM,
-  name: 'IconToolsBuildTurn',
-  renderType: { l: 'default', m: 'default', s: 'default', xs: 'default' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconToolsBuildTurn = createIconInner(props, svg);

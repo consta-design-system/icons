@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSolverViewportsSizeM from './IconSolverViewports_size_m';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSolverViewports = createIcon({
-  l: IconSolverViewportsSizeM,
-  m: IconSolverViewportsSizeM,
-  s: IconSolverViewportsSizeM,
-  xs: IconSolverViewportsSizeM,
-  name: 'IconSolverViewports',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSolverViewports = createIconInner(props, svg);

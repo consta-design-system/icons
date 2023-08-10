@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSolverDepthSizeM from './IconSolverDepth_size_m';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSolverDepth = createIcon({
-  l: IconSolverDepthSizeM,
-  m: IconSolverDepthSizeM,
-  s: IconSolverDepthSizeM,
-  xs: IconSolverDepthSizeM,
-  name: 'IconSolverDepth',
-  renderType: { l: 'default', m: 'default', s: 'default', xs: 'default' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSolverDepth = createIconInner(props, svg);

@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSectionsConnectedSizeS from './IconSectionsConnected_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSectionsConnected = createIcon({
-  l: IconSectionsConnectedSizeS,
-  m: IconSectionsConnectedSizeS,
-  s: IconSectionsConnectedSizeS,
-  xs: IconSectionsConnectedSizeS,
-  name: 'IconSectionsConnected',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSectionsConnected = createIconInner(props, svg);

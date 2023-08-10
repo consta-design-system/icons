@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconRigissSizeS from './IconRigiss_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconRigiss = createIcon({
-  l: IconRigissSizeS,
-  m: IconRigissSizeS,
-  s: IconRigissSizeS,
-  xs: IconRigissSizeS,
-  name: 'IconRigiss',
-  renderType: { l: 'default', m: 'default', s: 'default', xs: 'default' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconRigiss = createIconInner(props, svg);

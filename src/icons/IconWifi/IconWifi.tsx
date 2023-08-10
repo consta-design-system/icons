@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconWifiSizeM from './IconWifi_size_m';
-import IconWifiSizeS from './IconWifi_size_s';
-import IconWifiSizeXs from './IconWifi_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconWifi = createIcon({
-  l: IconWifiSizeM,
-  m: IconWifiSizeM,
-  s: IconWifiSizeS,
-  xs: IconWifiSizeXs,
-  name: 'IconWifi',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconWifi = createIconInner(props, svg);

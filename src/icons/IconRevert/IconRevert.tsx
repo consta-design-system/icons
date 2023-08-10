@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconRevertSizeM from './IconRevert_size_m';
-import IconRevertSizeS from './IconRevert_size_s';
-import IconRevertSizeXs from './IconRevert_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconRevert = createIcon({
-  l: IconRevertSizeM,
-  m: IconRevertSizeM,
-  s: IconRevertSizeS,
-  xs: IconRevertSizeXs,
-  name: 'IconRevert',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconRevert = createIconInner(props, svg);

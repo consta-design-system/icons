@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconTemperatureSizeS from './IconTemperature_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconTemperature = createIcon({
-  l: IconTemperatureSizeS,
-  m: IconTemperatureSizeS,
-  s: IconTemperatureSizeS,
-  xs: IconTemperatureSizeS,
-  name: 'IconTemperature',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconTemperature = createIconInner(props, svg);

@@ -1,0 +1,14 @@
+import { CreateIconArguments } from '##/icons/Icon/helpers';
+
+#sizesImports#
+const props: CreateIconArguments = {
+  l: #componentName#Size#sizeL#,
+  m: #componentName#Size#sizeM#,
+  s: #componentName#Size#sizeS#,
+  xs: #componentName#Size#sizeXs#,
+  name: '#componentName#',
+  renderType: #renderType#,
+  color: '#color#',
+};
+
+export default props;

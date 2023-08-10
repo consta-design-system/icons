@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconToolsDogledSizeM from './IconToolsDogled_size_m';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconToolsDogled = createIcon({
-  l: IconToolsDogledSizeM,
-  m: IconToolsDogledSizeM,
-  s: IconToolsDogledSizeM,
-  xs: IconToolsDogledSizeM,
-  name: 'IconToolsDogled',
-  renderType: { l: 'default', m: 'default', s: 'default', xs: 'default' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconToolsDogled = createIconInner(props, svg);

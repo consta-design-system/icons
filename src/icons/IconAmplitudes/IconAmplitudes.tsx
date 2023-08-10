@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconAmplitudesSizeS from './IconAmplitudes_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconAmplitudes = createIcon({
-  l: IconAmplitudesSizeS,
-  m: IconAmplitudesSizeS,
-  s: IconAmplitudesSizeS,
-  xs: IconAmplitudesSizeS,
-  name: 'IconAmplitudes',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconAmplitudes = createIconInner(props, svg);

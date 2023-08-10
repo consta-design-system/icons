@@ -1,14 +1,6 @@
-import { createIcon } from '../Icon';
-import IconFishboneStrokedSizeM from './IconFishboneStroked_size_m';
-import IconFishboneStrokedSizeS from './IconFishboneStroked_size_s';
-import IconFishboneStrokedSizeXs from './IconFishboneStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconFishboneStroked = createIcon({
-  l: IconFishboneStrokedSizeM,
-  m: IconFishboneStrokedSizeM,
-  s: IconFishboneStrokedSizeS,
-  xs: IconFishboneStrokedSizeXs,
-  name: 'IconFishboneStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconFishboneStroked = createIconInner(props, svg);

@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredLicenseAreaSizeXs from './IconColoredLicenseArea_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredLicenseArea = createIcon({
-  l: IconColoredLicenseAreaSizeXs,
-  m: IconColoredLicenseAreaSizeXs,
-  s: IconColoredLicenseAreaSizeXs,
-  xs: IconColoredLicenseAreaSizeXs,
-  name: 'IconColoredLicenseArea',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredLicenseArea = createIconInner(props, svg);

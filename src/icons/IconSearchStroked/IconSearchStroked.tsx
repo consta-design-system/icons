@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconSearchStrokedSizeL from './IconSearchStroked_size_l';
-import IconSearchStrokedSizeM from './IconSearchStroked_size_m';
-import IconSearchStrokedSizeS from './IconSearchStroked_size_s';
-import IconSearchStrokedSizeXs from './IconSearchStroked_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconSearchStroked = createIcon({
-  l: IconSearchStrokedSizeL,
-  m: IconSearchStrokedSizeM,
-  s: IconSearchStrokedSizeS,
-  xs: IconSearchStrokedSizeXs,
-  name: 'IconSearchStroked',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconSearchStroked = createIconInner(props, svg);

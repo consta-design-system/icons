@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconToolsHoldCurveHoldSizeM from './IconToolsHoldCurveHold_size_m';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconToolsHoldCurveHold = createIcon({
-  l: IconToolsHoldCurveHoldSizeM,
-  m: IconToolsHoldCurveHoldSizeM,
-  s: IconToolsHoldCurveHoldSizeM,
-  xs: IconToolsHoldCurveHoldSizeM,
-  name: 'IconToolsHoldCurveHold',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconToolsHoldCurveHold = createIconInner(props, svg);

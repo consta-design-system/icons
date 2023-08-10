@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconColoredP90SizeS from './IconColoredP90_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconColoredP90 = createIcon({
-  l: IconColoredP90SizeS,
-  m: IconColoredP90SizeS,
-  s: IconColoredP90SizeS,
-  xs: IconColoredP90SizeS,
-  name: 'IconColoredP90',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconColoredP90 = createIconInner(props, svg);

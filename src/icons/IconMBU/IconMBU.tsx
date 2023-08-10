@@ -1,15 +1,6 @@
-import { createIcon } from '../Icon';
-import IconMBUSizeL from './IconMBU_size_l';
-import IconMBUSizeM from './IconMBU_size_m';
-import IconMBUSizeS from './IconMBU_size_s';
-import IconMBUSizeXs from './IconMBU_size_xs';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconMBU = createIcon({
-  l: IconMBUSizeL,
-  m: IconMBUSizeM,
-  s: IconMBUSizeS,
-  xs: IconMBUSizeXs,
-  name: 'IconMBU',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'mono',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconMBU = createIconInner(props, svg);

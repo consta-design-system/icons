@@ -1,12 +1,6 @@
-import { createIcon } from '../Icon';
-import IconToolsMaxAngleSizeS from './IconToolsMaxAngle_size_s';
+import { createIconInner } from '##/icons/Icon/createIconInner';
 
-export const IconToolsMaxAngle = createIcon({
-  l: IconToolsMaxAngleSizeS,
-  m: IconToolsMaxAngleSizeS,
-  s: IconToolsMaxAngleSizeS,
-  xs: IconToolsMaxAngleSizeS,
-  name: 'IconToolsMaxAngle',
-  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
-  color: 'multiple',
-});
+import props from './props';
+import svg from './svg';
+
+export const IconToolsMaxAngle = createIconInner(props, svg);
