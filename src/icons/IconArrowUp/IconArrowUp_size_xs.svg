@@ -1,8 +1,8 @@
 <!-- ##color:mono ##group:direction -->
 <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
   <path
-    d="M6.005 3.66L9.98 7.633l-.707.707-3.268-3.268L2.737 8.34l-.707-.707 3.975-3.975z"
     fill-rule="evenodd"
     clip-rule="evenodd"
+    d="M6.00515 3.65906L9.98002 7.63393L9.27291 8.34104L6.00515 5.07327L2.73738 8.34104L2.03027 7.63393L6.00515 3.65906Z"
   />
 </svg>
