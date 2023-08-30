@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.9.1 (30/08/2023)
+- [fix(Icons): fix sizes and position (#30)](https://github.com/consta-design-system/icons/commit/f857b51147e82508f515c01e63dacba17d7c499c) - [@N1MBER](https://github.com/N1MBER)
+- [fix(IconHorizon): fix svg (#29)](https://github.com/consta-design-system/icons/commit/5690e182087bc3f79d7eae1f0ae6cfa6fb146d60) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v0.9.0 (10/08/2023)
 Самое важное:
 
