@@ -1,6 +1,4 @@
 .icons--MixAnimateIcon {
-  position: absolute;
-
   &_animate {
     &_entered,
     &_entering {
@@ -14,9 +12,9 @@
       transform: scale(0.1);
     }
 
-    &_entered,
     &_entering,
     &_exiting {
+      position: absolute;
       transition:
         transform var(--animate-icon-transition)
         var(--animate-icon-transition-function),
