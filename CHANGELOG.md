@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.9.2 (11/09/2023)
+- [fix(MixAnimateIcon): fixed animation position](https://github.com/consta-design-system/icons/commit/f7baddc5e3eac57fb602b562cbb4dd9d58f1775d) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.9.1 (30/08/2023)
 - [fix(Icons): fix sizes and position (#30)](https://github.com/consta-design-system/icons/commit/f857b51147e82508f515c01e63dacba17d7c499c) - [@N1MBER](https://github.com/N1MBER)
 - [fix(IconHorizon): fix svg (#29)](https://github.com/consta-design-system/icons/commit/5690e182087bc3f79d7eae1f0ae6cfa6fb146d60) - [@N1MBER](https://github.com/N1MBER)
