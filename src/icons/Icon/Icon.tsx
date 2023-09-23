@@ -1,5 +1,6 @@
 import './Icon.css';
 
+import { AsTags } from '@consta/uikit/__internal__/src/utils/types/AsTags';
 import {
   ComponentWithAs,
   forwardRefWithAs,
@@ -8,11 +9,10 @@ import React from 'react';
 
 import { cnIcon, IconProps } from './helpers';
 
-type IconComponent<AS extends keyof JSX.IntrinsicElements = 'span'> =
-  ComponentWithAs<
-    IconProps & { color?: 'mono' | 'multiple'; name: string },
-    AS
-  >;
+type IconComponent<AS extends AsTags = 'span'> = ComponentWithAs<
+  IconProps & { color?: 'mono' | 'multiple'; name: string },
+  AS
+>;
 
 export const Icon: IconComponent = forwardRefWithAs<
   IconProps & { color?: 'mono' | 'multiple'; name: string },
