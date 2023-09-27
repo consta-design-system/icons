@@ -1,6 +1,6 @@
 {
   "name": "@consta/icons",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "scripts": {
     "postinstall": "yarn install-peers && husky install",
     "tsc-dry-run": "tsc --noEmit",
