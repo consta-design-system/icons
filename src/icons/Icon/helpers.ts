@@ -1,3 +1,4 @@
+import { AsTags } from '@consta/uikit/__internal__/src/utils/types/AsTags';
 import { ComponentWithAs } from '@consta/uikit/__internal__/src/utils/types/PropsWithAsAttributes';
 
 import { cn } from '##/utils/bem';
@@ -25,8 +26,10 @@ export type IconProps = {
   size?: IconPropSize;
 };
 
-export type IconComponent<AS extends keyof JSX.IntrinsicElements = 'span'> =
-  ComponentWithAs<IconProps, AS>;
+export type IconComponent<AS extends AsTags = 'span'> = ComponentWithAs<
+  IconProps,
+  AS
+>;
 
 export const cnIcon = cn('Icon');
 
