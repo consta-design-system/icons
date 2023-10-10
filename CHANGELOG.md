@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.9.3 (27/09/2023)
+- [feat(As): rewrite as types (#32)](https://github.com/consta-design-system/icons/commit/02fd01d36eadea0cc16bf5c6af174cd6dcdcd510) - [@N1MBER](https://github.com/N1MBER)
+- [fix(IconPlay, IconInfoCircle): fix svg paths (#31)](https://github.com/consta-design-system/icons/commit/264a49a50be24ada92bcdb48062de22d803fd762) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v0.9.2 (11/09/2023)
 - [fix(MixAnimateIcon): fixed animation position](https://github.com/consta-design-system/icons/commit/f7baddc5e3eac57fb602b562cbb4dd9d58f1775d) - [@gizeasy](https://github.com/gizeasy)
 
