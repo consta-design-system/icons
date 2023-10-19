@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.10.0 (19/10/2023)
+Самое важное:
+
+- Добавили `IconFunnelRemove` - иконку для очистки фильтров.
+
+---
+
+- [feat(IconFunnelRemove): add new icon](https://github.com/consta-design-system/icons/commit/c5aca2797e96564502fafa62d8053d6def20c2a3) - [@N1MBER](https://github.com/N1MBER)
+- [chore(utils): added status classNames (#34)](https://github.com/consta-design-system/icons/commit/e4cddf1daf8b100df034c0a136e883bf1ee9e7b2) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v0.9.3 (27/09/2023)
 - [feat(As): rewrite as types (#32)](https://github.com/consta-design-system/icons/commit/02fd01d36eadea0cc16bf5c6af174cd6dcdcd510) - [@N1MBER](https://github.com/N1MBER)
 - [fix(IconPlay, IconInfoCircle): fix svg paths (#31)](https://github.com/consta-design-system/icons/commit/264a49a50be24ada92bcdb48062de22d803fd762) - [@N1MBER](https://github.com/N1MBER)
