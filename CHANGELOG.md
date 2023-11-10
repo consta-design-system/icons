@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.11.0 (10/11/2023)
+Самое важное:
+
+- Добавили новые иконки: `IconCardsCompact`, `IconCommentAddFilled`, `IconCommentDeleteFilled`, `IconCommentEditFilled`, `IconErase` и `IconShare`.
+- Поправили в документации группы для: `IconInfoCircle`, `IconWindow`, `IconDebug` и `IconAreaChart`.
+
+---
+
+- [feat(Icons): add new icons](https://github.com/consta-design-system/icons/commit/1382de1e41eaf6c978b6db0051a6863525f1a35e) - [@N1MBER](https://github.com/N1MBER)
+- [chore(deps): bump @babel/traverse from 7.18.11 to 7.23.2 (#35)](https://github.com/consta-design-system/icons/commit/0952c67b5754de7b698e2292c6d4ef73f59f5d8c) - [@dependabot[bot]](https://github.com/dependabot[bot])
+
+--------------------
+
 ## v0.10.0 (19/10/2023)
 Самое важное:
 
