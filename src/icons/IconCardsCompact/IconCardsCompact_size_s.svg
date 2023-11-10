@@ -1,0 +1,7 @@
+<!-- ##color:mono ##group:formatting -->
+<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7 3H1V7H7V3Z" />
+  <path d="M7 9H1V13H7V9Z" />
+  <path d="M9 3H15V7H9V3Z" />
+  <path d="M15 9H9V13H15V9Z" />
+</svg>
