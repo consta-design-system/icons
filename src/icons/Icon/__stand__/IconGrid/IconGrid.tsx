@@ -12,7 +12,7 @@ export function IconGrid() {
     <div>
       {groupedIcons.map(({ name, icons }) => (
         <div key={name}>
-          <Text size="xl" weight="semibold" view="primary">
+          <Text size="xl" weight="semibold" view="primary" lineHeight="m">
             {name}
           </Text>
           <Example
