@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.0.1 (19/12/2023)
+Самое важное:
+- Добавлена поддержка `@consta/uikit` `v5.0.0`
+
+---
+
+- [chore(deps): update deps](https://github.com/consta-design-system/icons/commit/58b61faee1fd6a931c1a0aacb3e779c84403ce6d) - [@gizeasy](https://github.com/gizeasy)
+- [chore: update consta version (#36)](https://github.com/consta-design-system/icons/commit/eae07703cbde9a299e429510f7850ab2d46ad34b) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v0.11.0 (10/11/2023)
 Самое важное:
 
