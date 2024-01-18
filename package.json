@@ -10,7 +10,7 @@
     "format:svg": "prettier --write '**/*.svg' --parser html",
     "pre-push": "yarn run tsc-dry-run",
     "pre-commit": "yarn run lint-staged",
-    "icon-generate": "node scripts/preBuild.js --config=scripts/generateReExportsConfig.js",
+    "icon-generate": "node scripts/preBuild.js --config=scripts/generateReExportsConfig.js && yarn format:svg && yarn lint:js",
     "test": "yarn tsc-dry-run",
     "unit": "jest",
     "unit:watch": "jest --watch",

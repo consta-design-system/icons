@@ -6,7 +6,7 @@ const IconLockSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M5 5H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-1V4a3 3 0 0 0-6 0v1zm1 0h4V4a2 2 0 1 0-4 0v1zm.5 4a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"
+      d="M5.5 6V4.5a2.5 2.5 0 0 1 5 0V6H12a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.5Zm1-1.5a1.5 1.5 0 1 1 3 0V6h-3V4.5Zm3 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
     />
   </svg>
 );
