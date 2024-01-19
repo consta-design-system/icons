@@ -1,11 +1,12 @@
 import { CreateIconArguments } from '##/icons/Icon/helpers';
 
+import IconLockSizeL from './IconLock_size_l';
 import IconLockSizeM from './IconLock_size_m';
 import IconLockSizeS from './IconLock_size_s';
 import IconLockSizeXs from './IconLock_size_xs';
 
 const props: CreateIconArguments = {
-  l: IconLockSizeM,
+  l: IconLockSizeL,
   m: IconLockSizeM,
   s: IconLockSizeS,
   xs: IconLockSizeXs,

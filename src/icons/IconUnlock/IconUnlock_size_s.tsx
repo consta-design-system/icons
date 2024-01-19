@@ -6,7 +6,7 @@ const IconUnlockSizeS = (props: SVGProps<SVGSVGElement>) => (
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M5 5H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2V4h1a3 3 0 0 0-6 0v1zm1 0h4V4a2 2 0 1 0-4 0v1zm.5 4a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"
+      d="M3 4.5a1.5 1.5 0 1 1 3 0V6H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H7V4.5a2.5 2.5 0 0 0-5 0V5h1v-.5Zm7.5 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
     />
   </svg>
 );
