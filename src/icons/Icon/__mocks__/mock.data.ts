@@ -51,6 +51,7 @@ import { IconChatStroked } from '../../IconChatStroked';
 import { IconCheck } from '../../IconCheck';
 import { IconClear } from '../../IconClear';
 import { IconClose } from '../../IconClose';
+import { IconCode } from '../../IconCode';
 import { IconCollapse } from '../../IconCollapse';
 import { IconColored2D } from '../../IconColored2D';
 import { IconColored3D } from '../../IconColored3D';
@@ -467,8 +468,8 @@ export const groupedIcons: Group[] = [
       IconStratigraphy,
       IconTraectoryBlue,
       IconTraectoryOrange,
-      IconWellAttributes,
       IconWellBlue,
+      IconWellAttributes,
       IconWellFolder,
       IconWellGreen,
       IconWellOrange,
@@ -483,16 +484,17 @@ export const groupedIcons: Group[] = [
       IconAdd,
       IconAddToComparison,
       IconAllDone,
-      IconArrowFirst,
       IconArrowLast,
-      IconArrowNext,
       IconArrowPrevious,
+      IconArrowFirst,
+      IconArrowNext,
       IconArrowRedone,
       IconArrowUndone,
       IconCancel,
       IconCheck,
       IconClear,
       IconClose,
+      IconCode,
       IconCopy,
       IconDebug,
       IconDownload,
@@ -521,22 +523,10 @@ export const groupedIcons: Group[] = [
     },
   },
   {
-    name: 'indices',
-    icons: {
-      IconAlert,
-      IconHealth,
-      IconInfo,
-      IconInfoCircle,
-      IconQuestion,
-      IconRouble,
-      IconWarning,
-    },
-  },
-  {
     name: 'formatting',
     icons: {
-      IconAlignBlocksLeft,
       IconAlignBlocksRight,
+      IconAlignBlocksLeft,
       IconCards,
       IconCardsCompact,
       IconCollapse,
@@ -559,6 +549,18 @@ export const groupedIcons: Group[] = [
       IconShape,
       IconTable2,
       IconWindow,
+    },
+  },
+  {
+    name: 'indices',
+    icons: {
+      IconAlert,
+      IconHealth,
+      IconInfo,
+      IconInfoCircle,
+      IconQuestion,
+      IconRouble,
+      IconWarning,
     },
   },
   {
@@ -802,6 +804,14 @@ export const groupedIcons: Group[] = [
     },
   },
   {
+    name: 'cursor',
+    icons: {
+      IconCursorMouse,
+      IconDrag,
+      IconHand,
+    },
+  },
+  {
     name: 'social',
     icons: {
       IconConfluence,
@@ -819,14 +829,6 @@ export const groupedIcons: Group[] = [
     },
   },
   {
-    name: 'cursor',
-    icons: {
-      IconCursorMouse,
-      IconDrag,
-      IconHand,
-    },
-  },
-  {
     name: 'nature',
     icons: {
       IconDiamond,
@@ -834,8 +836,8 @@ export const groupedIcons: Group[] = [
       IconDrop,
       IconGas,
       IconLeaf,
-      IconWorldStroked,
       IconWorldFilled,
+      IconWorldStroked,
     },
   },
   {
@@ -943,8 +945,8 @@ export const groupedIcons: Group[] = [
       IconWellGradients,
       IconWellKBK,
       IconWellPreset,
-      IconWellTrajectory,
       IconWellPresetALT,
+      IconWellTrajectory,
     },
   },
 ];
