@@ -3,19 +3,16 @@ import Icon2 from './images/icon2.image.svg';
 import Icon3 from './images/icon3.image.svg';
 import Icon5 from './images/icon5.image.svg';
 import Icon6 from './images/icon6.image.svg';
-import figma4 from './images/4-figma.png';
-import figma7 from './images/7-figma.png';
-import github8 from './images/8-github.png';
-import figma9 from './images/9-figma.png';
+import f4 from './images/f4.png';
+import g8 from './images/g8.png';
+import f9 from './images/f9.png';
 import finder10 from './images/10-finder.png';
-import github11 from './images/11-github.png';
+import g11 from './images/g11.png';
 
-> Это инструкция по добавлению новых иконок в библиотеки в Figma и в код. Если вам нужна автоматическая генерация компонентов из SVG, загляните в [эту инструкцию](##LIBS.LIB.STAND.TAB/lib:icons/stand:docs-addicons/tab:dev)
+> Это инструкция по добавлению новых иконок в библиотеки в макеты и в код. Если вам нужна автоматическая генерация компонентов из SVG, загляните в [эту инструкцию](##LIBS.LIB.STAND.TAB/lib:icons/stand:docs-addicons/tab:dev)
 
 - [Правила отрисовки](#правила-отрисовки)
 - [Правила работы с библиотекой](#правила-работы-с-библиотекой)
-- [Добавление в библиотеку в Figma](#добавление-в-библиотеку-в-figma)
-- [Добавление в библиотеку в коде](#добавление-в-библиотеку-в-коде)
 
 ## Правила отрисовки
 
@@ -34,7 +31,7 @@ import github11 from './images/11-github.png';
 
 Готовая иконка должна быть одним шейпом с заливкой.
 
-<image src={figma4} />
+<image src={f4} />
 
 Координаты точек фигур иконки должны быть выровнены по пиксельной сетке.
 
@@ -46,110 +43,3 @@ import github11 from './images/11-github.png';
 Иконки, которые ждут изменений, красятся в цвет `warning`, а новые, ещё не добавленные в библиотеку — в `alert`.
 
 <Icon6 />
-
-## Добавление в библиотеку в Figma
-
-**Нарисовал иконки — добавь в библиотеку.** Это правило касается и библиотеки в Figma, и библиотеки в коде.
-
-<img src={figma7} />
-
-## Добавление в библиотеку в коде
-
-> [Прочитать про автоматическую сборку иконок из SVG в компоненты](##LIBS.LIB.STAND.TAB/lib:icons/stand:docs-addicons/tab:dev)
-
-### 1. Подготовьте иконки в SVG
-
-1. Экспортируйте иконки из Figma в формате SVG.
-
-<img src={figma9} />
-
-2. Откройте файл SVG в редакторе кода или простом текстовом редакторе (подойдет Блокнот или TextEdit) и удалите атрибуты `fill`, `fillOpacity`, `width`, `height`.
-
-> Если эти атрибуты останутся, иконки не будут меняться, когда поменяется размер компонента или тема
-
-### Пример кода готовой иконки
-
-```tsx
-<svg
-  width="16"
-  height="16"
-  viewBox="0 0 16 16"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path d="M13 8L3 14L3 2L13 8Z" />
-</svg>
-```
-
-Для иконки можно задать свойства для рендера:
-
-| Свойство       | Тип                | По умолчанию | Описание                                        |
-| -------------- | ------------------ | ------------ | ----------------------------------------------- |
-| `color?`       | `mono`, `multiple` | `mono`       | Цветность иконки                                |
-| `group?`       | -                  | -            | Группа иконки на стенде                         |
-| `withoutSvgo?` | `boolean`          | -            | Выключить [`svgo`](https://github.com/svg/svgo) |
-
-```tsx
-<!-- ##color:mono ##group:communication -->
-<svg
-  width="16"
-  height="16"
-  viewBox="0 0 16 16"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path d="M13 8L3 14L3 2L13 8Z" />
-</svg>
-```
-
-### 2. Склонируйте [репозиторий @consta/icons](https://github.com/consta-design-system/icons) на GitHub
-
-Например, выполните в консоли команду:
-
-`git clone https://github.com/consta-design-system/icons.git`
-
-Путь к репозиторию можно скопировать на GitHub:
-
-<img src={github8} />
-
-### 3. Сделайте новую ветку
-
-Например, выполните в консоли команду:
-
-`git checkout -b feat/new_icons`
-
-### 4. Скопируйте иконки
-
-Перейдите в папку со склонированным репозиторием, создайте папку с названием новой иконки в папке `/icons/src/icons/` и положите в неё полученные SVG.
-
-Пример папки: `/icons/src/icons/IconAlert/`
-
-<img src={finder10} />
-
-### 5. Сгенерируйте файлы иконок
-
-В консоли в корне проекта выполните команду:
-
-`yarn icon-generate`
-
-### 6. Сделайте коммит
-
-В консоли в корне проекта выполните команду:
-
-`git commit`
-
-### 7. Отправьте изменения в репозиторий @consta/icons
-
-В консоли выполните команду:
-
-`git push`
-
-### 8. Создайте пулреквест
-
-Перейдите на [GitHub](https://github.com/consta-design-system/icons), найдите свою ветку и нажмите **New pull request**.
-
-<img src={github11} />
-
-Выберите в первом селекте ветку **dev**, во втором свою. И заполните всё, что сможете.
-
-### Готово
-
-Когда мы примем ваш пулреквест, иконки добавятся в библиотеку.
