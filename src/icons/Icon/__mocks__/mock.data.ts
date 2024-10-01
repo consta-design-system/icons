@@ -468,14 +468,14 @@ export const groupedIcons: Group[] = [
       IconStratigraphy,
       IconTraectoryBlue,
       IconTraectoryOrange,
-      IconWellBlue,
       IconWellAttributes,
+      IconWellBlue,
       IconWellFolder,
       IconWellGreen,
       IconWellOrange,
       IconWells,
-      IconZoneBlue,
       IconZoneOrange,
+      IconZoneBlue,
     },
   },
   {
@@ -484,10 +484,10 @@ export const groupedIcons: Group[] = [
       IconAdd,
       IconAddToComparison,
       IconAllDone,
-      IconArrowLast,
-      IconArrowPrevious,
       IconArrowFirst,
+      IconArrowLast,
       IconArrowNext,
+      IconArrowPrevious,
       IconArrowRedone,
       IconArrowUndone,
       IconCancel,
@@ -515,8 +515,8 @@ export const groupedIcons: Group[] = [
       IconResize,
       IconRestart,
       IconRevert,
-      IconShare,
       IconShuffle,
+      IconShare,
       IconSlide,
       IconTrash,
       IconUpload,
@@ -525,8 +525,8 @@ export const groupedIcons: Group[] = [
   {
     name: 'formatting',
     icons: {
-      IconAlignBlocksRight,
       IconAlignBlocksLeft,
+      IconAlignBlocksRight,
       IconCards,
       IconCardsCompact,
       IconCollapse,
@@ -730,8 +730,8 @@ export const groupedIcons: Group[] = [
       IconTest,
       IconTrajectory,
       IconVZD,
-      IconWellOpen,
       IconWellPipe,
+      IconWellOpen,
     },
   },
   {
@@ -761,8 +761,8 @@ export const groupedIcons: Group[] = [
       IconThumbUp,
       IconVideo,
       IconWifi,
-      IconWifiOff,
       IconWifiWarning,
+      IconWifiOff,
     },
   },
   {
@@ -804,14 +804,6 @@ export const groupedIcons: Group[] = [
     },
   },
   {
-    name: 'cursor',
-    icons: {
-      IconCursorMouse,
-      IconDrag,
-      IconHand,
-    },
-  },
-  {
     name: 'social',
     icons: {
       IconConfluence,
@@ -829,6 +821,14 @@ export const groupedIcons: Group[] = [
     },
   },
   {
+    name: 'cursor',
+    icons: {
+      IconCursorMouse,
+      IconDrag,
+      IconHand,
+    },
+  },
+  {
     name: 'nature',
     icons: {
       IconDiamond,
@@ -836,8 +836,8 @@ export const groupedIcons: Group[] = [
       IconDrop,
       IconGas,
       IconLeaf,
-      IconWorldFilled,
       IconWorldStroked,
+      IconWorldFilled,
     },
   },
   {
