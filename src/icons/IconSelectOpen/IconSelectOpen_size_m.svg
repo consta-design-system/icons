@@ -1,4 +1,4 @@
 <!-- ##color:mono ##group:direction -->
 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M6.5 15L12 9l5.5 6h-11z" />
+  <path d="M6.5 15L12 9L17.5 15H6.5Z" />
 </svg>
