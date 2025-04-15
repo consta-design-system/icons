@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.1.0 (11/06/2024)
+Самое важное:
+- Добавлена новая иконка `IconCode`
+- Обновлены иконки `IconLock` и `IconUnlock`
+---
+
+- [feat(IconCode): add new icon (#43)](https://github.com/consta-design-system/icons/commit/3b9b9674f197e3d1c9876217c19730402612d8ee) - [@gizeasy](https://github.com/gizeasy)
+- [feat(icons): update IconLock and IconUnlock (#38)](https://github.com/consta-design-system/icons/commit/96e22599a97ac594823f4a76d9c79c719062637c) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.0.1 (19/12/2023)
 Самое важное:
 - Добавлена поддержка `@consta/uikit` `v5.0.0`

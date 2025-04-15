@@ -51,6 +51,7 @@ import { IconChatStroked } from '../../IconChatStroked';
 import { IconCheck } from '../../IconCheck';
 import { IconClear } from '../../IconClear';
 import { IconClose } from '../../IconClose';
+import { IconCode } from '../../IconCode';
 import { IconCollapse } from '../../IconCollapse';
 import { IconColored2D } from '../../IconColored2D';
 import { IconColored3D } from '../../IconColored3D';
@@ -473,8 +474,8 @@ export const groupedIcons: Group[] = [
       IconWellGreen,
       IconWellOrange,
       IconWells,
-      IconZoneBlue,
       IconZoneOrange,
+      IconZoneBlue,
     },
   },
   {
@@ -493,6 +494,7 @@ export const groupedIcons: Group[] = [
       IconCheck,
       IconClear,
       IconClose,
+      IconCode,
       IconCopy,
       IconDebug,
       IconDownload,
@@ -513,23 +515,11 @@ export const groupedIcons: Group[] = [
       IconResize,
       IconRestart,
       IconRevert,
-      IconShare,
       IconShuffle,
+      IconShare,
       IconSlide,
       IconTrash,
       IconUpload,
-    },
-  },
-  {
-    name: 'indices',
-    icons: {
-      IconAlert,
-      IconHealth,
-      IconInfo,
-      IconInfoCircle,
-      IconQuestion,
-      IconRouble,
-      IconWarning,
     },
   },
   {
@@ -559,6 +549,18 @@ export const groupedIcons: Group[] = [
       IconShape,
       IconTable2,
       IconWindow,
+    },
+  },
+  {
+    name: 'indices',
+    icons: {
+      IconAlert,
+      IconHealth,
+      IconInfo,
+      IconInfoCircle,
+      IconQuestion,
+      IconRouble,
+      IconWarning,
     },
   },
   {
@@ -728,8 +730,8 @@ export const groupedIcons: Group[] = [
       IconTest,
       IconTrajectory,
       IconVZD,
-      IconWellOpen,
       IconWellPipe,
+      IconWellOpen,
     },
   },
   {
@@ -759,8 +761,8 @@ export const groupedIcons: Group[] = [
       IconThumbUp,
       IconVideo,
       IconWifi,
-      IconWifiOff,
       IconWifiWarning,
+      IconWifiOff,
     },
   },
   {
@@ -943,8 +945,8 @@ export const groupedIcons: Group[] = [
       IconWellGradients,
       IconWellKBK,
       IconWellPreset,
-      IconWellTrajectory,
       IconWellPresetALT,
+      IconWellTrajectory,
     },
   },
 ];
