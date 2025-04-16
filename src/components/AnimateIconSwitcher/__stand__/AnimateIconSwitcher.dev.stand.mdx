@@ -1,4 +1,4 @@
-import { MdxMenu } from '@consta/stand';
+import { MdxMenu, MdxInformer } from '@consta/stand';
 import {
   AnimateIconSwitcherIcons,
   AnimateIconSwitcherDirections,
@@ -45,7 +45,11 @@ export const AnimateIconSwitcherIcons = () => {
 
 За направление иконки отвечает свойство `directions`, которое может быть равно углу её поворота.
 
-> Если указана только одна иконка, то свойство `active` будет отвечать только за текущее направление иконки.
+<MdxInformer status="normal">
+
+Если указана одна иконка, то свойство `activeIndex` будет отвечать только за её текущее направление.
+
+</MdxInformer>
 
 ```tsx
 export const AnimateIconSwitcherDirections = () => {
