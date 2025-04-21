@@ -1,4 +1,4 @@
-import { MdxMenu } from '@consta/stand';
+import { MdxMenu, MdxInformer } from '@consta/stand';
 import {
   LazyIconExample,
   CreateLazyIconExample,
@@ -16,12 +16,13 @@ import { LazyIcon } from '@consta/icons/IconsProvider';
 
 </MdxMenu>
 
-Иконка с отложенной (ленивой) загрузкой. Построена на [`React.lazy`](https://react.dev/reference/react/lazy).
-Особенность компонента состоит в том, что иконки не будут попадать в главный бандл,
-а подгрузятся по мере их появления на странице. Каждая иконка будет лежать в отдельном чанке.
+Иконка с отложенной (ленивой) загрузкой. Построена на [`React.lazy`](https://react.dev/reference/react/lazy). Особенность компонента состоит в том, что иконки не будут попадать в главный бандл, а подгрузятся по мере их появления на странице. Каждая иконка будет лежать в отдельном чанке.
 
-> Для конкретной работы в сборщике проекта должен быть настроен [`Module Federation`](https://webpack.js.org/concepts/module-federation/).
-> Если используете [`Create React App`](https://create-react-app.dev/docs/getting-started), то все будет работать из коробки.
+<MdxInformer status="warning">
+
+Для конкретной работы в сборщике проекта должен быть настроен [`Module Federation`](https://webpack.js.org/concepts/module-federation/). Если используете [`Create React App`](https://create-react-app.dev/docs/getting-started), то все будет работать из коробки.
+
+</MdxInformer>
 
 ## Использование
 
