@@ -1,4 +1,5 @@
-const { normalize, resolve, join } = require('path');
+const { normalize, resolve } = require('path');
+const { join } = require('./helpers/join');
 const { writeFile, ensureDir, remove } = require('fs-extra');
 const { existsSync } = require('fs');
 const { Command, flags } = require('@oclif/command');
@@ -7,6 +8,7 @@ const logSymbols = require('log-symbols');
 const fg = require('fast-glob');
 const { react } = require('@bem/sdk.naming.presets');
 const createMatch = require('@bem/sdk.naming.cell.match');
+const { copyAssets } = require('./helpers');
 
 const enhancedReactNaming = {
   ...react,
@@ -23,7 +25,9 @@ const generateReExport = async (src, reexport, ignore, distPath) => {
 
   const components = [];
 
-  const files = await fg(join(src, reexport, '**/*.{ts,tsx}'), { ignore });
+  const files = await fg(join(src, reexport, '**', '*.{ts,tsx}'), {
+    ignore,
+  });
 
   files
     .sort()
@@ -118,6 +122,9 @@ class GenerateCommand extends Command {
       await Promise.all([
         generateReExports(config).then(() =>
           this.log(logSymbols.success, 'reExports generated'),
+        ),
+        copyAssets(config).then(() =>
+          this.log(logSymbols.success, 'assets copied'),
         ),
       ]);
     } catch (err) {

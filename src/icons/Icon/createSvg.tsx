@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useMemo } from 'react';
+import React, { isValidElement, useContext, useEffect, useMemo } from 'react';
 
 import { cnIcons, IconsContext } from '##/components/IconsProvider';
 
@@ -17,7 +17,9 @@ export const createSvg =
       return renderType[size] === 'use' ? Svg({ className }) : null;
     }, [Svg]);
 
-    const { children: _children, ...svgProps } = SvgElement?.props ?? {};
+    const { children: _children, ...svgProps } = isValidElement(SvgElement)
+      ? SvgElement?.props || {}
+      : {};
 
     useEffect(() => {
       if (renderType[size] === 'use') {
