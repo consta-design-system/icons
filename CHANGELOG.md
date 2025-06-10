@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.1 (10/06/2025)
+- [chore: update builder (#49)](https://github.com/consta-design-system/icons/commit/daa659eb989c51ad7335fc109d695b1b9f2404f8) - [@gizeasy](https://github.com/gizeasy)
+- [docs: replace informers (#48)](https://github.com/consta-design-system/icons/commit/81c47e08ad8345edc0e560e0bde253bae0a978cf) - [@alyonurchick1](https://github.com/alyonurchick1)
+- [docs: updating the icon instructions (lib: consta icons) (#39)](https://github.com/consta-design-system/icons/commit/65b46b651c693fe8c163b091515b5298f065f645) - [@alyonurchick1](https://github.com/alyonurchick1)
+- [fix(IconSelect): update IconSelect and IconSelectOpen (#46)](https://github.com/consta-design-system/icons/commit/f4f48b133bf5701807edbb2c6087207fcf8f0a83) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.1.0 (11/06/2024)
 Самое важное:
 - Добавлена новая иконка `IconCode`
