@@ -2,7 +2,11 @@ const { resolve } = require('path');
 const { Command, flags } = require('@oclif/command');
 const logSymbols = require('log-symbols');
 
-const { iconsTransformed } = require('./helpers');
+const {
+  iconsTransformed,
+  iconsFileTransformed,
+  responsesImagesTransformed,
+} = require('./helpers');
 
 class GenerateCommand extends Command {
   async safeInvokeHook(hook) {
@@ -34,9 +38,14 @@ class GenerateCommand extends Command {
     const { src, ignore = [], afterBuild } = config;
 
     try {
-      await iconsTransformed(ignore, src).then(() =>
-        this.log(logSymbols.success, 'icons copied & transformed'),
-      );
+      await Promise.all([
+        iconsFileTransformed(ignore, src).then(() =>
+          this.log(logSymbols.success, 'fileIcons copied & transformed'),
+        ),
+        responsesImagesTransformed(ignore, src).then(() =>
+          this.log(logSymbols.success, 'responsesImages copied & transformed'),
+        ),
+      ]);
       await this.safeInvokeHook(afterBuild);
     } catch (err) {
       this.error(err);

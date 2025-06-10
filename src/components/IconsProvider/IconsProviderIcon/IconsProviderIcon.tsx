@@ -1,15 +1,15 @@
-import React, { memo } from 'react';
+import React, { isValidElement, memo } from 'react';
 
 import { cnIcons } from '../IconsProvider';
 
 type Props = {
-  element: React.ReactElement | null;
+  element: React.ReactNode | null;
   name: string;
 };
 
 export const IconsProviderIcon = memo(
   ({ element, name }: Props) => {
-    if (!element) {
+    if (!isValidElement(element)) {
       return null;
     }
 
