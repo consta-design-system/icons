@@ -123,9 +123,6 @@ class GenerateCommand extends Command {
         generateReExports(config).then(() =>
           this.log(logSymbols.success, 'reExports generated'),
         ),
-        copyAssets(config).then(() =>
-          this.log(logSymbols.success, 'assets copied'),
-        ),
       ]);
     } catch (err) {
       this.error(err);

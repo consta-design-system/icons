@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.2.0 (11/08/2025)
+Самое важное:
+- Добавили `IconBookStroked`, `IconHashTag`, `IconPriceLabelStroked`, `IconSettingsStroked`
+
+---
+
+- [feat: added IconBookStroked, IconHashTag, IconPriceLabelStroked, IconSettingsStroked (#50)](https://github.com/consta-design-system/icons/commit/2309fede29ace986276428f2087c7f663b1911ca) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.1.1 (10/06/2025)
 - [chore: update builder (#49)](https://github.com/consta-design-system/icons/commit/daa659eb989c51ad7335fc109d695b1b9f2404f8) - [@gizeasy](https://github.com/gizeasy)
 - [docs: replace informers (#48)](https://github.com/consta-design-system/icons/commit/81c47e08ad8345edc0e560e0bde253bae0a978cf) - [@alyonurchick1](https://github.com/alyonurchick1)

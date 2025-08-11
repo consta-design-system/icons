@@ -1,4 +1,6 @@
-const { normalize, dirname, join, relative, resolve } = require('path');
+const { normalize, dirname, relative, resolve } = require('path');
+const { join } = require('./join');
+
 const {
   readFile,
   writeFile,
@@ -348,18 +350,25 @@ const iconsTransformed = async (ignore, src) => {
   await createNamesForLazyIcons(Object.keys(svgComponents), src);
 };
 
-const copyAssets = async (ignore, src, distPaths) => {
+const copyAssets = async ({ ignore, src, distPath }) => {
   const assetFiles = await fg([`${src}/**/*.{svg,jpg,png,gif,md,woff,woff2}`], {
     ignore,
   });
 
+  console.log(assetFiles);
+
   assetFiles.forEach(async (fileName) => {
     const asset = await readFile(fileName);
-    for (const distPath of distPaths) {
-      const newPath = resolve(distPath, relative(src, fileName));
-      await ensureDir(dirname(newPath));
-      writeFile(newPath, asset);
-    }
+
+    const newPath = resolve(
+      distPath,
+      '__internal__',
+      'src',
+      relative(src, fileName),
+    );
+
+    await ensureDir(dirname(newPath));
+    writeFile(newPath, asset);
   });
 };
 
