@@ -6,7 +6,7 @@ const IconArrowPreviousSizeXs = (props: SVGProps<SVGSVGElement>) => (
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M2 2.707 5.293 6 2 9.293l.707.707 4-4-4-4L2 2.707Zm3.293 0L8.586 6 5.292 9.293 6 10l4-4-4-4-.707.707Z"
+      d="M6.707 2.707 3.414 6l3.294 3.293L6 10 2 6l4-4 .707.707Zm3.293 0L6.707 6 10 9.293 9.293 10l-4-4 4-4 .707.707Z"
     />
   </svg>
 );

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SVGProps } from 'react';
 
 const IconWatchStrokedSizeXs = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" {...props}>
     <path d="M5 2h1v3.749l2.79 1.954-.573.82L5 6.268V2Z" />
     <path
       fillRule="evenodd"

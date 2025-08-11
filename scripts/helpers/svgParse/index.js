@@ -18,6 +18,8 @@ const svgParse = async ({
   const color = svg.includes('color:multiple') ? 'multiple' : 'mono';
   const withoutSvgo = svg.includes('withoutSvgo');
 
+  // svg = svgCleanHeight(svgCleanWidth(svgCleanN(svg)));
+
   if (cleanFill && color === 'mono') {
     svg = svgCleanFill(svg);
   }
@@ -29,7 +31,7 @@ const svgParse = async ({
         ? ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier']
         : ['@svgr/plugin-jsx', '@svgr/plugin-prettier'],
       typescript: true,
-      dimensions: false,
+      dimensions: true,
       svgo: !withoutSvgo,
       ...(withoutSvgo
         ? {}
@@ -37,6 +39,9 @@ const svgParse = async ({
             svgoConfig: {
               plugins: [
                 'preset-default',
+                {
+                  name: 'removeDimensions',
+                },
                 {
                   name: 'prefixIds',
                   params: {

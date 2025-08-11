@@ -40,6 +40,7 @@ import { IconBold } from '../../IconBold';
 import { IconBook } from '../../IconBook';
 import { IconBookmarkFilled } from '../../IconBookmarkFilled';
 import { IconBookmarkStroked } from '../../IconBookmarkStroked';
+import { IconBookStroked } from '../../IconBookStroked';
 import { IconCalculator } from '../../IconCalculator';
 import { IconCalendar } from '../../IconCalendar';
 import { IconCamera } from '../../IconCamera';
@@ -168,6 +169,7 @@ import { IconGradients } from '../../IconGradients';
 import { IconGrouping } from '../../IconGrouping';
 import { IconHamburger } from '../../IconHamburger';
 import { IconHand } from '../../IconHand';
+import { IconHashtag } from '../../IconHashtag';
 import { IconHealth } from '../../IconHealth';
 import { IconHelmet } from '../../IconHelmet';
 import { IconHome } from '../../IconHome';
@@ -263,6 +265,7 @@ import { IconPorosityMap } from '../../IconPorosityMap';
 import { IconPressureFilled } from '../../IconPressureFilled';
 import { IconPressureStroked } from '../../IconPressureStroked';
 import { IconPriceLabel } from '../../IconPriceLabel';
+import { IconPriceLabelStroked } from '../../IconPriceLabelStroked';
 import { IconPrinterFilled } from '../../IconPrinterFilled';
 import { IconPrinterStroked } from '../../IconPrinterStroked';
 import { IconProcessing } from '../../IconProcessing';
@@ -303,6 +306,7 @@ import { IconSelect } from '../../IconSelect';
 import { IconSelectOpen } from '../../IconSelectOpen';
 import { IconSendMessage } from '../../IconSendMessage';
 import { IconSettings } from '../../IconSettings';
+import { IconSettingsStroked } from '../../IconSettingsStroked';
 import { IconShape } from '../../IconShape';
 import { IconShare } from '../../IconShare';
 import { IconShuffle } from '../../IconShuffle';
@@ -433,16 +437,16 @@ export const groupedIcons: Group[] = [
       IconFractureMultiple,
       IconFractureOrange,
       IconFrequency,
-      IconGis,
       IconGisAttributes,
       IconGisMultiple,
+      IconGis,
       IconHorizonBlue,
       IconHorizonFolderBlue,
       IconHorizonFolderGreen,
-      IconHorizonFolderOrange,
       IconHorizonGreen,
       IconHorizonMultiple,
       IconHorizonOrange,
+      IconHorizonFolderOrange,
       IconInclinometry,
       IconInterpretations,
       IconIronMap,
@@ -450,9 +454,9 @@ export const groupedIcons: Group[] = [
       IconLayerYellow,
       IconLitology,
       IconMaps,
-      IconMarkers,
       IconMarkersBlue,
       IconMarkersOrange,
+      IconMarkers,
       IconMeasuredDepth,
       IconOilSaturationMap,
       IconPermeabilityMap,
@@ -474,8 +478,8 @@ export const groupedIcons: Group[] = [
       IconWellGreen,
       IconWellOrange,
       IconWells,
-      IconZoneOrange,
       IconZoneBlue,
+      IconZoneOrange,
     },
   },
   {
@@ -525,8 +529,8 @@ export const groupedIcons: Group[] = [
   {
     name: 'formatting',
     icons: {
-      IconAlignBlocksLeft,
       IconAlignBlocksRight,
+      IconAlignBlocksLeft,
       IconCards,
       IconCardsCompact,
       IconCollapse,
@@ -536,8 +540,8 @@ export const groupedIcons: Group[] = [
       IconFitToDefault,
       IconGrouping,
       IconLogicalElement,
-      IconMaxHeight,
       IconMaxWidth,
+      IconMaxHeight,
       IconNodeEnd,
       IconNodeStart,
       IconNodeStep,
@@ -580,8 +584,8 @@ export const groupedIcons: Group[] = [
       IconQuote,
       IconStrikethrough,
       IconTable,
-      IconType,
       IconUnderline,
+      IconType,
     },
   },
   {
@@ -630,8 +634,8 @@ export const groupedIcons: Group[] = [
       IconDown,
       IconForward,
       IconRoute,
-      IconSelect,
       IconSelectOpen,
+      IconSelect,
       IconTop,
       IconTopRight,
     },
@@ -642,6 +646,7 @@ export const groupedIcons: Group[] = [
       IconArtBrush,
       IconBag,
       IconBook,
+      IconBookStroked,
       IconBookmarkFilled,
       IconBookmarkStroked,
       IconCalculator,
@@ -654,15 +659,16 @@ export const groupedIcons: Group[] = [
       IconFolderClosed,
       IconFolderOpen,
       IconFolders,
-      IconHelmet,
       IconHome,
+      IconHelmet,
       IconLock,
       IconPicture,
       IconPin,
       IconPriceLabel,
-      IconPrinterFilled,
+      IconPriceLabelStroked,
       IconPrinterStroked,
       IconProcessing,
+      IconPrinterFilled,
       IconRing,
       IconRulerFilled,
       IconRulerStroked,
@@ -670,6 +676,7 @@ export const groupedIcons: Group[] = [
       IconSearchFilled,
       IconSearchStroked,
       IconSettings,
+      IconSettingsStroked,
       IconSpeed,
       IconStorage,
       IconTechResponse,
@@ -715,10 +722,10 @@ export const groupedIcons: Group[] = [
       IconKernStroked,
       IconLithologyFilled,
       IconLithologyStroked,
-      IconMBU,
-      IconMGRP,
       IconMLSP,
       IconMMP,
+      IconMGRP,
+      IconMBU,
       IconMolecules,
       IconOilBarrel,
       IconPressureFilled,
@@ -748,11 +755,12 @@ export const groupedIcons: Group[] = [
     icons: {
       IconChatFilled,
       IconChatStroked,
-      IconCommentAddFilled,
       IconCommentDeleteFilled,
       IconCommentEditFilled,
       IconCommentFilled,
       IconCommentStroked,
+      IconCommentAddFilled,
+      IconHashtag,
       IconMail,
       IconMic,
       IconPhone,
@@ -761,8 +769,8 @@ export const groupedIcons: Group[] = [
       IconThumbUp,
       IconVideo,
       IconWifi,
-      IconWifiWarning,
       IconWifiOff,
+      IconWifiWarning,
     },
   },
   {
@@ -775,7 +783,6 @@ export const groupedIcons: Group[] = [
       IconColoredCatch,
       IconColoredCommonBig,
       IconColoredCommonThree,
-      IconColoredCommonTwo,
       IconColoredCreateLogic,
       IconColoredDashboard,
       IconColoredEconomics,
@@ -785,6 +792,7 @@ export const groupedIcons: Group[] = [
       IconColoredFazaYellow,
       IconColoredField,
       IconColoredFolder,
+      IconColoredCommonTwo,
       IconColoredGRR,
       IconColoredGant,
       IconColoredGas,
@@ -809,8 +817,8 @@ export const groupedIcons: Group[] = [
       IconConfluence,
       IconFacebook,
       IconGitHub,
-      IconInstagramFilled,
       IconInstagramStroked,
+      IconInstagramFilled,
       IconJira,
       IconLentaFilled,
       IconLentaStroked,
@@ -836,8 +844,8 @@ export const groupedIcons: Group[] = [
       IconDrop,
       IconGas,
       IconLeaf,
-      IconWorldStroked,
       IconWorldFilled,
+      IconWorldStroked,
     },
   },
   {
@@ -859,8 +867,8 @@ export const groupedIcons: Group[] = [
       IconFunnelRemove,
       IconSortDown,
       IconSortDownCenter,
-      IconSortUp,
       IconSortUpCenter,
+      IconSortUp,
       IconUnsort,
       IconUnsortCenter,
     },
@@ -887,8 +895,8 @@ export const groupedIcons: Group[] = [
       IconScreenFilled,
       IconScreenStroked,
       IconStop,
-      IconVolumeDown,
       IconVolumeUp,
+      IconVolumeDown,
       IconWideScreenFilled,
       IconWideScreenStroked,
     },
@@ -929,12 +937,12 @@ export const groupedIcons: Group[] = [
       IconToolsHoldCurveHold,
       IconToolsHoldFin,
       IconToolsHoldMid,
-      IconToolsHoldStart,
       IconToolsIncline,
       IconToolsLeftDown,
-      IconToolsMaxAngle,
+      IconToolsHoldStart,
       IconToolsRightTop,
       IconToolsSWell,
+      IconToolsMaxAngle,
     },
   },
   {

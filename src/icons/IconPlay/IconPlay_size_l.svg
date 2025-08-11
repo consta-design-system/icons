@@ -1,8 +1,15 @@
 <!-- ##color:mono ##group:media -->
-<svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="28"
+  height="28"
+  viewBox="0 0 28 28"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <path
     fill-rule="evenodd"
     clip-rule="evenodd"
     d="M24.3009 15.2014C25.233 14.6541 25.233 13.3458 24.3009 12.7985L8.20763 3.34912C7.23907 2.78042 6 3.45475 6 4.55055V23.4494C6 24.5452 7.23907 25.2195 8.20763 24.6508L24.3009 15.2014Z"
+    fill="black"
   />
 </svg>
