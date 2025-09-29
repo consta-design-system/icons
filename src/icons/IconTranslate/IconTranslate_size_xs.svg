@@ -1,0 +1,21 @@
+<!-- ##color:mono ##group:communication -->
+
+<svg
+  width="12"
+  height="12"
+  viewBox="0 0 12 12"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M11 11H9.9082L9.29688 9.5H6.70312L6.0918 11H5L7.45703 5H8.54883L11 11ZM6.94824 8.5H8.88672L8 6L6.94824 8.5Z"
+    fill="black"
+  />
+  <path
+    d="M7 4H6L5.24219 5.70703L3.82812 7.12109L5.24219 8.53516L4.53516 9.24316L3.12012 7.82812L1.70703 9.24219L1 8.53516L2.41309 7.12109L1 5.70703L1.70703 5L3.12109 6.41406L4.53516 5L5 4H1V3H7V4Z"
+    fill="black"
+  />
+  <path d="M5 2H3V1H5V2Z" fill="black" />
+</svg>

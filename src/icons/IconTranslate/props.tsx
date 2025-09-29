@@ -1,0 +1,18 @@
+import { CreateIconArguments } from '##/icons/Icon/helpers';
+
+import IconTranslateSizeL from './IconTranslate_size_l';
+import IconTranslateSizeM from './IconTranslate_size_m';
+import IconTranslateSizeS from './IconTranslate_size_s';
+import IconTranslateSizeXs from './IconTranslate_size_xs';
+
+const props: CreateIconArguments = {
+  l: IconTranslateSizeL,
+  m: IconTranslateSizeM,
+  s: IconTranslateSizeS,
+  xs: IconTranslateSizeXs,
+  name: 'IconTranslate',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
+};
+
+export default props;
