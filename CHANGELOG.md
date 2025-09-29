@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.3.0 (29/09/2025)
+Самое важное:
+- Добавлена иконка `IconTranslate`
+
+---
+
+- [feat(IconTranslate): add icon (#51)](https://github.com/consta-design-system/icons/commit/97e1b15e65d80ba7302e8b27ca730b5b27becae2) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.2.0 (11/08/2025)
 Самое важное:
 - Добавили `IconBookStroked`, `IconHashTag`, `IconPriceLabelStroked`, `IconSettingsStroked`
