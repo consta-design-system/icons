@@ -1,0 +1,18 @@
+import { CreateIconArguments } from '##/icons/Icon/helpers';
+
+import IconShoppingCartSizeL from './IconShoppingCart_size_l';
+import IconShoppingCartSizeM from './IconShoppingCart_size_m';
+import IconShoppingCartSizeS from './IconShoppingCart_size_s';
+import IconShoppingCartSizeXs from './IconShoppingCart_size_xs';
+
+const props: CreateIconArguments = {
+  l: IconShoppingCartSizeL,
+  m: IconShoppingCartSizeM,
+  s: IconShoppingCartSizeS,
+  xs: IconShoppingCartSizeXs,
+  name: 'IconShoppingCart',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
+};
+
+export default props;
