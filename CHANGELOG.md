@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.4.0 (22/10/2025)
+Самое важное:
+- Добавлена иконка `IconShoppingCart`
+
+---
+
+- [feat(IconShoppingCart): add icon (#52)](https://github.com/consta-design-system/icons/commit/b5787c380b2d827f2b6516bdba8b44b8c6aab97b) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.3.0 (29/09/2025)
 Самое важное:
 - Добавлена иконка `IconTranslate`
