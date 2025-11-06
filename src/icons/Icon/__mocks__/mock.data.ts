@@ -217,6 +217,7 @@ import { IconLitology } from '../../IconLitology';
 import { IconLoading } from '../../IconLoading';
 import { IconLock } from '../../IconLock';
 import { IconLogicalElement } from '../../IconLogicalElement';
+import { IconMagic } from '../../IconMagic';
 import { IconMail } from '../../IconMail';
 import { IconMapFilled } from '../../IconMapFilled';
 import { IconMaps } from '../../IconMaps';
@@ -439,16 +440,16 @@ export const groupedIcons: Group[] = [
       IconFractureMultiple,
       IconFractureOrange,
       IconFrequency,
+      IconGisMultiple,
       IconGis,
       IconGisAttributes,
-      IconGisMultiple,
       IconHorizonBlue,
-      IconHorizonFolderBlue,
-      IconHorizonFolderGreen,
       IconHorizonFolderOrange,
       IconHorizonGreen,
-      IconHorizonMultiple,
+      IconHorizonFolderGreen,
       IconHorizonOrange,
+      IconHorizonMultiple,
+      IconHorizonFolderBlue,
       IconInclinometry,
       IconInterpretations,
       IconIronMap,
@@ -562,8 +563,8 @@ export const groupedIcons: Group[] = [
     icons: {
       IconAlert,
       IconHealth,
-      IconInfo,
       IconInfoCircle,
+      IconInfo,
       IconQuestion,
       IconRouble,
       IconWarning,
@@ -581,8 +582,8 @@ export const groupedIcons: Group[] = [
       IconColorText,
       IconColumns,
       IconItalic,
-      IconList,
       IconListNumbered,
+      IconList,
       IconQuote,
       IconStrikethrough,
       IconTable,
@@ -669,8 +670,8 @@ export const groupedIcons: Group[] = [
       IconPriceLabel,
       IconPriceLabelStroked,
       IconPrinterFilled,
-      IconProcessing,
       IconPrinterStroked,
+      IconProcessing,
       IconRing,
       IconRulerFilled,
       IconRulerStroked,
@@ -721,8 +722,8 @@ export const groupedIcons: Group[] = [
       IconFishboneStroked,
       IconGradients,
       IconIncident,
-      IconKernFilled,
       IconKernStroked,
+      IconKernFilled,
       IconLithologyFilled,
       IconLithologyStroked,
       IconMBU,
@@ -855,8 +856,8 @@ export const groupedIcons: Group[] = [
   {
     name: 'weather',
     icons: {
-      IconFavoriteFilled,
       IconFavoriteStroked,
+      IconFavoriteFilled,
       IconLightningBolt,
       IconMoon,
       IconSnowflake,
@@ -882,8 +883,8 @@ export const groupedIcons: Group[] = [
     icons: {
       IconGeo,
       IconLayers,
-      IconMapFilled,
       IconMapStroked,
+      IconMapFilled,
     },
   },
   {
@@ -905,6 +906,7 @@ export const groupedIcons: Group[] = [
       IconWideScreenStroked,
     },
   },
+  { name: 'default', icons: { IconMagic } },
   {
     name: 'human',
     icons: {
@@ -940,8 +942,8 @@ export const groupedIcons: Group[] = [
       IconToolsHold,
       IconToolsHoldCurveHold,
       IconToolsHoldFin,
-      IconToolsHoldStart,
       IconToolsHoldMid,
+      IconToolsHoldStart,
       IconToolsIncline,
       IconToolsLeftDown,
       IconToolsMaxAngle,
