@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.5.0 (06/11/2025)
+Самое важное:
+- Добавили иконку `IconMagic`
+
+---
+
+- [feat(IconMagic): add icon (#53)](https://github.com/consta-design-system/icons/commit/1e6c91cdfd900fa2b86e81a080257e51b9878ebf) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.4.0 (22/10/2025)
 Самое важное:
 - Добавлена иконка `IconShoppingCart`
