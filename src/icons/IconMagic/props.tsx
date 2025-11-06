@@ -1,0 +1,18 @@
+import { CreateIconArguments } from '##/icons/Icon/helpers';
+
+import IconMagicSizeL from './IconMagic_size_l';
+import IconMagicSizeM from './IconMagic_size_m';
+import IconMagicSizeS from './IconMagic_size_s';
+import IconMagicSizeXs from './IconMagic_size_xs';
+
+const props: CreateIconArguments = {
+  l: IconMagicSizeL,
+  m: IconMagicSizeM,
+  s: IconMagicSizeS,
+  xs: IconMagicSizeXs,
+  name: 'IconMagic',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
+};
+
+export default props;
