@@ -1,11 +1,11 @@
 # Changelog
 
+## v1.6.0 (20/01/2026)
+- [feat(IconPipette): add icon (#54)](https://github.com/consta-design-system/icons/commit/98f53eea29670aed3b2ec98fca2c3e16e9dbbe56) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.5.0 (06/11/2025)
-Самое важное:
-- Добавили иконку `IconMagic`
-
----
-
 - [feat(IconMagic): add icon (#53)](https://github.com/consta-design-system/icons/commit/1e6c91cdfd900fa2b86e81a080257e51b9878ebf) - [@gizeasy](https://github.com/gizeasy)
 
 --------------------
