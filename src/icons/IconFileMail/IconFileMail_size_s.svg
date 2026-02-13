@@ -1,0 +1,15 @@
+<!-- ##color:mono ##group:file -->
+<svg
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M1 3H15V13H1V3ZM2.84737 4L6.78982 7.39333L8 8.36005L9.21018 7.39333L13.1526 4H2.84737ZM14 4.59006L10.2746 7.79655L14 11.3354V4.59006ZM13.2477 12L9.501 8.44091L8 9.63995L6.499 8.44091L2.75233 12H13.2477ZM2 11.3354V4.59006L5.72537 7.79655L2 11.3354Z"
+    fill="black"
+  />
+</svg>

@@ -1,0 +1,13 @@
+import * as React from 'react';
+import { SVGProps } from 'react';
+
+const IconFileProgrammSizeS = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" {...props}>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 2h12.5v1H15v11H2v-1.5H1V2Zm2 10.5v.5h11V7h-.5v5.5H3ZM13.5 6h.5V4h-.5v2Zm-1-3H2v2h10.5V3Zm0 3H2v5.5h10.5V6ZM8 4.5H7v-1h1v1Zm2 0H9v-1h1v1Zm2 0h-1v-1h1v1Z"
+    />
+  </svg>
+);
+export default IconFileProgrammSizeS;

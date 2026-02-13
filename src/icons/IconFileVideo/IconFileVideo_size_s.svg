@@ -1,0 +1,15 @@
+<!-- ##color:mono ##group:file -->
+<svg
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M3 2H13V14H3V2ZM4 3V3.5H4.8V3H4ZM5.8 3V7.5H10.2V3H5.8ZM11.2 3V3.5H12V3H11.2ZM12 4.5H11.2V5.5H12V4.5ZM12 6.5H11.2V7.5H12V6.5ZM12 8.5H11.2V9.5H12V8.5ZM12 10.5H11.2V11.5H12V10.5ZM12 12.5H11.2V13H12V12.5ZM10.2 13V8.5H5.8V13H10.2ZM4.8 13V12.5H4V13H4.8ZM4 11.5H4.8V10.5H4V11.5ZM4 9.5H4.8V8.5H4V9.5ZM4 7.5H4.8V6.5H4V7.5ZM4 5.5H4.8V4.5H4V5.5Z"
+    fill="black"
+  />
+</svg>

@@ -1,0 +1,15 @@
+<!-- ##color:mono ##group:file -->
+<svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M2 3H20V5H22V21H4V19H2V3ZM5 19V20H21V10H20V19H5ZM20 9H21V6H20V9ZM3 4V7H19V4H3ZM19 8H3V18H19V8ZM14 6H13V5H14V6ZM16 6H15V5H16V6ZM18 6H17V5H18V6Z"
+    fill="black"
+  />
+</svg>
