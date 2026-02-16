@@ -1,0 +1,9 @@
+import * as React from 'react';
+import { SVGProps } from 'react';
+
+const IconFileAudioSizeS = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" {...props}>
+    <path d="M6 5.754V12.5A2.5 2.5 0 0 1 3.5 15h-1a1.5 1.5 0 0 1 0-3h1.7a.8.8 0 0 0 .8-.8V5.02a2 2 0 0 1 1.465-1.927l6.267-1.74A1 1 0 0 1 14 2.315V10.5a2.5 2.5 0 0 1-2.5 2.5h-1a1.5 1.5 0 0 1 0-3h1.7a.8.8 0 0 0 .8-.8V3.663a.5.5 0 0 0-.637-.48l-5.638 1.61A1 1 0 0 0 6 5.754Z" />
+  </svg>
+);
+export default IconFileAudioSizeS;

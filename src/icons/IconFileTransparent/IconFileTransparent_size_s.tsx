@@ -1,0 +1,14 @@
+import * as React from 'react';
+import { SVGProps } from 'react';
+
+const IconFileTransparentSizeS = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" {...props}>
+    <path d="M1 1h2v2H1V1ZM9 9h2v2H9V9ZM7 9H5v2h2V9Z" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M5 3H3v2H1v2h2v2H1v2h2v2H1v2h2v-2h2v2h2v-2h2v2h2v-2h2v2h2v-2h-2v-2h2V9h-2V7h2V5h-2V3h2V1h-2v2h-2V1H9v2H7V1H5v2Zm0 2V3h2v2H5Zm0 2H3V5h2v2Zm2 0V5h2v2H7Zm0 2V7H5v2H3v2h2v2h2v-2h2v2h2v-2h2V9h-2V7h2V5h-2V3H9v2h2v2H9v2H7Z"
+    />
+  </svg>
+);
+export default IconFileTransparentSizeS;

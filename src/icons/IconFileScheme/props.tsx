@@ -1,0 +1,16 @@
+import { CreateIconArguments } from '##/icons/Icon/helpers';
+
+import IconFileSchemeSizeM from './IconFileScheme_size_m';
+import IconFileSchemeSizeS from './IconFileScheme_size_s';
+
+const props: CreateIconArguments = {
+  l: IconFileSchemeSizeM,
+  m: IconFileSchemeSizeM,
+  s: IconFileSchemeSizeS,
+  xs: IconFileSchemeSizeM,
+  name: 'IconFileScheme',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
+};
+
+export default props;

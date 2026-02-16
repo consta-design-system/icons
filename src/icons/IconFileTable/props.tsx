@@ -1,0 +1,16 @@
+import { CreateIconArguments } from '##/icons/Icon/helpers';
+
+import IconFileTableSizeM from './IconFileTable_size_m';
+import IconFileTableSizeS from './IconFileTable_size_s';
+
+const props: CreateIconArguments = {
+  l: IconFileTableSizeM,
+  m: IconFileTableSizeM,
+  s: IconFileTableSizeS,
+  xs: IconFileTableSizeM,
+  name: 'IconFileTable',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
+};
+
+export default props;

@@ -1,0 +1,16 @@
+import { CreateIconArguments } from '##/icons/Icon/helpers';
+
+import IconFileTransparentSizeM from './IconFileTransparent_size_m';
+import IconFileTransparentSizeS from './IconFileTransparent_size_s';
+
+const props: CreateIconArguments = {
+  l: IconFileTransparentSizeM,
+  m: IconFileTransparentSizeM,
+  s: IconFileTransparentSizeS,
+  xs: IconFileTransparentSizeM,
+  name: 'IconFileTransparent',
+  renderType: { l: 'use', m: 'use', s: 'use', xs: 'use' },
+  color: 'mono',
+};
+
+export default props;
