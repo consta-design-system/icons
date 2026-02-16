@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.7.0 (16/02/2026)
+Добавили новые иконки:
+- IconFileAnimation
+- IconFileArchive
+- IconFileCode
+- IconFileAudio
+- IconFileConfig
+- IconFileDatabase
+- IconFileDisk
+- IconFileDocument
+- IconFileFont
+- IconFileImage
+- IconFileMail
+- IconFilePDF
+- IconFilePresentation
+- IconFileProgramm
+- IconFileScheme
+- IconFileTable
+- IconFileTransparent
+- IconFileUnknown
+- IconFileVector
+- IconFileVideo
+
+---
+
+- [feat(icons): add file icons (#55)](https://github.com/consta-design-system/icons/commit/1771774199d2bb5db3cb1f671aaea9870cf3bebc) - [@ShavrinAleksei](https://github.com/ShavrinAleksei)
+
+--------------------
+
 ## v1.6.0 (20/01/2026)
 - [feat(IconPipette): add icon (#54)](https://github.com/consta-design-system/icons/commit/98f53eea29670aed3b2ec98fca2c3e16e9dbbe56) - [@gizeasy](https://github.com/gizeasy)
 
