@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.7.1 (19/02/2026)
+- [fix(IconFileProgram): fix name (#56)](https://github.com/consta-design-system/icons/commit/0804d5f6443aa7d8479cabebbcc24112e61c9fc4) - [@ShavrinAleksei](https://github.com/ShavrinAleksei)
+
+--------------------
+
 ## v1.7.0 (16/02/2026)
 Добавили новые иконки:
 - IconFileAnimation
