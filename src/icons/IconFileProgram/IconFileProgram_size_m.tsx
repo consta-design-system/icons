@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const IconFileProgrammSizeM = (props: SVGProps<SVGSVGElement>) => (
+const IconFileProgramSizeM = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <path
       fillRule="evenodd"
@@ -10,4 +10,4 @@ const IconFileProgrammSizeM = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default IconFileProgrammSizeM;
+export default IconFileProgramSizeM;
