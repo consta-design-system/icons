@@ -1,8 +1,7 @@
 .icons--AnimateIconBase {
   --animate-icon-transition-function: cubic-bezier(0.7, 0, 0.5, 1);
   --animate-icon-transition: 0.3s;
-  transition:
-    transform var(--animate-icon-transition)
+  transition: transform var(--animate-icon-transition)
     var(--animate-icon-transition-function);
   transform: var(--animate-icon-direction);
 }
