@@ -30,7 +30,7 @@ import { createIcon } from '@consta/icons/Icon';
 
 ### Название
 
-Свойство `name` отвечает за название иконки и добавляет его `className`.
+Свойство `name` отвечает за название иконки и добавляет его в `className`.
 Название лучше начинать со слова `Icon`. Посмотреть примеры и проверить, что иконки с таким названием ещё нет, можно в [нашей библиотеке иконок](##LIBS.LIB.STAND/lib:icons/stand:icons-icon-stable).
 
 ### Размер
@@ -63,7 +63,7 @@ export const IconExamplePlus = createIcon({
 
 ### Цвет
 
-За цветове решение для иконки отвечает параметр `color`. Варианты: `'mono'` или `'multiple'`.
+За цветовое решение для иконки отвечает параметр `color`. Варианты: `'mono'` или `'multiple'`.
 
 Если ваша иконка нарисована одним цветом и вы хотите, чтоб этот цвет менялся вместе с [`view` иконки](##LIBS.LIB.STAND.TAB/lib:icons/tab:dev/stand:icons-icon-stable/hash:внешний-вид), установите `color: 'mono'`.
 
@@ -160,7 +160,7 @@ export const IconExamplePlus = createIcon({
 },
 ```
 
-Задекларируте типы для иконок
+Задекларируйте типы для иконок.
 
 ```ts
 declare module '*.icon.svg' {
@@ -171,7 +171,7 @@ declare module '*.icon.svg' {
 }
 ```
 
-Используйте
+Используйте иконку как обычный компонент.
 
 ## Свойства
 
