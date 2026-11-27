@@ -57,6 +57,8 @@ export type CreateIconArguments = {
   color?: 'mono' | 'multiple';
 };
 
-export type SvgProps = { size?: IconPropSize } & JSX.IntrinsicElements['svg'];
+export type SvgProps = {
+  size?: IconPropSize;
+} & React.JSX.IntrinsicElements['svg'];
 
 export type SvgComponent = React.FC<SvgProps>;

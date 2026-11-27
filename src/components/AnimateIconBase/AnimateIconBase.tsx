@@ -1,9 +1,8 @@
 import './AnimateIconBase.css';
 
 import { forwardRefWithAs } from '@consta/uikit/__internal__/src/utils/types/PropsWithAsAttributes';
-import { useRefs } from '@consta/uikit/useRefs';
+import { Transition } from '@consta/uikit/Transition';
 import React from 'react';
-import { Transition } from 'react-transition-group';
 
 import { cnIcon, iconPropSizeDefault } from '##/icons/Icon';
 import { cnMixAnimateIcon } from '##/mixs/MixAnimateIcon/MixAnimateIcon';
@@ -27,7 +26,6 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
       style,
       ...otherProps
     } = props;
-    const refs = useRefs<HTMLElement>(icons.length);
 
     const SingleIcon = icons[0];
 
@@ -43,11 +41,9 @@ export const AnimateIconBase = forwardRefWithAs<AnimateIconBaseProps, 'span'>(
             key={cnAnimateIconBase({ key: index })}
             unmountOnExit
             timeout={transition}
-            nodeRef={refs[index]}
           >
             {(animate) => (
               <Icon
-                ref={refs[index]}
                 className={cnMixAnimateIcon({
                   animate,
                 })}
