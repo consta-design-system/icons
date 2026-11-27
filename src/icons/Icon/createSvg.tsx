@@ -17,15 +17,20 @@ export const createSvg =
       return renderType[size] === 'use' ? Svg({ className }) : null;
     }, [Svg]);
 
-    const { children: _children, ...svgProps } = isValidElement(SvgElement)
-      ? SvgElement?.props || {}
-      : {};
+    // In React 19 types `React.FC` can return a promise, so the SVG props and the
+    // node handed to the provider are taken from the narrowed element only.
+    const svgElement = isValidElement<React.SVGProps<SVGSVGElement>>(SvgElement)
+      ? SvgElement
+      : null;
+
+    const { children: _children, ...svgProps }: React.SVGProps<SVGSVGElement> =
+      svgElement?.props || {};
 
     useEffect(() => {
       if (renderType[size] === 'use') {
-        addIcon?.(name, size, SvgElement);
+        addIcon?.(name, size, svgElement);
       }
-    }, [SvgElement, renderType, size]);
+    }, [svgElement, renderType, size]);
 
     useEffect(() => {
       return () => {

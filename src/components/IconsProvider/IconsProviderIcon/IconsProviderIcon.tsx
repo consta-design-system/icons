@@ -9,7 +9,9 @@ type Props = {
 
 export const IconsProviderIcon = memo(
   ({ element, name }: Props) => {
-    if (!isValidElement(element)) {
+    // React 19 types narrow `isValidElement` to `ReactElement<unknown>`, so the
+    // props shape we actually read has to be named explicitly.
+    if (!isValidElement<React.PropsWithChildren>(element)) {
       return null;
     }
 
