@@ -24,7 +24,7 @@ jobs:
       # Устанавливаем Node.JS для сборки приложения
       - uses: actions/setup-node@v1
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Install yarn
         id: yarn-setup
