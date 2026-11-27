@@ -32,7 +32,7 @@ jobs:
       - name: Install yarn
         id: yarn-setup
         run: |
-          yarn policies set-version 1.22.18
+          yarn policies set-version 1.22.22
           echo "::set-output name=cache_dir::$(yarn cache dir)"
 
       - name: Настройка кэширования yarn
