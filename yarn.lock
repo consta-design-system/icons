@@ -1805,15 +1805,9 @@
   resolved "https://registry.yarnpkg.com/@consta/header/-/header-3.2.0.tgz#da81d695a3f9a0ab323778ec0e642fe4371b93c7"
   integrity sha512-Xm60UUWGfAWmuYpKje9FeXkkz/GjE47PkHDxtDKTJx1kYLU1/ps2tLRNKgbSudG6k/a+7ZTZkjLqwqnqI3Dhnw==
 
-"@consta/icons@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@consta/icons/-/icons-1.1.0.tgz#f21496bc833ad062f03ddde62b93bdf7631c3c57"
-  integrity sha512-vsv41yw3atSzXfrmu9rJSNvcxjChrFau0IMAP/4nxBPzF7AIFx9Jf94ZtOOmK+st0NN/HXqKkaFMey6rYXTUCQ==
-
-"@consta/icons@^1.7.1":
+"@consta/icons@^1.7.1", "@consta/icons@https://pkg.pr.new/consta-design-system/icons/@consta/icons@9dcfaec":
   version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@consta/icons/-/icons-1.7.1.tgz#438d6fc7cb20ac1db67cc9502aa06eb83682ac62"
-  integrity sha512-ZFngpjo9MlVyNnRU0SJqg2kbzHmh41ydqCYLOWokvhPjlgqUS7W+R38+dHSpIMyMe33wKBvF8LciSqhGwmuP9w==
+  resolved "https://pkg.pr.new/consta-design-system/icons/@consta/icons@9dcfaec#2fe5484814cbb108e843d4430534dddf5b165ceb"
 
 "@consta/stand@https://pkg.pr.new/consta-design-system/stand/@consta/stand@73a81c3":
   version "0.0.163-alpha"
